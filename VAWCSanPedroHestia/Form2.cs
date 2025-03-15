@@ -21,5 +21,36 @@ namespace VAWCSanPedroHestia
         {
 
         }
+
+        private void home_btn_Click(object sender, EventArgs e)
+        {
+             
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void report_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void File_btn_Click(object sender, EventArgs e)
+        {
+            File_btn.BackColor = System.Drawing.Color.FromArgb(0, 156, 100);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
