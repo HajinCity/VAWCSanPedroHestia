@@ -65,5 +65,7 @@ namespace VAWCSanPedroHestia
                 MessageBox.Show($"Error fetching user data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
     }
 }
