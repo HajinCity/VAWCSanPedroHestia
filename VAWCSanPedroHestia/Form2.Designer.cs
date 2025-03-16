@@ -64,13 +64,14 @@
             this.panel1.Controls.Add(this.File_btn);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 718);
             this.panel1.TabIndex = 0;
             // 
             // logout_btn
             // 
+            this.logout_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.logout_btn.FlatAppearance.BorderSize = 0;
             this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_btn.Font = new System.Drawing.Font("Arial", 10F, System.Drawing.FontStyle.Bold);
@@ -78,7 +79,7 @@
             this.logout_btn.Image = ((System.Drawing.Image)(resources.GetObject("logout_btn.Image")));
             this.logout_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.logout_btn.Location = new System.Drawing.Point(45, 659);
-            this.logout_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.logout_btn.Margin = new System.Windows.Forms.Padding(2);
             this.logout_btn.Name = "logout_btn";
             this.logout_btn.Size = new System.Drawing.Size(176, 38);
             this.logout_btn.TabIndex = 10;
@@ -89,7 +90,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(21, 147);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(43, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -130,7 +131,7 @@
             this.management_btn.Image = ((System.Drawing.Image)(resources.GetObject("management_btn.Image")));
             this.management_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.management_btn.Location = new System.Drawing.Point(45, 542);
-            this.management_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.management_btn.Margin = new System.Windows.Forms.Padding(2);
             this.management_btn.Name = "management_btn";
             this.management_btn.Size = new System.Drawing.Size(176, 43);
             this.management_btn.TabIndex = 8;
@@ -146,7 +147,7 @@
             this.report_btn.Image = ((System.Drawing.Image)(resources.GetObject("report_btn.Image")));
             this.report_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.report_btn.Location = new System.Drawing.Point(45, 488);
-            this.report_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.report_btn.Margin = new System.Windows.Forms.Padding(2);
             this.report_btn.Name = "report_btn";
             this.report_btn.Size = new System.Drawing.Size(176, 32);
             this.report_btn.TabIndex = 7;
@@ -163,7 +164,7 @@
             this.intake_btn.Image = ((System.Drawing.Image)(resources.GetObject("intake_btn.Image")));
             this.intake_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.intake_btn.Location = new System.Drawing.Point(45, 434);
-            this.intake_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.intake_btn.Margin = new System.Windows.Forms.Padding(2);
             this.intake_btn.Name = "intake_btn";
             this.intake_btn.Size = new System.Drawing.Size(180, 32);
             this.intake_btn.TabIndex = 6;
@@ -189,7 +190,7 @@
             this.managecase_btn.Image = ((System.Drawing.Image)(resources.GetObject("managecase_btn.Image")));
             this.managecase_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.managecase_btn.Location = new System.Drawing.Point(45, 383);
-            this.managecase_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.managecase_btn.Margin = new System.Windows.Forms.Padding(2);
             this.managecase_btn.Name = "managecase_btn";
             this.managecase_btn.Size = new System.Drawing.Size(180, 32);
             this.managecase_btn.TabIndex = 4;
@@ -205,7 +206,7 @@
             this.case_btn.Image = ((System.Drawing.Image)(resources.GetObject("case_btn.Image")));
             this.case_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.case_btn.Location = new System.Drawing.Point(45, 332);
-            this.case_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.case_btn.Margin = new System.Windows.Forms.Padding(2);
             this.case_btn.Name = "case_btn";
             this.case_btn.Size = new System.Drawing.Size(180, 32);
             this.case_btn.TabIndex = 3;
@@ -221,7 +222,7 @@
             this.home_btn.Image = ((System.Drawing.Image)(resources.GetObject("home_btn.Image")));
             this.home_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.home_btn.Location = new System.Drawing.Point(45, 281);
-            this.home_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.home_btn.Margin = new System.Windows.Forms.Padding(2);
             this.home_btn.Name = "home_btn";
             this.home_btn.Size = new System.Drawing.Size(180, 32);
             this.home_btn.TabIndex = 2;
@@ -237,7 +238,7 @@
             this.File_btn.ForeColor = System.Drawing.Color.Transparent;
             this.File_btn.Image = global::VAWCSanPedroHestia.Properties.Resources.rect9;
             this.File_btn.Location = new System.Drawing.Point(54, 211);
-            this.File_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.File_btn.Margin = new System.Windows.Forms.Padding(2);
             this.File_btn.Name = "File_btn";
             this.File_btn.Size = new System.Drawing.Size(152, 45);
             this.File_btn.TabIndex = 1;
@@ -252,7 +253,7 @@
             this.ClientSize = new System.Drawing.Size(875, 718);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
