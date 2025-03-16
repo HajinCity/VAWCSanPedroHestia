@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Republic Act No. 8353             
+
+AN ACT EXPANDING THE DEFINITION OF THE CRIME OF RAPE, RECLASSIFYING THE SAME AS A CRIME 
+AGAINST PERSONS, AMENDING FOR THE PURPOSE ACT NO. 3815, AS AMENDED, OTHERWISE KNOWN 
+AS THE REVISED PENAL CODE, AND FOR OTHER PURPOSES
+
+Be it enacted by the Senate and House of Representatives of the Philippines in Congress assembled:
+
+Section 1. Short Title. - This Act shall be known as "The Anti-Rape Law of 1997."
+
+Section 2. Rape as a Crime Against Persons. - The crime of rape shall hereafter be classified as a Crime 
+Against Persons under Title Eight of Act No. 3815, as amended, otherwise known as the Revised Penal Code. 
+Accordingly, there shall be incorporated into Title Eight of the same Code a new chapter to be known as 
+Chapter Three on Rape, to read as follows:
+
+"Chapter Three
+"Rape
+
+"Article 266-A. Rape: When And How Committed. - Rape is committed:
+
+"1) By a man who shall have carnal knowledge of a woman under any of the following circumstances:
+
+"a) Through force, threat, or intimidation;
+
+"b) When the offended party is deprived of reason or otherwise unconscious;
+
+"c) By means of fraudulent machination or grave abuse of authority; and
+
+"d) When the offended party is under twelve (12) years of age or is demented, even though none of the 
+circumstances mentioned above be present.
+
+"2) By any person who, under any of the circumstances mentioned in paragraph 1 hereof, shall commit an act 
+of sexual assault by inserting his penis into another person's mouth or anal orifice, or any instrument or object, 
+into the genital or anal orifice of another person.
+
+"Article 266-B. Penalty. - Rape under paragraph 1 of the next preceding article shall be punished by reclusion 
+perpetua.
+
+"Whenever the rape is committed with the use of a deadly weapon or by two or more persons, the penalty shall 
+be reclusion perpetua to death.
+
+"When by reason or on the occasion of the rape, the victim has become insane, the penalty shall become 
+reclusion perpetua to death.
+
+"When the rape is attempted and a homicide is committed by reason or on the occasion thereof, the penalty 
+shall be reclusion perpetua to death.
+
+"When by reason or on the occasion ofthe rape, homicide is committed, the penalty shall be death.
+
+"The death penalty shall also be imposed if the crime of rape is committed with any of the following 
+aggravating/qualifying circumstances:
+
+"l) When the victim is under eighteen (18) years of age and the offender is a parent, ascendant, step-parent,
+ guardian, relative by consanguinity or affinity within the third civil degree, or the common-law spouse of the 
+parent of the victim;
+
+"2) When the victim is under the custody of the police or military authorities or any law enforcement or penal 
+institution;
+
+"3) When the rape is committed in full view of the spouse, parent, any of the children or other relatives within 
+the third civil degree of consanguinity;
+
+"4) When the victim is a religious engaged in legitimate religious vocation or calling and is personally known 
+to be such by the offender before or at the time of the commission of the crime;
+
+"5) When the victim is a child below seven (7) years old;
+
+"6) When the offender knows that he is afflicted with the Human Immuno-Deficiency Virus (HIV)/Acquired 
+Immune Deficiency Syndrome (AIDS) or any other sexually transmissible disease and the virus or disease is 
+transmitted to the victim;
+
+"7) When committed by any member of the Armed Forces of the Philippines or para-military units thereof or 
+the Philippine National Police or any law enforcement agency or penal institution, when the offender took 
+advantage of his position to facilitate the commission of the crime;
+
+"8) When by reason or on the occasion of the rape, the victim has suffered permanent physical mutilation 
+or disability;
+
+"9) When the offender knew of the pregnancy of the offended party at the time of the commission of the 
+crime; and
+
+"10) When the offender knew of the mental disability, emotional disorder and/or physical handicap of the 
+offended party at the time of the commission of the crime.
+
+"Rape under paragraph 2 of the next preceding article shall be punished by prision mayor.
+
+"Whenever the rape is committed with the use of a deadly weapon or by two or more persons, the penalty 
+shall be prision mayor to reclusion temporal.
+
+"When by reason or on the occasion of the rape, the victim has become insane, the penalty shall be reclusion 
+temporal.
+
+"When the rape is attempted and a homicide is committed by reason or on the occasion thereof, the penalty shall 
+be reclusion temporal to reclusion perpetua.
+
+"When by reason or on the occasion ofthe rape, homicide is committed, the penalty shall be reclusion perpetua.
+
+"Reclusion temporal shall be imposed if the rape is committed with any of the ten aggravating/ qualifying 
+circumstances mentioned in this article.
+
+"Article 266-C. Effect of Pardon. - The subsequent valid marriage between the offended party shall extinguish 
+the criminal action or the penalty imposed.
+
+"In case it is the legal husband who is the offender, the subsequent forgiveness by the wife as the offended 
+party shall extinguish the criminal action or the penalty: Provided, That the crime shall not be extinguished or 
+the penalty shall not be abated if the marriage is void ab initio.
+
+"Article 266-D. Presumptions. - Any physical overt act manifesting resistance against the act of rape in any 
+degree from the offended party, or where the offended party is so situated as to render her/him incapable 
+of giving valid consent, may be accepted as evidence in the prosecution of the acts punished under Article 
+266-A."
+
+Section 3. Separability Clause. - If any part, Sec., or provision of this Act is declared invalid or unconstitutional, 
+the other parts thereof not affected thereby shall remain valid.
+
+Section 4. Repealing Clause. - Article 336 of Act No. 3815, as amended, and all laws, acts, presidential decrees, 
+executive orders, administrative orders, rules and regulations inconsistent with or contrary to the provisions of 
+this Act are deemedamended, modified or repealed accordingly.
+
+Section 5. Effectivity. - This Act shall take effect fifteen (15) days after completion of its publication in two (2) 
+newspapers of general circulation.</value>
+  </data>
+</root>
