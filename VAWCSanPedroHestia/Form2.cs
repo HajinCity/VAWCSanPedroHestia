@@ -45,9 +45,11 @@ namespace VAWCSanPedroHestia
                 {
                     Dictionary<string, object> userData = snapshot.ToDictionary();
 
-                    // ✅ Retrieve firstname & lastname
-                    string firstName = userData.ContainsKey("firstname") ? userData["firstname"].ToString() : "Unknown";
-                    string lastName = userData.ContainsKey("lastname") ? userData["lastname"].ToString() : "Unknown";
+                    string firstName = userData.ContainsKey("Firstname") ? userData["Firstname"].ToString() :
+                                       userData.ContainsKey("firstname") ? userData["firstname"].ToString() : "Unknown";
+
+                    string lastName = userData.ContainsKey("Lastname") ? userData["Lastname"].ToString() :
+                                      userData.ContainsKey("lastname") ? userData["lastname"].ToString() : "Unknown";
 
                     string fullName = $"{firstName} {lastName}";
 
@@ -55,7 +57,7 @@ namespace VAWCSanPedroHestia
                 }
                 else
                 {
-                    MessageBox.Show("User data not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("User data not found in Firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
