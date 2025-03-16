@@ -1,56 +1,67 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Google.Cloud.Firestore;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class Form2: Form
+    public partial class Form2 : Form
     {
-        public Form2()
+        private FirestoreDb firestoreDb;
+        private string loggedInUsername; // Store logged-in username
+
+        public Form2(string username) // Receive username from Form3
         {
             InitializeComponent();
+            loggedInUsername = username;
+            InitializeFirebase();
+            LoadUserData();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void InitializeFirebase()
         {
-
+            try
+            {
+                string path = @"C:\Users\WINDOWS 10\source\repos\HajinCity\VAWCSanPedroHestia\VAWCSanPedroHestia\FirebaseJSONFile\vawc-hestiaxisanpedro2025-firebase-adminsdk-fbsvc-89e0f144fb.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                firestoreDb = FirestoreDb.Create("vawc-hestiaxisanpedro2025");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Firebase Init Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void home_btn_Click(object sender, EventArgs e)
+        private async void LoadUserData()
         {
-             
+            try
+            {
+                // 🔹 Check if the user document exists
+                DocumentReference docRef = firestoreDb.Collection("users").Document(loggedInUsername);
+                DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
 
-        }
+                if (snapshot.Exists) // ✅ Check if user exists
+                {
+                    Dictionary<string, object> userData = snapshot.ToDictionary();
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+                    // ✅ Retrieve firstname & lastname
+                    string firstName = userData.ContainsKey("firstname") ? userData["firstname"].ToString() : "Unknown";
+                    string lastName = userData.ContainsKey("lastname") ? userData["lastname"].ToString() : "Unknown";
 
-        }
+                    string fullName = $"{firstName} {lastName}";
 
-        private void report_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void File_btn_Click(object sender, EventArgs e)
-        {
-            File_btn.BackColor = System.Drawing.Color.FromArgb(0, 156, 100);
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+                    label1.Text = fullName; // ✅ Display full name in label1
+                }
+                else
+                {
+                    MessageBox.Show("User data not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error fetching user data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

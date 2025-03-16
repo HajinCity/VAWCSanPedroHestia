@@ -51,20 +51,21 @@ namespace VAWCSanPedroHestia
         {
             try
             {
+                // 🔹 Check if the user document exists in Firestore
                 DocumentReference docRef = firestoreDb.Collection("users").Document(username);
                 DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
 
-                if (snapshot.Exists)
+                if (snapshot.Exists) // ✅ Check if user exists in Firestore
                 {
                     Dictionary<string, object> userData = snapshot.ToDictionary();
-                    string storedPassword = userData["password"].ToString();
+                    string storedPassword = userData.ContainsKey("password") ? userData["password"].ToString() : "";
 
-                    if (storedPassword == password) // 🔹 Password check (Consider hashing in real apps)
+                    if (storedPassword == password) // ✅ Verify password (Consider hashing)
                     {
                         MessageBox.Show("Login Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Open Form2 (Main Application)
-                        Form2 dashboard = new Form2();
+                        // 🔹 Pass username (Document ID) to Form2
+                        Form2 dashboard = new Form2(username);
                         this.Hide();
                         dashboard.Show();
                     }
@@ -75,7 +76,7 @@ namespace VAWCSanPedroHestia
                 }
                 else
                 {
-                    MessageBox.Show("User not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("User not found in Firestore!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
@@ -83,6 +84,7 @@ namespace VAWCSanPedroHestia
                 MessageBox.Show($"Error during login: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
 
 
     }

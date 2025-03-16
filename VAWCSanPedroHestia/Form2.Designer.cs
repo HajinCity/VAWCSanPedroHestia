@@ -49,7 +49,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(132)))), ((int)(((byte)(51)))), ((int)(((byte)(140)))));
             this.panel1.Controls.Add(this.logout_btn);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label2);
@@ -120,7 +120,6 @@
             this.label1.Size = new System.Drawing.Size(157, 19);
             this.label1.TabIndex = 1;
             this.label1.Text = "ADELFA ANTIPOLO";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // management_btn
             // 
@@ -153,7 +152,6 @@
             this.report_btn.TabIndex = 7;
             this.report_btn.Text = "         REPORTS DOCS";
             this.report_btn.UseVisualStyleBackColor = true;
-            this.report_btn.Click += new System.EventHandler(this.report_btn_Click);
             // 
             // intake_btn
             // 
@@ -228,7 +226,6 @@
             this.home_btn.TabIndex = 2;
             this.home_btn.Text = "        HOME";
             this.home_btn.UseVisualStyleBackColor = true;
-            this.home_btn.Click += new System.EventHandler(this.home_btn_Click);
             // 
             // File_btn
             // 
@@ -237,14 +234,13 @@
             this.File_btn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold);
             this.File_btn.ForeColor = System.Drawing.Color.Transparent;
             this.File_btn.Image = global::VAWCSanPedroHestia.Properties.Resources.rect9;
-            this.File_btn.Location = new System.Drawing.Point(54, 211);
+            this.File_btn.Location = new System.Drawing.Point(45, 209);
             this.File_btn.Margin = new System.Windows.Forms.Padding(2);
             this.File_btn.Name = "File_btn";
-            this.File_btn.Size = new System.Drawing.Size(152, 45);
+            this.File_btn.Size = new System.Drawing.Size(184, 45);
             this.File_btn.TabIndex = 1;
             this.File_btn.Text = "FILE A CASE";
             this.File_btn.UseVisualStyleBackColor = false;
-            this.File_btn.Click += new System.EventHandler(this.File_btn_Click);
             // 
             // Form2
             // 
@@ -258,7 +254,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
