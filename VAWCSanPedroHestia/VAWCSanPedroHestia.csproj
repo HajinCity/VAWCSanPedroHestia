@@ -66,6 +66,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RA 10364.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RA 10364.Designer.cs">
+      <DependentUpon>RA 10364.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA 7877.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RA 7877.Designer.cs">
+      <DependentUpon>RA 7877.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA 8353.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RA 8353.Designer.cs">
+      <DependentUpon>RA 8353.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA 9208.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RA 9208.Designer.cs">
+      <DependentUpon>RA 9208.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RA 9262.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RA 9262.Designer.cs">
+      <DependentUpon>RA 9262.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +115,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RA 10364.resx">
+      <DependentUpon>RA 10364.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA 7877.resx">
+      <DependentUpon>RA 7877.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA 8353.resx">
+      <DependentUpon>RA 8353.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA 9208.resx">
+      <DependentUpon>RA 9208.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RA 9262.resx">
+      <DependentUpon>RA 9262.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
