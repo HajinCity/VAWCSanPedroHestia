@@ -683,7 +683,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1182, 725);
+            this.tabPage2.Size = new System.Drawing.Size(1230, 725);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Complaint Case";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -754,7 +754,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 749);
+            this.ClientSize = new System.Drawing.Size(1275, 894);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.save_casebtn);
             this.Controls.Add(this.tabControl1);
@@ -763,6 +763,7 @@
             this.Controls.Add(this.Caseno);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ManageCaseListIU";
             this.Text = "Form5";
             this.tabControl1.ResumeLayout(false);
