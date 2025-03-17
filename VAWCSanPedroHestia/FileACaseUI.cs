@@ -21,5 +21,10 @@ namespace VAWCSanPedroHestia
         {
 
         }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
