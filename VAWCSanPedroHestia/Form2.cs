@@ -76,6 +76,34 @@ namespace VAWCSanPedroHestia
             openingForm(new FileACaseUI());
         }
 
-     
+        private void home_btn_Click(object sender, EventArgs e)
+        {
+            openingForm(new HomeUI());
+        }
+
+        private void case_btn_Click(object sender, EventArgs e)
+        {
+            openingForm(new Case_List());
+        }
+
+        private void managecase_btn_Click(object sender, EventArgs e)
+        {
+            openingForm(new ManageCaseListIU());
+        }
+
+        private void intake_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void report_btn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void management_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
