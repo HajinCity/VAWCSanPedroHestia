@@ -150,12 +150,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Case List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Case List.Designer.cs">
+      <DependentUpon>Case List.cs</DependentUpon>
+    </Compile>
     <Compile Include="FileACaseUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FileACaseUI.Designer.cs">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirebaseInitialization.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +199,12 @@
     <Compile Include="HomeUI.Designer.cs">
       <DependentUpon>HomeUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Intake Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Intake Form.Designer.cs">
+      <DependentUpon>Intake Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RA 10364.cs">
@@ -224,6 +237,9 @@
     <Compile Include="RA 9262.Designer.cs">
       <DependentUpon>RA 9262.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Case List.resx">
+      <DependentUpon>Case List.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FileACaseUI.resx">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
     </EmbeddedResource>
