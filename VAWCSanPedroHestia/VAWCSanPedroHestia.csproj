@@ -257,7 +257,7 @@
     <EmbeddedResource Include="HomeUI.resx">
       <DependentUpon>HomeUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewForms\ManageCaseListIU.resx">
+    <EmbeddedResource Include="ManageCaseListIU.resx">
       <DependentUpon>ManageCaseListIU.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
