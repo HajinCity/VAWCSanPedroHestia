@@ -162,6 +162,7 @@
     <Compile Include="FileACaseUI.Designer.cs">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="FirebaseInitialization.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
