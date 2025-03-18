@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class ManageCaseListUI: Form
+    public partial class FileACaseUI: Form
     {
-        public ManageCaseListUI()
+        public FileACaseUI()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,27 +8,40 @@ namespace VAWCSanPedroHestia
 {
     public partial class Form2 : Form
     {
-        private readonly string loggedInUsername;
-        private Form activeForm;
+        private FirestoreDb firestoreDb;
+        private string loggedInUsername; // Store logged-in username
 
-        public Form2(string username)
+        public Form2(string username) // Receive username from Form3
         {
             InitializeComponent();
             loggedInUsername = username;
+            InitializeFirebase();
             LoadUserData();
+        }
+
+        private void InitializeFirebase()
+        {
+            try
+            {
+                string path = @"C:\Users\WINDOWS 10\source\repos\HajinCity\VAWCSanPedroHestia\VAWCSanPedroHestia\FirebaseJSONFile\vawc-hestiaxisanpedro2025-firebase-adminsdk-fbsvc-89e0f144fb.json";
+                Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
+                firestoreDb = FirestoreDb.Create("vawc-hestiaxisanpedro2025");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Firebase Init Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private async void LoadUserData()
         {
             try
             {
-                DocumentReference docRef = FirebaseInitialization.Database
-                    .Collection("users")
-                    .Document(loggedInUsername);
-
+                // 🔹 Check if the user document exists
+                DocumentReference docRef = firestoreDb.Collection("users").Document(loggedInUsername);
                 DocumentSnapshot snapshot = await docRef.GetSnapshotAsync();
 
-                if (snapshot.Exists)
+                if (snapshot.Exists) // ✅ Check if user exists
                 {
                     Dictionary<string, object> userData = snapshot.ToDictionary();
 
@@ -38,7 +51,9 @@ namespace VAWCSanPedroHestia
                     string lastName = userData.ContainsKey("Lastname") ? userData["Lastname"].ToString() :
                                       userData.ContainsKey("lastname") ? userData["lastname"].ToString() : "Unknown";
 
-                    label1.Text = $"{firstName} {lastName}";
+                    string fullName = $"{firstName} {lastName}";
+
+                    label1.Text = fullName; // ✅ Display full name in label1
                 }
                 else
                 {
@@ -51,62 +66,7 @@ namespace VAWCSanPedroHestia
             }
         }
 
-        private void openingForm(Form childForm)
-        {
-            if (activeForm != null)
-           
-                activeForm.Close();
-           
-            activeForm=childForm;
-
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-
-            panel3.Controls.Add(childForm);
-            panel3.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-
-
         private void File_btn_Click(object sender, EventArgs e)
-        {
-            openingForm(new FileACaseUI());
-        }
-
-        private void home_btn_Click(object sender, EventArgs e)
-        {
-            openingForm(new HomeUI());
-        }
-
-        private void case_btn_Click(object sender, EventArgs e)
-        {
-            openingForm(new Case_List());
-        }
-
-        private void managecase_btn_Click(object sender, EventArgs e)
-        {
-            openingForm(new ManageCaseListIU());
-        }
-
-        private void intake_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void report_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void management_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logout_btn_Click(object sender, EventArgs e)
         {
 
         }

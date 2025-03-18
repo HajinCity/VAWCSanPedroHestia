@@ -90,37 +90,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label37 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.save_casebtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -137,17 +111,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(31, 50);
+            this.label2.Location = new System.Drawing.Point(248, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(86, 19);
             this.label2.TabIndex = 1;
             this.label2.Text = "CASE NO.";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Caseno
             // 
             this.Caseno.AutoSize = true;
             this.Caseno.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Caseno.Location = new System.Drawing.Point(124, 49);
+            this.Caseno.Location = new System.Drawing.Point(360, 40);
             this.Caseno.Name = "Caseno";
             this.Caseno.Size = new System.Drawing.Size(51, 20);
             this.Caseno.TabIndex = 2;
@@ -188,7 +163,7 @@
             this.tabPage1.Controls.Add(this.groupBox1);
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage1.Size = new System.Drawing.Size(1182, 725);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Complainant";
@@ -234,7 +209,7 @@
             // Rtxtrgn
             // 
             this.Rtxtrgn.Location = new System.Drawing.Point(139, 590);
-            this.Rtxtrgn.Margin = new System.Windows.Forms.Padding(2);
+            this.Rtxtrgn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rtxtrgn.Name = "Rtxtrgn";
             this.Rtxtrgn.Size = new System.Drawing.Size(192, 26);
             this.Rtxtrgn.TabIndex = 45;
@@ -243,7 +218,7 @@
             // 
             this.Rcmboage.FormattingEnabled = true;
             this.Rcmboage.Location = new System.Drawing.Point(139, 239);
-            this.Rcmboage.Margin = new System.Windows.Forms.Padding(2);
+            this.Rcmboage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rcmboage.Name = "Rcmboage";
             this.Rcmboage.Size = new System.Drawing.Size(90, 28);
             this.Rcmboage.TabIndex = 44;
@@ -261,7 +236,7 @@
             // Rtxtprvnc
             // 
             this.Rtxtprvnc.Location = new System.Drawing.Point(139, 546);
-            this.Rtxtprvnc.Margin = new System.Windows.Forms.Padding(2);
+            this.Rtxtprvnc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rtxtprvnc.Name = "Rtxtprvnc";
             this.Rtxtprvnc.Size = new System.Drawing.Size(192, 26);
             this.Rtxtprvnc.TabIndex = 43;
@@ -269,7 +244,7 @@
             // Rtxtmncp
             // 
             this.Rtxtmncp.Location = new System.Drawing.Point(139, 500);
-            this.Rtxtmncp.Margin = new System.Windows.Forms.Padding(2);
+            this.Rtxtmncp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rtxtmncp.Name = "Rtxtmncp";
             this.Rtxtmncp.Size = new System.Drawing.Size(192, 26);
             this.Rtxtmncp.TabIndex = 42;
@@ -277,7 +252,7 @@
             // Rtxtbrgy
             // 
             this.Rtxtbrgy.Location = new System.Drawing.Point(139, 453);
-            this.Rtxtbrgy.Margin = new System.Windows.Forms.Padding(2);
+            this.Rtxtbrgy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rtxtbrgy.Name = "Rtxtbrgy";
             this.Rtxtbrgy.Size = new System.Drawing.Size(192, 26);
             this.Rtxtbrgy.TabIndex = 41;
@@ -285,7 +260,7 @@
             // Rtxtprk
             // 
             this.Rtxtprk.Location = new System.Drawing.Point(139, 405);
-            this.Rtxtprk.Margin = new System.Windows.Forms.Padding(2);
+            this.Rtxtprk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rtxtprk.Name = "Rtxtprk";
             this.Rtxtprk.Size = new System.Drawing.Size(192, 26);
             this.Rtxtprk.TabIndex = 40;
@@ -294,7 +269,7 @@
             // 
             this.Rcmborltn.FormattingEnabled = true;
             this.Rcmborltn.Location = new System.Drawing.Point(217, 646);
-            this.Rcmborltn.Margin = new System.Windows.Forms.Padding(2);
+            this.Rcmborltn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rcmborltn.Name = "Rcmborltn";
             this.Rcmborltn.Size = new System.Drawing.Size(192, 28);
             this.Rcmborltn.TabIndex = 39;
@@ -352,7 +327,7 @@
             // Rnumcntct
             // 
             this.Rnumcntct.Location = new System.Drawing.Point(139, 314);
-            this.Rnumcntct.Margin = new System.Windows.Forms.Padding(2);
+            this.Rnumcntct.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rnumcntct.Name = "Rnumcntct";
             this.Rnumcntct.Size = new System.Drawing.Size(192, 26);
             this.Rnumcntct.TabIndex = 36;
@@ -360,7 +335,7 @@
             // Rtextrgn
             // 
             this.Rtextrgn.Location = new System.Drawing.Point(139, 278);
-            this.Rtextrgn.Margin = new System.Windows.Forms.Padding(2);
+            this.Rtextrgn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Rtextrgn.Name = "Rtextrgn";
             this.Rtextrgn.Size = new System.Drawing.Size(192, 26);
             this.Rtextrgn.TabIndex = 35;
@@ -368,11 +343,8 @@
             // RCmboSex
             // 
             this.RCmboSex.FormattingEnabled = true;
-            this.RCmboSex.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
             this.RCmboSex.Location = new System.Drawing.Point(139, 200);
-            this.RCmboSex.Margin = new System.Windows.Forms.Padding(2);
+            this.RCmboSex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RCmboSex.Name = "RCmboSex";
             this.RCmboSex.Size = new System.Drawing.Size(90, 28);
             this.RCmboSex.TabIndex = 30;
@@ -380,7 +352,7 @@
             // RtxtAllias
             // 
             this.RtxtAllias.Location = new System.Drawing.Point(139, 160);
-            this.RtxtAllias.Margin = new System.Windows.Forms.Padding(2);
+            this.RtxtAllias.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RtxtAllias.Name = "RtxtAllias";
             this.RtxtAllias.Size = new System.Drawing.Size(192, 26);
             this.RtxtAllias.TabIndex = 33;
@@ -388,7 +360,7 @@
             // RtxtMname
             // 
             this.RtxtMname.Location = new System.Drawing.Point(139, 119);
-            this.RtxtMname.Margin = new System.Windows.Forms.Padding(2);
+            this.RtxtMname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RtxtMname.Name = "RtxtMname";
             this.RtxtMname.Size = new System.Drawing.Size(192, 26);
             this.RtxtMname.TabIndex = 32;
@@ -396,7 +368,7 @@
             // RtextFname
             // 
             this.RtextFname.Location = new System.Drawing.Point(139, 76);
-            this.RtextFname.Margin = new System.Windows.Forms.Padding(2);
+            this.RtextFname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RtextFname.Name = "RtextFname";
             this.RtextFname.Size = new System.Drawing.Size(192, 26);
             this.RtextFname.TabIndex = 31;
@@ -404,7 +376,7 @@
             // RtxtLname
             // 
             this.RtxtLname.Location = new System.Drawing.Point(139, 33);
-            this.RtxtLname.Margin = new System.Windows.Forms.Padding(2);
+            this.RtxtLname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RtxtLname.Name = "RtxtLname";
             this.RtxtLname.Size = new System.Drawing.Size(192, 26);
             this.RtxtLname.TabIndex = 30;
@@ -525,7 +497,7 @@
             // Ctxtrgn
             // 
             this.Ctxtrgn.Location = new System.Drawing.Point(122, 546);
-            this.Ctxtrgn.Margin = new System.Windows.Forms.Padding(2);
+            this.Ctxtrgn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ctxtrgn.Name = "Ctxtrgn";
             this.Ctxtrgn.Size = new System.Drawing.Size(192, 26);
             this.Ctxtrgn.TabIndex = 31;
@@ -534,7 +506,7 @@
             // 
             this.Ccmboage.FormattingEnabled = true;
             this.Ccmboage.Location = new System.Drawing.Point(122, 200);
-            this.Ccmboage.Margin = new System.Windows.Forms.Padding(2);
+            this.Ccmboage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ccmboage.Name = "Ccmboage";
             this.Ccmboage.Size = new System.Drawing.Size(90, 28);
             this.Ccmboage.TabIndex = 30;
@@ -552,7 +524,7 @@
             // Ctxtprvnc
             // 
             this.Ctxtprvnc.Location = new System.Drawing.Point(122, 500);
-            this.Ctxtprvnc.Margin = new System.Windows.Forms.Padding(2);
+            this.Ctxtprvnc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ctxtprvnc.Name = "Ctxtprvnc";
             this.Ctxtprvnc.Size = new System.Drawing.Size(192, 26);
             this.Ctxtprvnc.TabIndex = 27;
@@ -570,7 +542,7 @@
             // Ctxtmncp
             // 
             this.Ctxtmncp.Location = new System.Drawing.Point(122, 453);
-            this.Ctxtmncp.Margin = new System.Windows.Forms.Padding(2);
+            this.Ctxtmncp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ctxtmncp.Name = "Ctxtmncp";
             this.Ctxtmncp.Size = new System.Drawing.Size(192, 26);
             this.Ctxtmncp.TabIndex = 25;
@@ -588,7 +560,7 @@
             // Ctxtbrgy
             // 
             this.Ctxtbrgy.Location = new System.Drawing.Point(122, 405);
-            this.Ctxtbrgy.Margin = new System.Windows.Forms.Padding(2);
+            this.Ctxtbrgy.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ctxtbrgy.Name = "Ctxtbrgy";
             this.Ctxtbrgy.Size = new System.Drawing.Size(192, 26);
             this.Ctxtbrgy.TabIndex = 23;
@@ -606,7 +578,7 @@
             // CtxtPurok
             // 
             this.CtxtPurok.Location = new System.Drawing.Point(122, 358);
-            this.CtxtPurok.Margin = new System.Windows.Forms.Padding(2);
+            this.CtxtPurok.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CtxtPurok.Name = "CtxtPurok";
             this.CtxtPurok.Size = new System.Drawing.Size(192, 26);
             this.CtxtPurok.TabIndex = 21;
@@ -624,7 +596,7 @@
             // Cnumno
             // 
             this.Cnumno.Location = new System.Drawing.Point(122, 278);
-            this.Cnumno.Margin = new System.Windows.Forms.Padding(2);
+            this.Cnumno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Cnumno.Name = "Cnumno";
             this.Cnumno.Size = new System.Drawing.Size(192, 26);
             this.Cnumno.TabIndex = 19;
@@ -642,7 +614,7 @@
             // CtextRegion
             // 
             this.CtextRegion.Location = new System.Drawing.Point(122, 239);
-            this.CtextRegion.Margin = new System.Windows.Forms.Padding(2);
+            this.CtextRegion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CtextRegion.Name = "CtextRegion";
             this.CtextRegion.Size = new System.Drawing.Size(192, 26);
             this.CtextRegion.TabIndex = 17;
@@ -670,11 +642,8 @@
             // ComboCsex
             // 
             this.ComboCsex.FormattingEnabled = true;
-            this.ComboCsex.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
             this.ComboCsex.Location = new System.Drawing.Point(122, 160);
-            this.ComboCsex.Margin = new System.Windows.Forms.Padding(2);
+            this.ComboCsex.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ComboCsex.Name = "ComboCsex";
             this.ComboCsex.Size = new System.Drawing.Size(90, 28);
             this.ComboCsex.TabIndex = 13;
@@ -682,7 +651,7 @@
             // CtxtMname
             // 
             this.CtxtMname.Location = new System.Drawing.Point(122, 119);
-            this.CtxtMname.Margin = new System.Windows.Forms.Padding(2);
+            this.CtxtMname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CtxtMname.Name = "CtxtMname";
             this.CtxtMname.Size = new System.Drawing.Size(192, 26);
             this.CtxtMname.TabIndex = 12;
@@ -690,7 +659,7 @@
             // CtxtFname
             // 
             this.CtxtFname.Location = new System.Drawing.Point(122, 76);
-            this.CtxtFname.Margin = new System.Windows.Forms.Padding(2);
+            this.CtxtFname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CtxtFname.Name = "CtxtFname";
             this.CtxtFname.Size = new System.Drawing.Size(192, 26);
             this.CtxtFname.TabIndex = 11;
@@ -698,7 +667,7 @@
             // Ctxtlname
             // 
             this.Ctxtlname.Location = new System.Drawing.Point(122, 33);
-            this.Ctxtlname.Margin = new System.Windows.Forms.Padding(2);
+            this.Ctxtlname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Ctxtlname.Name = "Ctxtlname";
             this.Ctxtlname.Size = new System.Drawing.Size(192, 26);
             this.Ctxtlname.TabIndex = 10;
@@ -745,260 +714,13 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox6);
-            this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.textBox5);
-            this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.textBox4);
-            this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.textBox2);
-            this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.comboBox5);
-            this.tabPage2.Controls.Add(this.label36);
-            this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.dateTimePicker2);
-            this.tabPage2.Controls.Add(this.comboBox4);
-            this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.comboBox3);
-            this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.textBox1);
-            this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.comboBox1);
-            this.tabPage2.Controls.Add(this.label31);
-            this.tabPage2.Controls.Add(this.label30);
-            this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
             this.tabPage2.Size = new System.Drawing.Size(1182, 725);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Complaint Case";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(843, 570);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(111, 26);
-            this.textBox6.TabIndex = 44;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(704, 570);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(69, 20);
-            this.label41.TabIndex = 43;
-            this.label41.Text = "Province";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(843, 516);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(288, 26);
-            this.textBox5.TabIndex = 42;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(704, 519);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(69, 20);
-            this.label40.TabIndex = 41;
-            this.label40.Text = "Province";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(843, 460);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(288, 26);
-            this.textBox4.TabIndex = 40;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(704, 463);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(120, 20);
-            this.label39.TabIndex = 39;
-            this.label39.Text = "Municipality/City";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(843, 405);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(288, 26);
-            this.textBox3.TabIndex = 38;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(704, 408);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(77, 20);
-            this.label38.TabIndex = 37;
-            this.label38.Text = "Barangay";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(843, 352);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(288, 26);
-            this.textBox2.TabIndex = 36;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(704, 355);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(50, 20);
-            this.label37.TabIndex = 35;
-            this.label37.Text = "Purok";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(843, 299);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(288, 28);
-            this.comboBox5.TabIndex = 34;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(704, 302);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(127, 20);
-            this.label36.TabIndex = 33;
-            this.label36.Text = "Place of Incident";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(730, 234);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(105, 20);
-            this.label35.TabIndex = 32;
-            this.label35.Text = "Incident Date";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(843, 229);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(292, 26);
-            this.dateTimePicker2.TabIndex = 31;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(843, 120);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(288, 28);
-            this.comboBox4.TabIndex = 21;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(730, 123);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(88, 20);
-            this.label34.TabIndex = 20;
-            this.label34.Text = "Referral To";
-            // 
-            // comboBox3
-            // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "Reffered",
-            "Settled",
-            "Closed"});
-            this.comboBox3.Location = new System.Drawing.Point(843, 69);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(288, 28);
-            this.comboBox3.TabIndex = 19;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(730, 72);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(97, 20);
-            this.label33.TabIndex = 18;
-            this.label33.Text = "Case Status";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(35, 234);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(421, 451);
-            this.textBox1.TabIndex = 17;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(31, 196);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(168, 20);
-            this.label32.TabIndex = 16;
-            this.label32.Text = "Description of Incident";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(213, 120);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(243, 28);
-            this.comboBox2.TabIndex = 15;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 69);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(311, 28);
-            this.comboBox1.TabIndex = 14;
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(31, 123);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(177, 20);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "R.A Violations Specifics";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(31, 72);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(109, 20);
-            this.label30.TabIndex = 1;
-            this.label30.Text = "R.A Violations";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Case Details";
             // 
             // save_casebtn
             // 
@@ -1006,7 +728,7 @@
             this.save_casebtn.ForeColor = System.Drawing.Color.White;
             this.save_casebtn.Image = global::VAWCSanPedroHestia.Properties.Resources.rect9;
             this.save_casebtn.Location = new System.Drawing.Point(1066, 31);
-            this.save_casebtn.Margin = new System.Windows.Forms.Padding(2);
+            this.save_casebtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.save_casebtn.Name = "save_casebtn";
             this.save_casebtn.Size = new System.Drawing.Size(165, 47);
             this.save_casebtn.TabIndex = 30;
@@ -1018,7 +740,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1275, 884);
+            this.ClientSize = new System.Drawing.Size(1275, 894);
             this.Controls.Add(this.save_casebtn);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.dateTimePicker1);
@@ -1030,15 +752,12 @@
             this.Name = "FileACaseUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FileACaseUI";
-            this.Load += new System.EventHandler(this.FileACaseUI_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1109,30 +828,5 @@
         private System.Windows.Forms.ComboBox Ccmboage;
         private System.Windows.Forms.TextBox Rtxtrgn;
         private System.Windows.Forms.TextBox Ctxtrgn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox2;
     }
 }
