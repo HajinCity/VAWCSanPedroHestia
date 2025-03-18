@@ -1,21 +1,25 @@
 ﻿using Google.Cloud.Firestore;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using VAWCSanPedroHestia.NewForm;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class FileACaseUI: Form
+    public partial class FileACaseUI : Form
     {
         public FileACaseUI()
         {
             InitializeComponent();
+            SetComplaintDateRestrictions();
+            RAVioCase.SelectedIndexChanged += RAVioCase_SelectedIndexChanged;
+        }
+        private void SetComplaintDateRestrictions()
+        {
+            ComplaintDate.Value = DateTime.Today;
+            ComplaintDate.MinDate = DateTime.Today; 
+            ComplaintDate.MaxDate = DateTime.Today; 
+            ComplaintDate.Enabled = false; 
         }
 
         private void FileACaseUI_Load(object sender, EventArgs e)
@@ -23,7 +27,7 @@ namespace VAWCSanPedroHestia
             GenerateCaseNumber();
         }
 
-        private async void GenerateCaseNumber()
+        public async void GenerateCaseNumber()
         {
             string currentYear = DateTime.Now.Year.ToString();
             string prefix = $"{currentYear}-";
@@ -52,5 +56,63 @@ namespace VAWCSanPedroHestia
             Caseno.Text = newCaseId;
         }
 
+        private async void save_casebtn_Click(object sender, EventArgs e)
+        {
+            await FileACaseSaveToDb.SaveCaseAsync(this);
+            ClearForm(this); // ✅ Call ClearForm properly
+        }
+
+        // ✅ **Clears all TextBoxes, ComboBoxes (Properly!), and resets DateTimePickers**
+        private void ClearForm(Control parent)
+        {
+            foreach (Control ctrl in parent.Controls)
+            {
+                if (ctrl is TextBox txt)
+                    txt.Clear();
+
+                if (ctrl is ComboBox cmb)
+                {
+                    cmb.SelectedIndex = -1; // ✅ Properly resets selection
+                    cmb.Text = "";          // ✅ Clears any manually entered text
+                }
+
+                if (ctrl is DateTimePicker dtp)
+                    dtp.Value = DateTime.Now;
+
+                // **If the control contains more controls inside (like Panels, GroupBoxes)**
+                if (ctrl.HasChildren)
+                    ClearForm(ctrl); // Recursive call to clear controls inside Panels, GroupBoxes
+            }
+
+            // **Refresh Case Number after clearing**
+            GenerateCaseNumber();
+        }
+
+        private void RAVioCase_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Clear existing items in the sub-case combo box
+            RAVioSubCase.Items.Clear();
+
+            // Get the selected value from RAVioCase
+            string selectedCategory = RAVioCase.SelectedItem?.ToString();
+
+            // Check which category is selected
+            if (selectedCategory == "R.A. 9262: Anti Violence Against Women and their Children Act")
+            {
+                // Add specific sub-cases for R.A. 9262
+                RAVioSubCase.Items.Add("Sexual Abuse");
+                RAVioSubCase.Items.Add("Psychological");
+                RAVioSubCase.Items.Add("Physical");
+                RAVioSubCase.Items.Add("Economic");
+            }
+            else
+            {
+                // If it's any other category, only show "None"
+                RAVioSubCase.Items.Add("None");
+            }
+
+            // ✅ Set default selection to "None"
+            RAVioSubCase.SelectedIndex = 0;
+        }
     }
 }

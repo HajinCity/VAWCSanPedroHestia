@@ -156,6 +156,7 @@
     <Compile Include="NewForm\Case List.Designer.cs">
       <DependentUpon>Case List.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewForm\FileACaseSaveToDb.cs" />
     <Compile Include="NewForm\FileACaseUI.cs">
       <SubType>Form</SubType>
     </Compile>

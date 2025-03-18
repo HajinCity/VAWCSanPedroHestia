@@ -32,12 +32,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Caseno = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.ComplaintDate = new System.Windows.Forms.DateTimePicker();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Rtxtrgn = new System.Windows.Forms.TextBox();
-            this.Rcmboage = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
             this.Rtxtprvnc = new System.Windows.Forms.TextBox();
             this.Rtxtmncp = new System.Windows.Forms.TextBox();
@@ -66,7 +65,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Ctxtrgn = new System.Windows.Forms.TextBox();
-            this.Ccmboage = new System.Windows.Forms.ComboBox();
             this.Cnumregion = new System.Windows.Forms.Label();
             this.Ctxtprvnc = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -90,32 +88,38 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.piRegion = new System.Windows.Forms.TextBox();
             this.label41 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.piProvince = new System.Windows.Forms.TextBox();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.piMunicpal = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.piBarangay = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.piPurok = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.PlaceOfIncident = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.IncidentDate = new System.Windows.Forms.DateTimePicker();
+            this.RefTo = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.CaseStatus = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DescriptionIncident = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.RAVioSubCase = new System.Windows.Forms.ComboBox();
+            this.RAVioCase = new System.Windows.Forms.ComboBox();
             this.label31 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.save_casebtn = new System.Windows.Forms.Button();
+            this.CompAge = new System.Windows.Forms.TextBox();
+            this.ResAge = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.CompCivlStatus = new System.Windows.Forms.ComboBox();
+            this.ResCivilStatus = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -163,13 +167,13 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Complaint Date";
             // 
-            // dateTimePicker1
+            // ComplaintDate
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(741, 38);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(292, 26);
-            this.dateTimePicker1.TabIndex = 4;
+            this.ComplaintDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComplaintDate.Location = new System.Drawing.Point(757, 35);
+            this.ComplaintDate.Name = "ComplaintDate";
+            this.ComplaintDate.Size = new System.Drawing.Size(292, 26);
+            this.ComplaintDate.TabIndex = 4;
             // 
             // tabControl1
             // 
@@ -196,8 +200,10 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.ResCivilStatus);
+            this.groupBox2.Controls.Add(this.label43);
+            this.groupBox2.Controls.Add(this.ResAge);
             this.groupBox2.Controls.Add(this.Rtxtrgn);
-            this.groupBox2.Controls.Add(this.Rcmboage);
             this.groupBox2.Controls.Add(this.label29);
             this.groupBox2.Controls.Add(this.Rtxtprvnc);
             this.groupBox2.Controls.Add(this.Rtxtmncp);
@@ -238,15 +244,6 @@
             this.Rtxtrgn.Name = "Rtxtrgn";
             this.Rtxtrgn.Size = new System.Drawing.Size(192, 26);
             this.Rtxtrgn.TabIndex = 45;
-            // 
-            // Rcmboage
-            // 
-            this.Rcmboage.FormattingEnabled = true;
-            this.Rcmboage.Location = new System.Drawing.Point(139, 239);
-            this.Rcmboage.Margin = new System.Windows.Forms.Padding(2);
-            this.Rcmboage.Name = "Rcmboage";
-            this.Rcmboage.Size = new System.Drawing.Size(90, 28);
-            this.Rcmboage.TabIndex = 44;
             // 
             // label29
             // 
@@ -293,6 +290,20 @@
             // Rcmborltn
             // 
             this.Rcmborltn.FormattingEnabled = true;
+            this.Rcmborltn.Items.AddRange(new object[] {
+            "Current Spouse/Partner",
+            "Former Fiance/Dating Relationship",
+            "Teacher/Instructor/Professor",
+            "Neighbors/Peers/Co-Workers/Classmates",
+            "Former Spouse/Partner",
+            "Employer/Manager/Supervisor",
+            "Coach/Trainer",
+            "Stranger",
+            "Current Fiance/Dating Relationship",
+            "Agent of the Employer",
+            "People of Authority/Service Provider",
+            "Family",
+            "Ohter Relatives"});
             this.Rcmborltn.Location = new System.Drawing.Point(217, 646);
             this.Rcmborltn.Margin = new System.Windows.Forms.Padding(2);
             this.Rcmborltn.Name = "Rcmborltn";
@@ -488,8 +499,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CompCivlStatus);
+            this.groupBox1.Controls.Add(this.label42);
+            this.groupBox1.Controls.Add(this.CompAge);
             this.groupBox1.Controls.Add(this.Ctxtrgn);
-            this.groupBox1.Controls.Add(this.Ccmboage);
             this.groupBox1.Controls.Add(this.Cnumregion);
             this.groupBox1.Controls.Add(this.Ctxtprvnc);
             this.groupBox1.Controls.Add(this.label15);
@@ -526,15 +539,6 @@
             this.Ctxtrgn.Name = "Ctxtrgn";
             this.Ctxtrgn.Size = new System.Drawing.Size(192, 26);
             this.Ctxtrgn.TabIndex = 31;
-            // 
-            // Ccmboage
-            // 
-            this.Ccmboage.FormattingEnabled = true;
-            this.Ccmboage.Location = new System.Drawing.Point(122, 200);
-            this.Ccmboage.Margin = new System.Windows.Forms.Padding(2);
-            this.Ccmboage.Name = "Ccmboage";
-            this.Ccmboage.Size = new System.Drawing.Size(90, 28);
-            this.Ccmboage.TabIndex = 30;
             // 
             // Cnumregion
             // 
@@ -739,28 +743,28 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.textBox6);
+            this.tabPage2.Controls.Add(this.piRegion);
             this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.textBox5);
+            this.tabPage2.Controls.Add(this.piProvince);
             this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.textBox4);
+            this.tabPage2.Controls.Add(this.piMunicpal);
             this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.textBox3);
+            this.tabPage2.Controls.Add(this.piBarangay);
             this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.textBox2);
+            this.tabPage2.Controls.Add(this.piPurok);
             this.tabPage2.Controls.Add(this.label37);
-            this.tabPage2.Controls.Add(this.comboBox5);
+            this.tabPage2.Controls.Add(this.PlaceOfIncident);
             this.tabPage2.Controls.Add(this.label36);
             this.tabPage2.Controls.Add(this.label35);
-            this.tabPage2.Controls.Add(this.dateTimePicker2);
-            this.tabPage2.Controls.Add(this.comboBox4);
+            this.tabPage2.Controls.Add(this.IncidentDate);
+            this.tabPage2.Controls.Add(this.RefTo);
             this.tabPage2.Controls.Add(this.label34);
-            this.tabPage2.Controls.Add(this.comboBox3);
+            this.tabPage2.Controls.Add(this.CaseStatus);
             this.tabPage2.Controls.Add(this.label33);
-            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.DescriptionIncident);
             this.tabPage2.Controls.Add(this.label32);
-            this.tabPage2.Controls.Add(this.comboBox2);
-            this.tabPage2.Controls.Add(this.comboBox1);
+            this.tabPage2.Controls.Add(this.RAVioSubCase);
+            this.tabPage2.Controls.Add(this.RAVioCase);
             this.tabPage2.Controls.Add(this.label31);
             this.tabPage2.Controls.Add(this.label30);
             this.tabPage2.Controls.Add(this.label3);
@@ -772,30 +776,30 @@
             this.tabPage2.Text = "Complaint Case";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // piRegion
             // 
-            this.textBox6.Location = new System.Drawing.Point(843, 570);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(111, 26);
-            this.textBox6.TabIndex = 44;
+            this.piRegion.Location = new System.Drawing.Point(843, 570);
+            this.piRegion.Margin = new System.Windows.Forms.Padding(2);
+            this.piRegion.Name = "piRegion";
+            this.piRegion.Size = new System.Drawing.Size(111, 26);
+            this.piRegion.TabIndex = 44;
             // 
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(704, 570);
+            this.label41.Location = new System.Drawing.Point(708, 570);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(69, 20);
+            this.label41.Size = new System.Drawing.Size(60, 20);
             this.label41.TabIndex = 43;
-            this.label41.Text = "Province";
+            this.label41.Text = "Region";
             // 
-            // textBox5
+            // piProvince
             // 
-            this.textBox5.Location = new System.Drawing.Point(843, 516);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(288, 26);
-            this.textBox5.TabIndex = 42;
+            this.piProvince.Location = new System.Drawing.Point(843, 516);
+            this.piProvince.Margin = new System.Windows.Forms.Padding(2);
+            this.piProvince.Name = "piProvince";
+            this.piProvince.Size = new System.Drawing.Size(288, 26);
+            this.piProvince.TabIndex = 42;
             // 
             // label40
             // 
@@ -806,13 +810,13 @@
             this.label40.TabIndex = 41;
             this.label40.Text = "Province";
             // 
-            // textBox4
+            // piMunicpal
             // 
-            this.textBox4.Location = new System.Drawing.Point(843, 460);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(288, 26);
-            this.textBox4.TabIndex = 40;
+            this.piMunicpal.Location = new System.Drawing.Point(843, 460);
+            this.piMunicpal.Margin = new System.Windows.Forms.Padding(2);
+            this.piMunicpal.Name = "piMunicpal";
+            this.piMunicpal.Size = new System.Drawing.Size(288, 26);
+            this.piMunicpal.TabIndex = 40;
             // 
             // label39
             // 
@@ -823,13 +827,13 @@
             this.label39.TabIndex = 39;
             this.label39.Text = "Municipality/City";
             // 
-            // textBox3
+            // piBarangay
             // 
-            this.textBox3.Location = new System.Drawing.Point(843, 405);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(288, 26);
-            this.textBox3.TabIndex = 38;
+            this.piBarangay.Location = new System.Drawing.Point(843, 405);
+            this.piBarangay.Margin = new System.Windows.Forms.Padding(2);
+            this.piBarangay.Name = "piBarangay";
+            this.piBarangay.Size = new System.Drawing.Size(288, 26);
+            this.piBarangay.TabIndex = 38;
             // 
             // label38
             // 
@@ -840,13 +844,13 @@
             this.label38.TabIndex = 37;
             this.label38.Text = "Barangay";
             // 
-            // textBox2
+            // piPurok
             // 
-            this.textBox2.Location = new System.Drawing.Point(843, 352);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(288, 26);
-            this.textBox2.TabIndex = 36;
+            this.piPurok.Location = new System.Drawing.Point(843, 352);
+            this.piPurok.Margin = new System.Windows.Forms.Padding(2);
+            this.piPurok.Name = "piPurok";
+            this.piPurok.Size = new System.Drawing.Size(288, 26);
+            this.piPurok.TabIndex = 36;
             // 
             // label37
             // 
@@ -857,14 +861,14 @@
             this.label37.TabIndex = 35;
             this.label37.Text = "Purok";
             // 
-            // comboBox5
+            // PlaceOfIncident
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(843, 299);
-            this.comboBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(288, 28);
-            this.comboBox5.TabIndex = 34;
+            this.PlaceOfIncident.FormattingEnabled = true;
+            this.PlaceOfIncident.Location = new System.Drawing.Point(843, 299);
+            this.PlaceOfIncident.Margin = new System.Windows.Forms.Padding(2);
+            this.PlaceOfIncident.Name = "PlaceOfIncident";
+            this.PlaceOfIncident.Size = new System.Drawing.Size(288, 28);
+            this.PlaceOfIncident.TabIndex = 34;
             // 
             // label36
             // 
@@ -884,22 +888,22 @@
             this.label35.TabIndex = 32;
             this.label35.Text = "Incident Date";
             // 
-            // dateTimePicker2
+            // IncidentDate
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(843, 229);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(292, 26);
-            this.dateTimePicker2.TabIndex = 31;
+            this.IncidentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.IncidentDate.Location = new System.Drawing.Point(843, 229);
+            this.IncidentDate.Name = "IncidentDate";
+            this.IncidentDate.Size = new System.Drawing.Size(292, 26);
+            this.IncidentDate.TabIndex = 31;
             // 
-            // comboBox4
+            // RefTo
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(843, 120);
-            this.comboBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(288, 28);
-            this.comboBox4.TabIndex = 21;
+            this.RefTo.FormattingEnabled = true;
+            this.RefTo.Location = new System.Drawing.Point(843, 120);
+            this.RefTo.Margin = new System.Windows.Forms.Padding(2);
+            this.RefTo.Name = "RefTo";
+            this.RefTo.Size = new System.Drawing.Size(288, 28);
+            this.RefTo.TabIndex = 21;
             // 
             // label34
             // 
@@ -910,14 +914,18 @@
             this.label34.TabIndex = 20;
             this.label34.Text = "Referral To";
             // 
-            // comboBox3
+            // CaseStatus
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(843, 69);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(288, 28);
-            this.comboBox3.TabIndex = 19;
+            this.CaseStatus.FormattingEnabled = true;
+            this.CaseStatus.Items.AddRange(new object[] {
+            "Pending",
+            "Dismissed",
+            "Stop"});
+            this.CaseStatus.Location = new System.Drawing.Point(843, 69);
+            this.CaseStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.CaseStatus.Name = "CaseStatus";
+            this.CaseStatus.Size = new System.Drawing.Size(288, 28);
+            this.CaseStatus.TabIndex = 19;
             // 
             // label33
             // 
@@ -928,13 +936,13 @@
             this.label33.TabIndex = 18;
             this.label33.Text = "Case Status";
             // 
-            // textBox1
+            // DescriptionIncident
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 234);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(421, 451);
-            this.textBox1.TabIndex = 17;
+            this.DescriptionIncident.Location = new System.Drawing.Point(35, 234);
+            this.DescriptionIncident.Multiline = true;
+            this.DescriptionIncident.Name = "DescriptionIncident";
+            this.DescriptionIncident.Size = new System.Drawing.Size(421, 451);
+            this.DescriptionIncident.TabIndex = 17;
             // 
             // label32
             // 
@@ -945,23 +953,29 @@
             this.label32.TabIndex = 16;
             this.label32.Text = "Description of Incident";
             // 
-            // comboBox2
+            // RAVioSubCase
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(213, 120);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(243, 28);
-            this.comboBox2.TabIndex = 15;
+            this.RAVioSubCase.FormattingEnabled = true;
+            this.RAVioSubCase.Location = new System.Drawing.Point(213, 120);
+            this.RAVioSubCase.Margin = new System.Windows.Forms.Padding(2);
+            this.RAVioSubCase.Name = "RAVioSubCase";
+            this.RAVioSubCase.Size = new System.Drawing.Size(243, 28);
+            this.RAVioSubCase.TabIndex = 15;
             // 
-            // comboBox1
+            // RAVioCase
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 69);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(311, 28);
-            this.comboBox1.TabIndex = 14;
+            this.RAVioCase.FormattingEnabled = true;
+            this.RAVioCase.Items.AddRange(new object[] {
+            "R.A. 9262: Anti Violence Against Women and their Children Act",
+            "R.A. 8353: Anti-Rape Law of 1995",
+            "R.A. 7877: Anti-Sexual Harrassment Act",
+            "R.A. 9208/10364: Anti-Trafficking in Person Act of 2003"});
+            this.RAVioCase.Location = new System.Drawing.Point(145, 69);
+            this.RAVioCase.Margin = new System.Windows.Forms.Padding(2);
+            this.RAVioCase.Name = "RAVioCase";
+            this.RAVioCase.Size = new System.Drawing.Size(311, 28);
+            this.RAVioCase.TabIndex = 14;
+            this.RAVioCase.SelectedIndexChanged += new System.EventHandler(this.RAVioCase_SelectedIndexChanged);
             // 
             // label31
             // 
@@ -1002,6 +1016,73 @@
             this.save_casebtn.TabIndex = 30;
             this.save_casebtn.Text = "SAVE CASE";
             this.save_casebtn.UseVisualStyleBackColor = true;
+            this.save_casebtn.Click += new System.EventHandler(this.save_casebtn_Click);
+            // 
+            // CompAge
+            // 
+            this.CompAge.Location = new System.Drawing.Point(122, 206);
+            this.CompAge.Margin = new System.Windows.Forms.Padding(2);
+            this.CompAge.Name = "CompAge";
+            this.CompAge.Size = new System.Drawing.Size(90, 26);
+            this.CompAge.TabIndex = 32;
+            // 
+            // ResAge
+            // 
+            this.ResAge.Location = new System.Drawing.Point(139, 239);
+            this.ResAge.Margin = new System.Windows.Forms.Padding(2);
+            this.ResAge.Name = "ResAge";
+            this.ResAge.Size = new System.Drawing.Size(90, 26);
+            this.ResAge.TabIndex = 33;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(16, 320);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(72, 16);
+            this.label42.TabIndex = 33;
+            this.label42.Text = "Civil Status";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(27, 358);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(72, 16);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "Civil Status";
+            // 
+            // CompCivlStatus
+            // 
+            this.CompCivlStatus.FormattingEnabled = true;
+            this.CompCivlStatus.Items.AddRange(new object[] {
+            "Single",
+            "Live-in",
+            "Separated",
+            "Married",
+            "Widowed"});
+            this.CompCivlStatus.Location = new System.Drawing.Point(122, 320);
+            this.CompCivlStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.CompCivlStatus.Name = "CompCivlStatus";
+            this.CompCivlStatus.Size = new System.Drawing.Size(192, 28);
+            this.CompCivlStatus.TabIndex = 34;
+            // 
+            // ResCivilStatus
+            // 
+            this.ResCivilStatus.FormattingEnabled = true;
+            this.ResCivilStatus.Items.AddRange(new object[] {
+            "Single",
+            "Live-in",
+            "Separated",
+            "Married",
+            "Widowed"});
+            this.ResCivilStatus.Location = new System.Drawing.Point(139, 356);
+            this.ResCivilStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.ResCivilStatus.Name = "ResCivilStatus";
+            this.ResCivilStatus.Size = new System.Drawing.Size(192, 28);
+            this.ResCivilStatus.TabIndex = 35;
             // 
             // FileACaseUI
             // 
@@ -1011,7 +1092,7 @@
             this.ClientSize = new System.Drawing.Size(1275, 884);
             this.Controls.Add(this.save_casebtn);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.ComplaintDate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Caseno);
             this.Controls.Add(this.label2);
@@ -1038,9 +1119,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label Caseno;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -1052,22 +1131,12 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox ComboCsex;
-        private System.Windows.Forms.TextBox CtxtMname;
-        private System.Windows.Forms.TextBox CtxtFname;
-        private System.Windows.Forms.TextBox Ctxtlname;
         private System.Windows.Forms.Label Cnumregion;
-        private System.Windows.Forms.TextBox Ctxtprvnc;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox Ctxtmncp;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox Ctxtbrgy;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox CtxtPurok;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox Cnumno;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox CtextRegion;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
@@ -1078,51 +1147,67 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button save_casebtn;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox Rtxtprvnc;
-        private System.Windows.Forms.TextBox Rtxtmncp;
-        private System.Windows.Forms.TextBox Rtxtbrgy;
-        private System.Windows.Forms.TextBox Rtxtprk;
-        private System.Windows.Forms.ComboBox Rcmborltn;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox Rnumcntct;
-        private System.Windows.Forms.TextBox Rtextrgn;
-        private System.Windows.Forms.ComboBox RCmboSex;
-        private System.Windows.Forms.TextBox RtxtAllias;
-        private System.Windows.Forms.TextBox RtxtMname;
-        private System.Windows.Forms.TextBox RtextFname;
-        private System.Windows.Forms.TextBox RtxtLname;
-        private System.Windows.Forms.ComboBox Rcmboage;
-        private System.Windows.Forms.ComboBox Ccmboage;
-        private System.Windows.Forms.TextBox Rtxtrgn;
-        private System.Windows.Forms.TextBox Ctxtrgn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label Caseno;
+        public System.Windows.Forms.DateTimePicker ComplaintDate;
+        public System.Windows.Forms.ComboBox RAVioSubCase;
+        public System.Windows.Forms.ComboBox RAVioCase;
+        public System.Windows.Forms.TextBox DescriptionIncident;
+        public System.Windows.Forms.ComboBox CaseStatus;
+        public System.Windows.Forms.ComboBox PlaceOfIncident;
+        public System.Windows.Forms.DateTimePicker IncidentDate;
+        public System.Windows.Forms.ComboBox RefTo;
+        public System.Windows.Forms.TextBox piRegion;
+        public System.Windows.Forms.TextBox piProvince;
+        public System.Windows.Forms.TextBox piMunicpal;
+        public System.Windows.Forms.TextBox piBarangay;
+        public System.Windows.Forms.TextBox piPurok;
+        public System.Windows.Forms.ComboBox ComboCsex;
+        public System.Windows.Forms.TextBox CtxtMname;
+        public System.Windows.Forms.TextBox CtxtFname;
+        public System.Windows.Forms.TextBox Ctxtlname;
+        public System.Windows.Forms.TextBox Ctxtprvnc;
+        public System.Windows.Forms.TextBox Ctxtmncp;
+        public System.Windows.Forms.TextBox Ctxtbrgy;
+        public System.Windows.Forms.TextBox CtxtPurok;
+        public System.Windows.Forms.TextBox Cnumno;
+        public System.Windows.Forms.TextBox CtextRegion;
+        public System.Windows.Forms.TextBox Rtxtprvnc;
+        public System.Windows.Forms.TextBox Rtxtmncp;
+        public System.Windows.Forms.TextBox Rtxtbrgy;
+        public System.Windows.Forms.TextBox Rtxtprk;
+        public System.Windows.Forms.ComboBox Rcmborltn;
+        public System.Windows.Forms.TextBox Rnumcntct;
+        public System.Windows.Forms.TextBox Rtextrgn;
+        public System.Windows.Forms.ComboBox RCmboSex;
+        public System.Windows.Forms.TextBox RtxtAllias;
+        public System.Windows.Forms.TextBox RtxtMname;
+        public System.Windows.Forms.TextBox RtextFname;
+        public System.Windows.Forms.TextBox RtxtLname;
+        public System.Windows.Forms.TextBox Rtxtrgn;
+        public System.Windows.Forms.TextBox Ctxtrgn;
+        public System.Windows.Forms.TextBox ResAge;
+        public System.Windows.Forms.TextBox CompAge;
+        public System.Windows.Forms.ComboBox ResCivilStatus;
+        private System.Windows.Forms.Label label43;
+        public System.Windows.Forms.ComboBox CompCivlStatus;
+        private System.Windows.Forms.Label label42;
     }
 }
