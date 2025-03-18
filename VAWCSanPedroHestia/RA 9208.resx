@@ -1,0 +1,572 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>AN ACT TO INSTITUTE POLICIES TO ELIMINATE TRAFFICKING IN PERSONS ESPECIALLY WOMEN AND 
+CHILDREN, ESTABLISHING THE NECESSARY INSTITUTIONAL MECHANISMS FOR THE PROTECTION 
+AND SUPPORT OF TRAFFICKED PERSONS, PROVIDING PENALTIES FOR ITS VIOLATIONS, AND FOR OTHER
+
+Be it enacted by the Senate and the House of Representatives of the Philippines in Congress assembled:</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Section 1. Title. This Act shall be known as the "Anti-Trafficking in Persons Act of 2003".
+
+Section 2. Declaration of Policy. – It is hereby declared that the State values the dignity of every human person 
+and guarantees the respect of individual rights. In pursuit of this policy, the State shall give highest priority to 
+the enactment of measures and development of programs that will promote human dignity, protect the people 
+from any threat of violence and exploitation, eliminate trafficking in persons, and mitigate pressures for 
+involuntary migration and servitude of persons, not only to support trafficked persons but more importantly, 
+to ensure their recovery, rehabilitation and reintegration into the mainstream of society.
+
+It shall be a State policy to recognize the equal rights and inherent human dignity of women and men as
+enshrined in theUnited Nations Universal Declaration on Human Rights, United Nations Convention on the 
+Rights of the Child, United Nations Convention on the Protection of Migrant Workers and their Families. United 
+Nations Convention Against Transnational Organized Crime Including its Protocol to Prevent, Suppress and 
+Punish Trafficking in Persons, Especially Women and Children and all other relevant and universally accepted 
+human rights instruments and other international conventions to which the Philippines is a signatory.
+
+Section 3. Definition of Terms. - As used in this Act:
+
+(a) Trafficking in Persons - refers to the recruitment, transportation, transfer or harboring, or receipt of persons 
+with or without the victim's consent or knowledge, within or across national borders by means of threat or use 
+of force, or other forms of coercion, abduction, fraud, deception, abuse of power or of position, taking 
+advantage of the vulnerability of the person, or, the giving or receiving of payments or benefits to achieve the 
+consent of a person having control over another person for the purpose of exploitation which includes at a
+ minimum, the exploitation or the prostitution of others or other forms of sexual exploitation, forced labor or 
+services, slavery, servitude or the removal or sale of organs.
+
+The recruitment, transportation, transfer, harboring or receipt of a child for the purpose of exploitation shall 
+also be considered as "trafficking in persons" even if it does not involve any of the means set forth in the 
+preceding paragraph.
+
+(b) Child - refers to a person below eighteen (18) years of age or one who is over eighteen (18) but is unable 
+to fully take care of or protect himself/herself from abuse, neglect, cruelty, exploitation, or discrimination 
+because of a physical or mental disability or condition.
+
+(c) Prostitution - refers to any act, transaction, scheme or design involving the use of a person by another, for 
+sexual intercourse or lascivious conduct in exchange for money, profit or any other consideration.
+
+(d) Forced Labor and Slavery - refer to the extraction of work or services from any person by means of 
+enticement, violence, intimidation or threat, use of force or coercion, including deprivation of freedom, 
+abuse of authority or moral ascendancy, debt-bondage or deception.
+
+(e) Sex Tourism - refers to a program organized by travel and tourism-related establishments and individuals 
+which consists of tourism packages or activities, utilizing and offering escort and sexual services as enticement 
+for tourists. This includes sexual services and practices offered during rest and recreation periods for members 
+of the military.
+
+(f) Sexual Exploitation - refers to participation by a person in prostitution or the production of pornographic
+materials as a result of being subjected to a threat, deception, coercion, abduction, force, abuse of authority, 
+debt bondage, fraud or through abuse of a victim's vulnerability.
+
+(g) Debt Bondage - refers to the pledging by the debtor of his/her personal services or labor or those of a person 
+under his/her control as security or payment for a debt, when the length and nature of services is not clearly 
+defined or when the value of the services as reasonably assessed is not applied toward the liquidation of the debt.
+
+(h) Pornography - refers to any representation, through publication, exhibition, cinematography, indecent shows, 
+information technology, or by whatever means, of a person engaged in real or simulated explicit sexual activities 
+or any representation of the sexual parts of a person for primarily sexual purposes.
+
+(i) Council - shall mean the Inter-Agency Council Against Trafficking created under Section 20 of this Act.
+
+Section 4. Acts of Trafficking in Persons. - It shall be unlawful for any person, natural or juridical, to commit 
+any of the following acts:
+
+(a) To recruit, transport, transfer; harbor, provide, or receive a person by any means, including those done 
+under the pretext of domestic or overseas employment or training or apprenticeship, for the purpose of 
+prostitution, pornography, sexual exploitation, forced labor, slavery, involuntary servitude or debt bondage;
+
+(b) To introduce or match for money, profit, or material, economic or other consideration, any person or, as 
+provided for under Republic Act No. 6955, any Filipino woman to a foreign national, for marriage for the
+purpose of acquiring, buying, offering, selling or trading him/her to engage in prostitution, pornography, 
+sexual exploitation, forced labor, slavery, involuntary servitude or debt bondage;
+
+(c) To offer or contract marriage, real or simulated, for the purpose of acquiring, buying, offering, selling, or 
+trading them to engage in prostitution, pornography, sexual exploitation, forced labor or slavery, involuntary 
+servitude or debt bondage;
+
+(d) To undertake or organize tours and travel plans consisting of tourism packages or activities for the 
+purpose of utilizing and offering persons for prostitution, pornography or sexual exploitation;
+
+(e) To maintain or hire a person to engage in prostitution or pornography;
+
+(f) To adopt or facilitate the adoption of persons for the purpose of prostitution, pornography, sexual 
+exploitation, forced labor, slavery, involuntary servitude or debt bondage;
+
+(g) To recruit, hire, adopt, transport or abduct a person, by means of threat or use of force, fraud, deceit, 
+violence, coercion, or intimidation for the purpose of removal or sale of organs of said person; and
+
+(h) To recruit, transport or adopt a child to engage in armed activities in the Philippines or abroad.
+
+Section 5. Acts that Promote Trafficking in Persons. - The following acts which promote or facilitate 
+trafficking in persons, shall be unlawful:
+
+(a) To knowingly lease or sublease, use or allow to be used any house, building or establishment for 
+the purpose of promoting trafficking in persons;
+
+(b) To produce, print and issue or distribute unissued, tampered or fake counseling certificates, registration 
+stickers and certificates of any government agency which issues these certificates and stickers as proof of 
+compliance with government regulatory and pre-departure requirements for the purpose of promoting 
+trafficking in persons;
+
+(c) To advertise, publish, print, broadcast or distribute, or cause the advertisement, publication, printing, 
+broadcasting or distribution by any means, including the use of information technology and the internet, of any 
+brochure, flyer, or any propaganda material that promotes trafficking in persons;
+
+(d) To assist in the conduct of misrepresentation or fraud for purposes of facilitating the acquisition of 
+clearances and necessary exit documents from government agencies that are mandated to provide pre-
+departure registration and services for departing persons for the purpose of promoting trafficking in 
+persons;
+
+(e) To facilitate, assist or help in the exit and entry of persons from/to the country at international and local 
+airports, territorial boundaries and seaports who are in possession of unissued, tampered or fraudulent travel 
+documents for the purpose of promoting trafficking in persons;
+
+(f) To confiscate, conceal, or destroy the passport, travel documents, or personal documents or belongings 
+of trafficked persons in furtherance of trafficking or to prevent them from leaving the country or seeking 
+redress from the government or appropriate agencies; and
+
+(g) To knowingly benefit from, financial or otherwise, or make use of, the labor or services of a person held 
+to a condition of involuntary servitude, forced labor, or slavery.
+
+Section 6. Qualified Trafficking in Persons. - The following are considered as qualified trafficking:
+
+(a) When the trafficked person is a child;
+
+(b) When the adoption is effected through Republic Act No. 8043, otherwise known as the "Inter-Country 
+Adoption Act of 1995" and said adoption is for the purpose of prostitution, pornography, sexual exploitation, 
+forced labor, slavery, involuntary servitude or debt bondage;
+
+(c) When the crime is committed by a syndicate, or in large scale. Trafficking is deemed committed by a 
+syndicate if carried out by a group of three (3) or more persons conspiring or confederating with one another. 
+It is deemed committed in large scale if committed against three (3) or more persons, individually or as a group;
+
+(d) When the offender is an ascendant, parent, sibling, guardian or a person who exercises authority over the 
+trafficked person or when the offense is committed by a public officer or employee;
+
+(e) When the trafficked person is recruited to engage in prostitution with any member of the military or law 
+enforcement agencies.
+
+(f) When the offender is a member of the military or law enforcement agencies; and</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>(g) When by reason or on occasion of the act of trafficking in persons, the offended party dies, becomes insane, 
+suffers mutilation or is afflicted with Human Immunodeficiency Virus (HIV) or the Acquired Immune Deficiency 
+Syndrome (AIDS).
+
+Section 6. Confidentiality. - At any stage of the investigation, prosecution and trial of an offense under this Act, 
+law enforcement officers, prosecutors, judges, court personnel and medical practitioners, as well as parties to 
+the case, shall recognize the right to privacy of the trafficked person and the accused. Towards this end, law 
+enforcement officers, prosecutors and judges to whom the complaint has been referred may, whenever necessary 
+to ensure a fair and impartial proceeding, and after considering all circumstances for the best interest of the 
+parties, order a closed-door investigation, prosecution or trial. The name and personal circumstances of the 
+trafficked person or of the accused, or any other information tending to establish their identities and such 
+circumstances or information shall not be disclosed to the public.
+
+In cases when prosecution or trial is conducted behind closed-doors, it shall be unlawful for any editor, publisher, 
+and reporter or columnist in case of printed materials, announcer or producer in case of television and radio, 
+producer and director of a film in case of the movie industry, or any person utilizing tri-media facilities or
+information technology to cause publicity of any case of trafficking in persons.
+
+Section 8. Prosecution of Cases. - Any person who has personal knowledge of the commission of any offense 
+under this Act, the trafficked person, the parents, spouse, siblings, children or legal guardian may file a 
+complaint for trafficking.
+
+Section 9. Venue. - A criminal action arising from violation of this Act shall be filed where the offense was 
+committed, or where any of its elements occurred, or where the trafficked person actually resides at the time 
+of the commission of the offense: Provided, That the court where the criminal action is first filed shall acquire 
+jurisdiction to the exclusion of other courts.
+
+Section 10. Penalties and Sanctions. - The following penalties and sanctions are hereby established for the 
+offenses enumerated in this Act:
+
+(a) Any person found guilty of committing any of the acts enumerated in Section 4 shall suffer the penalty of
+imprisonment of twenty (20) years and a fine of not less than One million pesos (P1,000,000.00) but not more 
+than Two million pesos (P2,000,000.00);
+
+(b) Any person found guilty of committing any of the acts enumerated in Section 5 shall suffer the penalty of 
+imprisonment of fifteen (15) years and a fine of not less than Five hundred thousand pesos (P500,000.00) but 
+not more than One million pesos (P1,000,000.00);
+
+(c) Any person found guilty of qualified trafficking under Section 6 shall suffer the penalty of life imprisonment 
+and a fine of not less than Two million pesos (P2,000,000.00) but not more than Five million pesos (P5,000,000.00);
+
+(d) Any person who violates Section 7 hereof shall suffer the penalty of imprisonment of six (6) years and a fine 
+of not less than Five hundred thousand pesos (P500,000.00) but not more than One million pesos (P1,000,000.00);
+
+(e) If the offender is a corporation, partnership, association, club, establishment or any juridical person, the 
+penalty shall be imposed upon the owner, president, partner, manager, and/or any responsible officer who 
+participated in the commission of the crime or who shall have knowingly permitted or failed to prevent its 
+commission;
+
+(f) The registration with the Securities and Exchange Commission (SEC) and license to operate of the erring 
+agency, corporation, association, religious group, tour or travel agent, club or establishment, or any place of 
+entertainment shall be cancelled and revoked permanently. The owner, president, partner or manager thereof 
+shall not be allowed to operate similar establishments in a different name;
+
+(g) If the offender is a foreigner, he shall be immediately deported after serving his sentence and be barred 
+permanently from entering the country;
+
+(h) Any employee or official of government agencies who shall issue or approve the issuance of travel exit 
+clearances, passports, registration certificates, counseling certificates, marriage license, and other similar 
+documents to persons, whether juridical or natural, recruitment agencies, establishments or other individuals 
+or groups, who fail to observe the prescribed procedures and the requirement as provided for by laws, rules 
+and regulations, shall be held administratively liable, without prejudice to criminal liability under this Act. The 
+concerned government official or employee shall, upon conviction, be dismissed from the service and be 
+barred permanently to hold public office. His/her retirement and other benefits shall likewise be forfeited; and
+
+(i) Conviction by final judgment of the adopter for any offense under this Act shall result in the immediate 
+rescission of the decree of adoption.
+
+Section 11. Use of Trafficked Persons. - Any person who buys or engages the services of trafficked persons for 
+prostitution shall be penalized as follows:
+
+(a) First offense - six (6) months of community service as may be determined by the court and a fine of Fifty 
+thousand pesos (P50,000.00); and
+
+(b) Second and subsequent offenses - imprisonment of one (1) year and a fine of One hundred thousand 
+pesos (P100,000.00).
+
+Section 12. Prescriptive Period. - Trafficking cases under this Act shall prescribe in ten (10) years: Provided, 
+however, That trafficking cases committed by a syndicate or in a large scale as defined under Section 6 
+shall prescribe in twenty (20) years.
+
+The prescriptive period shall commence to run from the day on which the trafficked person is delivered or 
+released from the conditions of bondage and shall be interrupted by the filing of the complaint or information 
+and shall commence to run again when such proceedings terminate without the accused being convicted or 
+acquitted or are unjustifiably stopped for any reason not imputable to the accused.
+
+Section 13. Exemption from Filing Fees. - When the trafficked person institutes a separate civil action for the 
+recovery of civil damages, he/she shall be exempt from the payment of filing fees.
+
+Section 14. Confiscation and Forfeiture of the Proceeds and Instruments Derived from Trafficking in Persons. 
+- In addition to the penalty imposed for the violation of this Act, the court shall order the confiscation and 
+forfeiture, in favor of the government, of all the proceeds and properties derived from the commission of the 
+crime, unless they are the property of a third person not liable for the unlawful act; Provided, however, That 
+all awards for damages shall be taken from the personal and separate properties of the offender; Provided, 
+further, That if such properties are insufficient, the balance shall be taken from the confiscated and forfeited 
+properties.
+
+When the proceeds, properties and instruments of the offense have been destroyed, diminished in value or 
+otherwise rendered worthless by any act or omission, directly or indirectly, of the offender, or it has been 
+concealed, removed, converted or transferred to prevent the same from being found or to avoid forfeiture or 
+confiscation, the offender shall be ordered to pay the amount equal to the value of the proceeds, property or 
+instruments of the offense.
+
+Section 15. Trust Fund. - All fines imposed under this Act and the proceeds and properties forfeited and 
+confiscated pursuant to Section 14 hereof shall accrue to a Trust Fund to be administered and managed by 
+the Council to be used exclusively for programs that will prevent acts of trafficking and protect, rehabilitate, 
+reintegrate trafficked persons into the mainstream of society. Such programs shall include, but not limited to, 
+the following:
+
+(a) Provision for mandatory services set forth in Section 23 of this Act;
+
+(b) Sponsorship of a national research program on trafficking and establishment of a data collection system 
+for monitoring and evaluation purposes;
+
+(c) Provision of necessary technical and material support services to appropriate government agencies and 
+non-government organizations (NGOs);
+
+(d) Sponsorship of conferences and seminars to provide venue for consensus building amongst the public, 
+the academe, government, NGOs and international organizations; and
+
+(e) Promotion of information and education campaign on trafficking.
+
+Section 16. Programs that Address Trafficking in Persons. - The government shall establish and implement 
+preventive, protective and rehabilitative programs for trafficked persons. For this purpose, the following 
+agencies are hereby mandated to implement the following programs;
+
+(a) Department of Foreign Affairs (DFA) - shall make available its resources and facilities overseas for
+ trafficked persons regardless of their manner of entry to the receiving country, and explore means to further 
+enhance its assistance in eliminating trafficking activities through closer networking with government 
+agencies in the country and overseas, particularly in the formulation of policies and implementation of relevant 
+programs.
+
+The DFA shall take necessary measures for the efficient implementation of the Machine Readable Passports 
+to protect the integrity of Philippine passports, visas and other travel documents to reduce the incidence of 
+trafficking through the use of fraudulent identification documents.
+
+It shall establish and implement a pre-marriage, on-site and pre-departure counseling program on intermarriages.
+
+(b) Department of Social Welfare and Development (DSWD) - shall implement rehabilitative and protective 
+programs for trafficked persons. It shall provide counseling and temporary shelter to trafficked persons and 
+develop a system for accreditation among NGOs for purposes of establishing centers and programs for 
+intervention in various levels of the community.
+
+(c) Department of Labor and Employment (DOLE) - shall ensure the strict implementation and compliance with 
+the rules and guidelines relative to the employment of persons locally and overseas. It shall likewise monitor, 
+document and report cases of trafficking in persons involving employers and labor recruiters.
+
+(d) Department of Justice (DOJ) - shall ensure the prosecution of persons accused of trafficking and designate 
+and train special prosecutors who shall handle and prosecute cases of trafficking. It shall also establish a 
+mechanism for free legal assistance for trafficked persons, in coordination with the DSWD, Integrated Bar of the 
+Philippines (IBP) and other NGOs and volunteer groups.
+
+(e) National Commission on the Role of Filipino Women (NCRFW) - shall actively participate and coordinate in the 
+formulation and monitoring of policies addressing the issue of trafficking in persons in coordination with relevant 
+government agencies. It shall likewise advocate for the inclusion of the issue of trafficking in persons in both its 
+local and international advocacy for women's issues.
+
+(f) Bureau of Immigration (BI) - shall strictly administer and enforce immigration and alien administration laws. 
+It shall adopt measures for the apprehension of suspected traffickers both at the place of arrival and departure 
+and shall ensure compliance by the Filipino fiancés/fiancées and spouses of foreign nationals with the guidance 
+and counseling requirement as provided for in this Act.
+
+(g) Philippine National Police (PNP) - shall be the primary law enforcement agency to undertake surveillance,
+ investigation and arrest of individuals or persons suspected to be engaged in trafficking. It shall closely 
+coordinate with various law enforcement agencies to secure concerted efforts for effective investigation and 
+apprehension of suspected traffickers. It shall also establish a system to receive complaints and calls to assist 
+trafficked persons and conduct rescue operations.
+
+(h) Philippine Overseas Employment Administration (POEA) - shall implement an effective pre-employment 
+orientation seminars and pre-departure counseling programs to applicants for overseas employment. It shall 
+likewise formulate a system of providing free legal assistance to trafficked persons.
+
+(i) Department of the Interior and Local Government (DILG) - shall institute a systematic information and 
+prevention campaign and likewise maintain a databank for the effective monitoring, documentation and 
+prosecution of cases on trafficking in persons.
+
+(j) Local government units (LGUs) - shall monitor and document cases of trafficking in persons in their areas of
+ jurisdiction, effect the cancellation of licenses of establishments which violate the provisions of this Act and 
+ensure effective prosecution of such cases. They shall also undertake an information campaign against trafficking 
+in persons through the establishment of the Migrants Advisory and Information Network (MAIN) desks in 
+municipalities or provinces in coordination with DILG, Philippine Information Agency (PIA), Commission on 
+Filipinos Overseas (CFO), NGOs and other concerned agencies. They shall encourage and support community 
+based initiatives which address the trafficking in persons.
+
+In implementing this Act, the agencies concerned may seek and enlist the assistance of NGOs, people's 
+organizations (Pos), civic organizations and other volunteer groups.
+
+Section 17. Legal Protection to Trafficked Persons. - Trafficked persons shall be recognized as victims of the 
+act or acts of trafficking and as such shall not be penalized for crimes directly related to the acts of trafficking 
+enumerated in this Act or in obedience to the order made by the trafficker in relation thereto. In this regard, 
+the consent of a trafficked person to the intended exploitation set forth in this Act shall be irrelevant.
+
+Section 18. Preferential Entitlement Under the Witness Protection Program. - Any provision of Republic 
+Act No. 6981 to the contrary notwithstanding, any trafficked person shall be entitled to the witness protection 
+program provided therein.
+
+Section 19. Trafficked Persons Who are Foreign Nationals. - Subject to the guidelines issued by the Council, 
+trafficked persons in the Philippines who are nationals of a foreign country shall also be entitled to appropriate
+protection, assistance and services available to trafficked persons under this Act: Provided, That they shall be
+permitted continued presence in the Philippines for a length of time prescribed by the Council as necessary to 
+effect the prosecution of offenders.
+
+Section 20. Inter-Agency Council Against Trafficking. - There is hereby established an Inter-Agency Council 
+Against Trafficking, to be composed of the Secretary of the Department of Justice as Chairperson and the 
+Secretary of the Department of Social Welfare and Development as Co-Chairperson and shall have the 
+following as members:
+
+(a) Secretary, Department of Foreign Affairs;
+
+(b) Secretary, Department of Labor and Employment;
+
+(c) Administrator, Philippine Overseas Employment Administration;
+
+(d) Commissioner, Bureau of Immigration;
+
+(e) Director-General, Philippine National Police;
+
+(f) Chairperson, National Commission on the Role of Filipino Women; and
+
+(g) Three (3) representatives from NGOs, who shall be composed of one (1) representative each from among 
+the sectors representing women, overseas Filipino workers (OFWs) and children, with a proven record of 
+involvement in the prevention and suppression of trafficking in persons. These representatives shall be 
+nominated by the government agency representatives of the Council, for appointment by the President for 
+a term of three (3) years.
+
+The members of the Council may designate their permanent representatives who shall have a rank not lower 
+than an assistant secretary or its equivalent to meetings, and shall receive emoluments as may be determined 
+by the Council in accordance with existing budget and accounting, rules and regulations.
+
+Section 22. Secretariat to the Council. - The Department of Justice shall establish the necessary Secretariat for 
+the Council.
+
+Section 23. Mandatory Services to Trafficked Persons. - To ensure recovery, rehabilitation and reintegration into 
+the mainstream of society, concerned government agencies shall make available the following services to 
+trafficked persons:
+
+(a) Emergency shelter or appropriate housing;
+
+(b) Counseling;
+
+(c) Free legal services which shall include information about the victims' rights and the procedure for filing 
+complaints, claiming compensation and such other legal remedies available to them, in a language understood 
+by the trafficked person;
+
+(d) Medical or psychological services;
+
+(e) Livelihood and skills training; and
+
+(f) Educational assistance to a trafficked child.
+
+Sustained supervision and follow through mechanism that will track the progress of recovery, rehabilitation 
+and reintegration of the trafficked persons shall be adopted and carried out.
+
+Section 24. Other Services for Trafficked Persons. -
+
+(a) Legal Assistance. - Trafficked persons shall be considered under the category "Overseas Filipino in Distress" 
+and may avail of the legal assistance created by Republic Act No. 8042, subject to the guidelines as provided 
+by law.
+
+(b) Overseas Filipino Resource Centers. - The services available to overseas Filipinos as provided for by 
+Republic Act No. 8042 shall also be extended to trafficked persons regardless of their immigration status 
+in the host country.
+
+(c) The Country Team Approach. - The country team approach under Executive Order No. 74 of 1993, shall be the 
+operational scheme under which Philippine embassies abroad shall provide protection to trafficked persons in 
+so far as the promotion of their welfare, dignity and fundamental rights are concerned.
+
+Section 25. Repatriation of Trafficked Persons. - The DFA, in coordination with DOLE and other appropriate 
+agencies, shall have the primary responsibility for the repatriation of trafficked persons, regardless of whether 
+they are documented or undocumented.
+
+If, however, the repatriation of the trafficked persons shall expose the victims to greater risks, the DFA shall 
+make representation with the host government for the extension of appropriate residency permits and 
+protection, as may be legally permissible in the host country.
+
+Section 26. Extradition. - The DOJ, in consultation with DFA, shall endeavor to include offenses of trafficking 
+in persons among extraditable offenses.
+
+Section 27. Reporting Requirements. - The Council shall submit to the President of the Philippines and to 
+Congress an annual report of the policies, programs and activities relative to the implementation of this Act.
+
+Section 28. Funding. - The heads of the departments and agencies concerned shall immediately include in 
+their programs and issue such rules and regulations to implement the provisions of this Act, the funding of 
+which shall be included in the annual General Appropriations Act.
+
+Section 29. Implementing Rules and Regulations. - The Council shall promulgate the necessary implementing 
+rules and regulations within sixty (60) days from the effectivity of this Act.
+
+Section 30. Non-restriction of Freedom of Speech and of Association, Religion and the Right to Travel. 
+Nothing in this Act shall be interpreted as a restriction of the freedom of speech and of association, religion 
+and the right to travel for purposes not contrary to law as guaranteed by the Constitution.
+
+Section 31. Separability Clause. - If, for any reason, any section or provision of this Act is held unconstitutional 
+or invalid, the other sections or provisions hereof shall not be affected thereby.
+
+Section 32. Repealing clause. - All laws, presidential decrees, executive orders and rules and regulations, or 
+parts thereof, inconsistent with the provisions of this Act are hereby repealed or modified accordingly: Provided, 
+That this Act shall not in any way amend or repeal the provision of Republic Act No. 7610, otherwise known as 
+the "Special Protection of Children Against Child Abuse, Exploitation and Discrimination Act".
+
+Section 33. Effectivity. - This Act shall take effect fifteen (15) days from the date of its complete publication in at 
+least two (2) newspapers of general circulation.</value>
+  </data>
+</root>
