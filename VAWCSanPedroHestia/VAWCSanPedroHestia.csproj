@@ -199,6 +199,12 @@
     <Compile Include="NewForms\HomeUI.Designer.cs">
       <DependentUpon>HomeUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Intake Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Intake Form.Designer.cs">
+      <DependentUpon>Intake Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RA 10364.cs">
@@ -252,8 +258,7 @@
     <EmbeddedResource Include="NewForms\HomeUI.resx">
       <DependentUpon>HomeUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewForms\ManageCaseListIU.resx">
-      <DependentUpon>ManageCaseListIU.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
