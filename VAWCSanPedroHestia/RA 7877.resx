@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>REPUBLIC ACT 7877
+
+AN ACT DECLARING SEXUAL HARASSMENT UNLAWFUL IN THE EMPLOYMENT,EDUCATION OR TRAINING 
+ENVIRONMENT, AND FOR OTHER PURPOSESBe it enacted by the Senate and House of Representatives of the 
+Philippines in Congress assembled:
+ SECTION 1. Title. — This Act shall be known as the “Anti-Sexual Harassment
+Act of 1995.” 
+
+SEC. 2. Declaration of Policy. — The State shall value the dignity of everyindividual, enhance the development 
+of its human resources, guarantee full respect forhuman rights, and uphold the dignity of workers, employees, 
+applicants for employment,students or those undergoing training, instruction or education. Towards this end, 
+allforms of sexual harassment in the employment, education or training environment arehereby declared 
+unlawful.
+
+SEC. 3. Work, Education or Training-related Sexual Harassment Defined. —Work, education or training-related 
+sexual harassment is committed by an employer,employee, manager, supervisor, agent of the employer, teacher, 
+instructor, professor,coach, trainor, or any other person who, having authority, influence or moral ascendancy
+over another in a work or training or education environment, demands, requests orotherwise requires any 
+sexual favor from the other, regardless of whether the demand,request or requirement for submission is 
+accepted by the object of said Act.
+
+(a) In a work-related or employment environment, sexual harassment is committed when:
+
+(1) The sexual favor is made as a condition in the hiring or in theemployment, re-employment or continued 
+employment of saidindividual, or in granting said individual favorable compensation, terms, 
+
+conditions, promotions, or privileges; or the refusal to grant the sexualfavor results in limiting, segregating or 
+classifying the employee which inany way would discriminate, deprive or diminish employmentopportunities 
+or otherwise adversely affect said employee;
+
+(2) The above acts wold impair the employee’s rights or privileges underexisting labor laws; or
+
+(3) The above acts would result in an intimidating, hostile, or offensive environment for the employee.
+
+(b) In an education or training environment, sexual harassment is committed:
+
+(1) Against one who is under the care, custody or supervision of the offender;
+
+(2) Against one whose education, training, apprenticeship or tutorship is entrusted to the offender;
+
+(3) When the sexual favor is made a condition to the giving of a passing
+grade, or the granting of honors and scholarships, or the payment of a
+stipend, allowance or other benefits, privileges, or considerations; or
+(4) When the sexual advances result in an intimidating, hostile or offensive
+environment for the student, trainee or apprentice.
+Any person who directs or induces another to commit any act of sexual
+harassment as herein defined, or who cooperates in the commission thereof by another
+without which it would not have been committed, shall also be held liable under this Act.
+
+SEC. 4. Duty of the Employer or Head of Office in a Work-related, Education or
+Training Environment. — It shall be the duty of the employer or the head of the workrelated, educational or 
+training environment or institution, to prevent or deter the commission of acts of sexual harassment and to 
+provide the procedures for the resolution,settlement or prosecution of acts of sexual harassment. Towards 
+this end, the employer or head of office shall:
+
+(a) Promulgate appropriate rules and regulations in consultation with and jointly approved by the employees 
+or students or trainees, through their duly designatedrepresentatives, prescribing the procedure for the 
+investigation of sexual harassment cases and the administrative sanctions therefor.
+
+Administrative sanctions shall not be a bar to prosecution in the proper courts for unlawful acts of sexual 
+harassment. 
+
+The said rules and regulations issued pursuant to this subsection (a) shall include, among others, guidelines 
+on proper decorum in the workplace and educational or training institutions.
+
+(b) Create a committee on decorum and investigation of cases on sexual harassment. The committee shall 
+conduct meetings, as the case may be, with officers and employees, teachers, instructors, professors, coaches,
+trainors and students or trainees toincrease understanding and prevent incidents of sexual harassment. It shall 
+also conduct the investigation of alleged cases constituting sexual harassment. In the case of a work-related 
+environment, the committee shall be composed of at least one (1) representative each from the management, 
+the union, if any, the employees from the supervisory rank, and from the rank and file employees. In the case 
+of the educational or training institution, the committee shall be composed of at least one (1) representative 
+from the administration, the trainors, teachers, instructors, professors or coaches and students or trainees, as 
+the case may be. The employer or head of office, educational or training institution shall disseminate or post 
+a copy of this Act for the information of all concerned.
+
+SEC. 5. Liability of the Employer, Head of Office, Educational or Training Institution. — The employer or head 
+of office, educational or training institution shall be solidarily liable for damages arising from the acts of sexual 
+harassment committed in the employment, education or training environment if the employer or head of office,
+educational or training institution is informed of such acts by the offended party and no immediate action is taken 
+thereon. SEC. 6. Independent Action for Damages. — Nothing in this Act shall preclude the victim of work, 
+education or training-related sexual harassment from instituting a separate and independent action for damages 
+and other affirmative relief.
+
+ SEC. 7. Penalties. — Any person who violates the provisions of this Act shall,upon conviction, be penalized by 
+imprisonment of not less than one (1) month nor morethan six (6) months, or a fine of not less than Ten thousand 
+pesos (P10,000) nor more than Twenty thousand pesos (P20,000), or both such fine and imprisonment at the
+discretion of the court. Any action arising from the violation of the provisions of this Act shall prescribein three 
+(3) years.
+
+SEC. 8. Separability Clause. — If any portion or provision of this Act is declared void or unconstitutional, the 
+remaining portions or provisions hereof shall not be affected by such declaration. 
+
+SEC. 9. Repealing Clause. — All laws, decrees, orders, rules and regulations, other issuances, or parts thereof 
+inconsistent with provisions of this Act are hereby repealed or modified accordingly.
+
+SEC. 10. Effectivity Clause. — This Act shall take effect fifteen (15) days after its complete publication in at 
+least two (2) national newspapers of general circulation. 
+
+</value>
+  </data>
+</root>
