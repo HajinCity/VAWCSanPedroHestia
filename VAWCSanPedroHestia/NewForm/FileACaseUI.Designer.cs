@@ -36,6 +36,9 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.ResCivilStatus = new System.Windows.Forms.ComboBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.ResAge = new System.Windows.Forms.TextBox();
             this.Rtxtrgn = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.Rtxtprvnc = new System.Windows.Forms.TextBox();
@@ -64,6 +67,9 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CompCivlStatus = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.CompAge = new System.Windows.Forms.TextBox();
             this.Ctxtrgn = new System.Windows.Forms.TextBox();
             this.Cnumregion = new System.Windows.Forms.Label();
             this.Ctxtprvnc = new System.Windows.Forms.TextBox();
@@ -114,12 +120,6 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.save_casebtn = new System.Windows.Forms.Button();
-            this.CompAge = new System.Windows.Forms.TextBox();
-            this.ResAge = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.CompCivlStatus = new System.Windows.Forms.ComboBox();
-            this.ResCivilStatus = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -236,6 +236,39 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Respondent";
+            // 
+            // ResCivilStatus
+            // 
+            this.ResCivilStatus.FormattingEnabled = true;
+            this.ResCivilStatus.Items.AddRange(new object[] {
+            "Single",
+            "Live-in",
+            "Separated",
+            "Married",
+            "Widowed"});
+            this.ResCivilStatus.Location = new System.Drawing.Point(139, 356);
+            this.ResCivilStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.ResCivilStatus.Name = "ResCivilStatus";
+            this.ResCivilStatus.Size = new System.Drawing.Size(192, 28);
+            this.ResCivilStatus.TabIndex = 35;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(27, 358);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(72, 16);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "Civil Status";
+            // 
+            // ResAge
+            // 
+            this.ResAge.Location = new System.Drawing.Point(139, 239);
+            this.ResAge.Margin = new System.Windows.Forms.Padding(2);
+            this.ResAge.Name = "ResAge";
+            this.ResAge.Size = new System.Drawing.Size(90, 26);
+            this.ResAge.TabIndex = 33;
             // 
             // Rtxtrgn
             // 
@@ -531,6 +564,39 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Complainant";
+            // 
+            // CompCivlStatus
+            // 
+            this.CompCivlStatus.FormattingEnabled = true;
+            this.CompCivlStatus.Items.AddRange(new object[] {
+            "Single",
+            "Live-in",
+            "Separated",
+            "Married",
+            "Widowed"});
+            this.CompCivlStatus.Location = new System.Drawing.Point(122, 320);
+            this.CompCivlStatus.Margin = new System.Windows.Forms.Padding(2);
+            this.CompCivlStatus.Name = "CompCivlStatus";
+            this.CompCivlStatus.Size = new System.Drawing.Size(192, 28);
+            this.CompCivlStatus.TabIndex = 34;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(16, 320);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(72, 16);
+            this.label42.TabIndex = 33;
+            this.label42.Text = "Civil Status";
+            // 
+            // CompAge
+            // 
+            this.CompAge.Location = new System.Drawing.Point(122, 206);
+            this.CompAge.Margin = new System.Windows.Forms.Padding(2);
+            this.CompAge.Name = "CompAge";
+            this.CompAge.Size = new System.Drawing.Size(90, 26);
+            this.CompAge.TabIndex = 32;
             // 
             // Ctxtrgn
             // 
@@ -864,6 +930,17 @@
             // PlaceOfIncident
             // 
             this.PlaceOfIncident.FormattingEnabled = true;
+            this.PlaceOfIncident.Items.AddRange(new object[] {
+            "Home",
+            "Religious Institutions",
+            "Brothels and Similar Establishments",
+            "Work",
+            "Place of Medical Treatment",
+            "School",
+            "Transportation & Connecting Sites",
+            "Commercial Places",
+            "No Response",
+            "Others"});
             this.PlaceOfIncident.Location = new System.Drawing.Point(843, 299);
             this.PlaceOfIncident.Margin = new System.Windows.Forms.Padding(2);
             this.PlaceOfIncident.Name = "PlaceOfIncident";
@@ -1017,72 +1094,6 @@
             this.save_casebtn.Text = "SAVE CASE";
             this.save_casebtn.UseVisualStyleBackColor = true;
             this.save_casebtn.Click += new System.EventHandler(this.save_casebtn_Click);
-            // 
-            // CompAge
-            // 
-            this.CompAge.Location = new System.Drawing.Point(122, 206);
-            this.CompAge.Margin = new System.Windows.Forms.Padding(2);
-            this.CompAge.Name = "CompAge";
-            this.CompAge.Size = new System.Drawing.Size(90, 26);
-            this.CompAge.TabIndex = 32;
-            // 
-            // ResAge
-            // 
-            this.ResAge.Location = new System.Drawing.Point(139, 239);
-            this.ResAge.Margin = new System.Windows.Forms.Padding(2);
-            this.ResAge.Name = "ResAge";
-            this.ResAge.Size = new System.Drawing.Size(90, 26);
-            this.ResAge.TabIndex = 33;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(16, 320);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(72, 16);
-            this.label42.TabIndex = 33;
-            this.label42.Text = "Civil Status";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(27, 358);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(72, 16);
-            this.label43.TabIndex = 46;
-            this.label43.Text = "Civil Status";
-            // 
-            // CompCivlStatus
-            // 
-            this.CompCivlStatus.FormattingEnabled = true;
-            this.CompCivlStatus.Items.AddRange(new object[] {
-            "Single",
-            "Live-in",
-            "Separated",
-            "Married",
-            "Widowed"});
-            this.CompCivlStatus.Location = new System.Drawing.Point(122, 320);
-            this.CompCivlStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.CompCivlStatus.Name = "CompCivlStatus";
-            this.CompCivlStatus.Size = new System.Drawing.Size(192, 28);
-            this.CompCivlStatus.TabIndex = 34;
-            // 
-            // ResCivilStatus
-            // 
-            this.ResCivilStatus.FormattingEnabled = true;
-            this.ResCivilStatus.Items.AddRange(new object[] {
-            "Single",
-            "Live-in",
-            "Separated",
-            "Married",
-            "Widowed"});
-            this.ResCivilStatus.Location = new System.Drawing.Point(139, 356);
-            this.ResCivilStatus.Margin = new System.Windows.Forms.Padding(2);
-            this.ResCivilStatus.Name = "ResCivilStatus";
-            this.ResCivilStatus.Size = new System.Drawing.Size(192, 28);
-            this.ResCivilStatus.TabIndex = 35;
             // 
             // FileACaseUI
             // 
