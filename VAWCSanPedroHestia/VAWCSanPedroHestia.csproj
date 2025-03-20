@@ -244,6 +244,9 @@
     <Compile Include="RA 9262.Designer.cs">
       <DependentUpon>RA 9262.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Intake Form.resx">
+      <DependentUpon>Intake Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="intakeformUI.resx">
       <DependentUpon>intakeformUI.cs</DependentUpon>
     </EmbeddedResource>
