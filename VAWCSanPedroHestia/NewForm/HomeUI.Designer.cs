@@ -312,6 +312,7 @@
             this.RA7877_Button.TabIndex = 7;
             this.RA7877_Button.Text = "RA 7877";
             this.RA7877_Button.UseVisualStyleBackColor = false;
+            this.RA7877_Button.Click += new System.EventHandler(this.RA7877_Button_Click);
             // 
             // RA9262_Button
             // 
@@ -326,6 +327,7 @@
             this.RA9262_Button.TabIndex = 5;
             this.RA9262_Button.Text = "RA 9262";
             this.RA9262_Button.UseVisualStyleBackColor = false;
+            this.RA9262_Button.Click += new System.EventHandler(this.RA9262_Button_Click);
             // 
             // label4
             // 
@@ -350,6 +352,7 @@
             this.RA8353_Button.TabIndex = 6;
             this.RA8353_Button.Text = "RA 8353";
             this.RA8353_Button.UseVisualStyleBackColor = false;
+            this.RA8353_Button.Click += new System.EventHandler(this.RA8353_Button_Click);
             // 
             // RA7610_Button
             // 
@@ -364,6 +367,7 @@
             this.RA7610_Button.TabIndex = 8;
             this.RA7610_Button.Text = "RA 7610";
             this.RA7610_Button.UseVisualStyleBackColor = false;
+            this.RA7610_Button.Click += new System.EventHandler(this.RA7610_Button_Click);
             // 
             // RA9208_Button
             // 
@@ -378,6 +382,7 @@
             this.RA9208_Button.TabIndex = 9;
             this.RA9208_Button.Text = "RA 9208";
             this.RA9208_Button.UseVisualStyleBackColor = false;
+            this.RA9208_Button.Click += new System.EventHandler(this.RA9208_Button_Click);
             // 
             // panel2
             // 

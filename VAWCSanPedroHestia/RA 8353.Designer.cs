@@ -1,6 +1,6 @@
 ﻿namespace VAWCSanPedroHestia
 {
-    partial class UserControl1
+    partial class RA_8353
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControl1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RA_8353));
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -42,12 +42,12 @@
             this.label1.TabIndex = 0;
             this.label1.Text = resources.GetString("label1.Text");
             // 
-            // UserControl1
+            // RA_8353
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
-            this.Name = "UserControl1";
+            this.Name = "RA_8353";
             this.Size = new System.Drawing.Size(842, 2240);
             this.ResumeLayout(false);
             this.PerformLayout();

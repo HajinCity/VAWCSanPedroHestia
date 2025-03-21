@@ -16,5 +16,30 @@ namespace VAWCSanPedroHestia
         {
             InitializeComponent();
         }
+
+        private void RA9262_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RA8353_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RA7877_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RA7610_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RA9208_Button_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
