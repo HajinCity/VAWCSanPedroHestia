@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class UserControl2: UserControl
+    public partial class RA_9208: UserControl
     {
-        public UserControl2()
+        public RA_9208()
         {
             InitializeComponent();
         }
