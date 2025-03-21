@@ -200,6 +200,12 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewForm\QuarterlyAccomplishmentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\QuarterlyAccomplishmentReport.Designer.cs">
+      <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewForm\ManageCaseListIU.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -288,6 +294,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\ManageCaseListIU.resx">
       <DependentUpon>ManageCaseListIU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\QuarterlyAccomplishmentReport.resx">
+      <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

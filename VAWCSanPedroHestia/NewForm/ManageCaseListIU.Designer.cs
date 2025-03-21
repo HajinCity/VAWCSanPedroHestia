@@ -1,4 +1,4 @@
-﻿namespace VAWCSanPedroHestia
+namespace VAWCSanPedroHestia
 {
     partial class ManageCaseListIU
     {
@@ -73,11 +73,17 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.UrAge = new System.Windows.Forms.TextBox();
+            this.UpRspCivilS = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.UcompAge = new System.Windows.Forms.TextBox();
+            this.UcompCivilS = new System.Windows.Forms.ComboBox();
+            this.label42 = new System.Windows.Forms.Label();
             this.UcompRegion = new System.Windows.Forms.TextBox();
             this.Cnumregion = new System.Windows.Forms.Label();
             this.UcompProvince = new System.Windows.Forms.TextBox();
@@ -113,12 +119,18 @@
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.casenoTxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.UcompCivilS = new System.Windows.Forms.ComboBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.UpRspCivilS = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.UcompAge = new System.Windows.Forms.TextBox();
-            this.UrAge = new System.Windows.Forms.TextBox();
+            this.UCompBdate = new System.Windows.Forms.DateTimePicker();
+            this.label44 = new System.Windows.Forms.Label();
+            this.UCompOccupation = new System.Windows.Forms.TextBox();
+            this.UCompNationality = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.UResBdate = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.UResOccupation = new System.Windows.Forms.TextBox();
+            this.UResNationality = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -130,7 +142,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(15, 206);
+            this.label9.Location = new System.Drawing.Point(248, 144);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 16);
             this.label9.TabIndex = 14;
@@ -138,34 +150,37 @@
             // 
             // UcmbxSex
             // 
+            this.UcmbxSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UcmbxSex.FormattingEnabled = true;
-            this.UcmbxSex.Location = new System.Drawing.Point(122, 160);
+            this.UcmbxSex.Location = new System.Drawing.Point(283, 106);
             this.UcmbxSex.Margin = new System.Windows.Forms.Padding(2);
             this.UcmbxSex.Name = "UcmbxSex";
-            this.UcmbxSex.Size = new System.Drawing.Size(90, 28);
+            this.UcmbxSex.Size = new System.Drawing.Size(157, 24);
             this.UcmbxSex.TabIndex = 13;
             // 
             // UpRspRegion
             // 
-            this.UpRspRegion.Location = new System.Drawing.Point(139, 590);
+            this.UpRspRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspRegion.Location = new System.Drawing.Point(141, 489);
             this.UpRspRegion.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspRegion.Name = "UpRspRegion";
-            this.UpRspRegion.Size = new System.Drawing.Size(192, 26);
+            this.UpRspRegion.Size = new System.Drawing.Size(268, 22);
             this.UpRspRegion.TabIndex = 45;
             // 
             // UcompReligion
             // 
-            this.UcompReligion.Location = new System.Drawing.Point(122, 239);
+            this.UcompReligion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompReligion.Location = new System.Drawing.Point(130, 205);
             this.UcompReligion.Margin = new System.Windows.Forms.Padding(2);
             this.UcompReligion.Name = "UcompReligion";
-            this.UcompReligion.Size = new System.Drawing.Size(192, 26);
+            this.UcompReligion.Size = new System.Drawing.Size(268, 22);
             this.UcompReligion.TabIndex = 17;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(15, 245);
+            this.label10.Location = new System.Drawing.Point(23, 211);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 16);
             this.label10.TabIndex = 16;
@@ -175,7 +190,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(27, 596);
+            this.label29.Location = new System.Drawing.Point(29, 490);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(51, 16);
             this.label29.TabIndex = 30;
@@ -185,7 +200,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(16, 410);
+            this.label13.Location = new System.Drawing.Point(23, 364);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(66, 16);
             this.label13.TabIndex = 22;
@@ -193,17 +208,18 @@
             // 
             // UcompPurok
             // 
-            this.UcompPurok.Location = new System.Drawing.Point(122, 358);
+            this.UcompPurok.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompPurok.Location = new System.Drawing.Point(130, 324);
             this.UcompPurok.Margin = new System.Windows.Forms.Padding(2);
             this.UcompPurok.Name = "UcompPurok";
-            this.UcompPurok.Size = new System.Drawing.Size(192, 26);
+            this.UcompPurok.Size = new System.Drawing.Size(268, 22);
             this.UcompPurok.TabIndex = 21;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(16, 363);
+            this.label12.Location = new System.Drawing.Point(24, 329);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(42, 16);
             this.label12.TabIndex = 20;
@@ -211,58 +227,64 @@
             // 
             // UcompCellNo
             // 
-            this.UcompCellNo.Location = new System.Drawing.Point(122, 278);
+            this.UcompCellNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompCellNo.Location = new System.Drawing.Point(130, 244);
             this.UcompCellNo.Margin = new System.Windows.Forms.Padding(2);
             this.UcompCellNo.Name = "UcompCellNo";
-            this.UcompCellNo.Size = new System.Drawing.Size(192, 26);
+            this.UcompCellNo.Size = new System.Drawing.Size(268, 22);
             this.UcompCellNo.TabIndex = 19;
             // 
             // UpRspProvince
             // 
-            this.UpRspProvince.Location = new System.Drawing.Point(139, 546);
+            this.UpRspProvince.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspProvince.Location = new System.Drawing.Point(141, 448);
             this.UpRspProvince.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspProvince.Name = "UpRspProvince";
-            this.UpRspProvince.Size = new System.Drawing.Size(192, 26);
+            this.UpRspProvince.Size = new System.Drawing.Size(268, 22);
             this.UpRspProvince.TabIndex = 43;
             // 
             // UpRspMunicipal
             // 
-            this.UpRspMunicipal.Location = new System.Drawing.Point(139, 500);
+            this.UpRspMunicipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspMunicipal.Location = new System.Drawing.Point(141, 407);
             this.UpRspMunicipal.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspMunicipal.Name = "UpRspMunicipal";
-            this.UpRspMunicipal.Size = new System.Drawing.Size(192, 26);
+            this.UpRspMunicipal.Size = new System.Drawing.Size(268, 22);
             this.UpRspMunicipal.TabIndex = 42;
             // 
             // UpRspBarangay
             // 
-            this.UpRspBarangay.Location = new System.Drawing.Point(139, 453);
+            this.UpRspBarangay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspBarangay.Location = new System.Drawing.Point(141, 367);
             this.UpRspBarangay.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspBarangay.Name = "UpRspBarangay";
-            this.UpRspBarangay.Size = new System.Drawing.Size(192, 26);
+            this.UpRspBarangay.Size = new System.Drawing.Size(268, 22);
             this.UpRspBarangay.TabIndex = 41;
             // 
             // UpRspPurok
             // 
-            this.UpRspPurok.Location = new System.Drawing.Point(139, 405);
+            this.UpRspPurok.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspPurok.Location = new System.Drawing.Point(141, 330);
             this.UpRspPurok.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspPurok.Name = "UpRspPurok";
-            this.UpRspPurok.Size = new System.Drawing.Size(192, 26);
+            this.UpRspPurok.Size = new System.Drawing.Size(268, 22);
             this.UpRspPurok.TabIndex = 40;
             // 
             // UpRspRelationshiptoC
             // 
+            this.UpRspRelationshiptoC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpRspRelationshiptoC.FormattingEnabled = true;
-            this.UpRspRelationshiptoC.Location = new System.Drawing.Point(217, 646);
+            this.UpRspRelationshiptoC.Location = new System.Drawing.Point(194, 624);
             this.UpRspRelationshiptoC.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspRelationshiptoC.Name = "UpRspRelationshiptoC";
-            this.UpRspRelationshiptoC.Size = new System.Drawing.Size(192, 28);
+            this.UpRspRelationshiptoC.Size = new System.Drawing.Size(247, 24);
             this.UpRspRelationshiptoC.TabIndex = 39;
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(27, 652);
+            this.label28.Location = new System.Drawing.Point(15, 627);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(174, 16);
             this.label28.TabIndex = 38;
@@ -272,7 +294,7 @@
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(27, 552);
+            this.label27.Location = new System.Drawing.Point(29, 448);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(60, 16);
             this.label27.TabIndex = 30;
@@ -282,7 +304,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(27, 506);
+            this.label26.Location = new System.Drawing.Point(29, 407);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(103, 16);
             this.label26.TabIndex = 37;
@@ -292,7 +314,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(27, 458);
+            this.label25.Location = new System.Drawing.Point(29, 368);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(66, 16);
             this.label25.TabIndex = 30;
@@ -302,7 +324,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(16, 458);
+            this.label14.Location = new System.Drawing.Point(24, 404);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(103, 16);
             this.label14.TabIndex = 24;
@@ -312,7 +334,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(16, 284);
+            this.label11.Location = new System.Drawing.Point(24, 250);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 16);
             this.label11.TabIndex = 18;
@@ -322,7 +344,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(27, 410);
+            this.label24.Location = new System.Drawing.Point(29, 336);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(42, 16);
             this.label24.TabIndex = 30;
@@ -344,25 +366,27 @@
             // 
             // UpRspCellNo
             // 
-            this.UpRspCellNo.Location = new System.Drawing.Point(139, 314);
+            this.UpRspCellNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspCellNo.Location = new System.Drawing.Point(141, 259);
             this.UpRspCellNo.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspCellNo.Name = "UpRspCellNo";
-            this.UpRspCellNo.Size = new System.Drawing.Size(192, 26);
+            this.UpRspCellNo.Size = new System.Drawing.Size(268, 22);
             this.UpRspCellNo.TabIndex = 36;
             // 
             // UpRspReligion
             // 
-            this.UpRspReligion.Location = new System.Drawing.Point(139, 278);
+            this.UpRspReligion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspReligion.Location = new System.Drawing.Point(141, 223);
             this.UpRspReligion.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspReligion.Name = "UpRspReligion";
-            this.UpRspReligion.Size = new System.Drawing.Size(192, 26);
+            this.UpRspReligion.Size = new System.Drawing.Size(268, 22);
             this.UpRspReligion.TabIndex = 35;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(27, 284);
+            this.label22.Location = new System.Drawing.Point(29, 226);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(57, 16);
             this.label22.TabIndex = 30;
@@ -372,7 +396,7 @@
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(27, 245);
+            this.label21.Location = new System.Drawing.Point(239, 152);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(32, 16);
             this.label21.TabIndex = 30;
@@ -380,73 +404,81 @@
             // 
             // UcompBarangay
             // 
-            this.UcompBarangay.Location = new System.Drawing.Point(122, 405);
+            this.UcompBarangay.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompBarangay.Location = new System.Drawing.Point(130, 361);
             this.UcompBarangay.Margin = new System.Windows.Forms.Padding(2);
             this.UcompBarangay.Name = "UcompBarangay";
-            this.UcompBarangay.Size = new System.Drawing.Size(192, 26);
+            this.UcompBarangay.Size = new System.Drawing.Size(268, 22);
             this.UcompBarangay.TabIndex = 23;
             // 
             // UpRspAllias
             // 
-            this.UpRspAllias.Location = new System.Drawing.Point(139, 160);
+            this.UpRspAllias.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspAllias.Location = new System.Drawing.Point(141, 149);
             this.UpRspAllias.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspAllias.Name = "UpRspAllias";
-            this.UpRspAllias.Size = new System.Drawing.Size(192, 26);
+            this.UpRspAllias.Size = new System.Drawing.Size(95, 22);
             this.UpRspAllias.TabIndex = 33;
             // 
             // UpRspMiddleName
             // 
-            this.UpRspMiddleName.Location = new System.Drawing.Point(139, 119);
+            this.UpRspMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspMiddleName.Location = new System.Drawing.Point(141, 108);
             this.UpRspMiddleName.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspMiddleName.Name = "UpRspMiddleName";
-            this.UpRspMiddleName.Size = new System.Drawing.Size(192, 26);
+            this.UpRspMiddleName.Size = new System.Drawing.Size(95, 22);
             this.UpRspMiddleName.TabIndex = 32;
             // 
             // UpRspFrstName
             // 
-            this.UpRspFrstName.Location = new System.Drawing.Point(139, 76);
+            this.UpRspFrstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspFrstName.Location = new System.Drawing.Point(141, 65);
             this.UpRspFrstName.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspFrstName.Name = "UpRspFrstName";
-            this.UpRspFrstName.Size = new System.Drawing.Size(192, 26);
+            this.UpRspFrstName.Size = new System.Drawing.Size(268, 22);
             this.UpRspFrstName.TabIndex = 31;
             // 
             // UpRspLstName
             // 
-            this.UpRspLstName.Location = new System.Drawing.Point(139, 33);
+            this.UpRspLstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspLstName.Location = new System.Drawing.Point(141, 22);
             this.UpRspLstName.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspLstName.Name = "UpRspLstName";
-            this.UpRspLstName.Size = new System.Drawing.Size(192, 26);
+            this.UpRspLstName.Size = new System.Drawing.Size(268, 22);
             this.UpRspLstName.TabIndex = 30;
             // 
             // UcompMddlName
             // 
-            this.UcompMddlName.Location = new System.Drawing.Point(122, 119);
+            this.UcompMddlName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompMddlName.Location = new System.Drawing.Point(130, 108);
             this.UcompMddlName.Margin = new System.Windows.Forms.Padding(2);
             this.UcompMddlName.Name = "UcompMddlName";
-            this.UcompMddlName.Size = new System.Drawing.Size(192, 26);
+            this.UcompMddlName.Size = new System.Drawing.Size(95, 22);
             this.UcompMddlName.TabIndex = 12;
             // 
             // UcompFstName
             // 
-            this.UcompFstName.Location = new System.Drawing.Point(122, 76);
+            this.UcompFstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompFstName.Location = new System.Drawing.Point(130, 65);
             this.UcompFstName.Margin = new System.Windows.Forms.Padding(2);
             this.UcompFstName.Name = "UcompFstName";
-            this.UcompFstName.Size = new System.Drawing.Size(192, 26);
+            this.UcompFstName.Size = new System.Drawing.Size(268, 22);
             this.UcompFstName.TabIndex = 11;
             // 
             // UcompLstName
             // 
-            this.UcompLstName.Location = new System.Drawing.Point(122, 33);
+            this.UcompLstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompLstName.Location = new System.Drawing.Point(130, 22);
             this.UcompLstName.Margin = new System.Windows.Forms.Padding(2);
             this.UcompLstName.Name = "UcompLstName";
-            this.UcompLstName.Size = new System.Drawing.Size(192, 26);
+            this.UcompLstName.Size = new System.Drawing.Size(268, 22);
             this.UcompLstName.TabIndex = 10;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(16, 166);
+            this.label8.Location = new System.Drawing.Point(248, 111);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 16);
             this.label8.TabIndex = 9;
@@ -456,7 +488,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(15, 125);
+            this.label7.Location = new System.Drawing.Point(23, 114);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 16);
             this.label7.TabIndex = 8;
@@ -466,7 +498,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 82);
+            this.label6.Location = new System.Drawing.Point(23, 71);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(72, 16);
             this.label6.TabIndex = 7;
@@ -476,7 +508,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 39);
+            this.label5.Location = new System.Drawing.Point(24, 28);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 16);
             this.label5.TabIndex = 6;
@@ -484,18 +516,19 @@
             // 
             // UpRspSex
             // 
+            this.UpRspSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpRspSex.FormattingEnabled = true;
-            this.UpRspSex.Location = new System.Drawing.Point(139, 200);
+            this.UpRspSex.Location = new System.Drawing.Point(276, 108);
             this.UpRspSex.Margin = new System.Windows.Forms.Padding(2);
             this.UpRspSex.Name = "UpRspSex";
-            this.UpRspSex.Size = new System.Drawing.Size(90, 28);
+            this.UpRspSex.Size = new System.Drawing.Size(157, 24);
             this.UpRspSex.TabIndex = 30;
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(27, 320);
+            this.label23.Location = new System.Drawing.Point(29, 262);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(76, 16);
             this.label23.TabIndex = 30;
@@ -505,7 +538,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(27, 206);
+            this.label20.Location = new System.Drawing.Point(241, 111);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(30, 16);
             this.label20.TabIndex = 30;
@@ -536,6 +569,12 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.UResOccupation);
+            this.groupBox2.Controls.Add(this.UResNationality);
+            this.groupBox2.Controls.Add(this.UResBdate);
+            this.groupBox2.Controls.Add(this.label43);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label47);
             this.groupBox2.Controls.Add(this.UrAge);
             this.groupBox2.Controls.Add(this.UpRspCivilS);
             this.groupBox2.Controls.Add(this.label2);
@@ -573,11 +612,46 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Respondent";
             // 
+            // UrAge
+            // 
+            this.UrAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UrAge.Location = new System.Drawing.Point(276, 149);
+            this.UrAge.Margin = new System.Windows.Forms.Padding(2);
+            this.UrAge.Name = "UrAge";
+            this.UrAge.Size = new System.Drawing.Size(157, 22);
+            this.UrAge.TabIndex = 38;
+            // 
+            // UpRspCivilS
+            // 
+            this.UpRspCivilS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UpRspCivilS.FormattingEnabled = true;
+            this.UpRspCivilS.Items.AddRange(new object[] {
+            "Single",
+            "Live-in",
+            "Separated",
+            "Married",
+            "Widowed"});
+            this.UpRspCivilS.Location = new System.Drawing.Point(141, 294);
+            this.UpRspCivilS.Margin = new System.Windows.Forms.Padding(2);
+            this.UpRspCivilS.Name = "UpRspCivilS";
+            this.UpRspCivilS.Size = new System.Drawing.Size(268, 24);
+            this.UpRspCivilS.TabIndex = 47;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(29, 299);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 16);
+            this.label2.TabIndex = 46;
+            this.label2.Text = "Civil Status";
+            // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(27, 166);
+            this.label19.Location = new System.Drawing.Point(29, 155);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(40, 16);
             this.label19.TabIndex = 30;
@@ -587,7 +661,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(27, 125);
+            this.label18.Location = new System.Drawing.Point(29, 114);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(88, 16);
             this.label18.TabIndex = 30;
@@ -597,7 +671,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(27, 82);
+            this.label17.Location = new System.Drawing.Point(29, 71);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(72, 16);
             this.label17.TabIndex = 30;
@@ -607,7 +681,7 @@
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(27, 39);
+            this.label16.Location = new System.Drawing.Point(29, 28);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(72, 16);
             this.label16.TabIndex = 30;
@@ -615,6 +689,12 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.UCompOccupation);
+            this.groupBox1.Controls.Add(this.UCompNationality);
+            this.groupBox1.Controls.Add(this.label46);
+            this.groupBox1.Controls.Add(this.label45);
+            this.groupBox1.Controls.Add(this.UCompBdate);
+            this.groupBox1.Controls.Add(this.label44);
             this.groupBox1.Controls.Add(this.UcompAge);
             this.groupBox1.Controls.Add(this.UcompCivilS);
             this.groupBox1.Controls.Add(this.label42);
@@ -648,19 +728,55 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Complainant";
             // 
+            // UcompAge
+            // 
+            this.UcompAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompAge.Location = new System.Drawing.Point(283, 141);
+            this.UcompAge.Margin = new System.Windows.Forms.Padding(2);
+            this.UcompAge.Name = "UcompAge";
+            this.UcompAge.Size = new System.Drawing.Size(157, 22);
+            this.UcompAge.TabIndex = 37;
+            // 
+            // UcompCivilS
+            // 
+            this.UcompCivilS.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompCivilS.FormattingEnabled = true;
+            this.UcompCivilS.Items.AddRange(new object[] {
+            "Single",
+            "Live-in",
+            "Separated",
+            "Married",
+            "Widowed"});
+            this.UcompCivilS.Location = new System.Drawing.Point(130, 286);
+            this.UcompCivilS.Margin = new System.Windows.Forms.Padding(2);
+            this.UcompCivilS.Name = "UcompCivilS";
+            this.UcompCivilS.Size = new System.Drawing.Size(268, 24);
+            this.UcompCivilS.TabIndex = 36;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(24, 292);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(72, 16);
+            this.label42.TabIndex = 35;
+            this.label42.Text = "Civil Status";
+            // 
             // UcompRegion
             // 
-            this.UcompRegion.Location = new System.Drawing.Point(122, 546);
+            this.UcompRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompRegion.Location = new System.Drawing.Point(130, 486);
             this.UcompRegion.Margin = new System.Windows.Forms.Padding(2);
             this.UcompRegion.Name = "UcompRegion";
-            this.UcompRegion.Size = new System.Drawing.Size(192, 26);
+            this.UcompRegion.Size = new System.Drawing.Size(268, 22);
             this.UcompRegion.TabIndex = 31;
             // 
             // Cnumregion
             // 
             this.Cnumregion.AutoSize = true;
             this.Cnumregion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cnumregion.Location = new System.Drawing.Point(16, 552);
+            this.Cnumregion.Location = new System.Drawing.Point(23, 489);
             this.Cnumregion.Name = "Cnumregion";
             this.Cnumregion.Size = new System.Drawing.Size(51, 16);
             this.Cnumregion.TabIndex = 28;
@@ -668,17 +784,18 @@
             // 
             // UcompProvince
             // 
-            this.UcompProvince.Location = new System.Drawing.Point(122, 500);
+            this.UcompProvince.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompProvince.Location = new System.Drawing.Point(130, 442);
             this.UcompProvince.Margin = new System.Windows.Forms.Padding(2);
             this.UcompProvince.Name = "UcompProvince";
-            this.UcompProvince.Size = new System.Drawing.Size(192, 26);
+            this.UcompProvince.Size = new System.Drawing.Size(268, 22);
             this.UcompProvince.TabIndex = 27;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(16, 506);
+            this.label15.Location = new System.Drawing.Point(24, 447);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(60, 16);
             this.label15.TabIndex = 26;
@@ -686,10 +803,11 @@
             // 
             // UcompMunicipal
             // 
-            this.UcompMunicipal.Location = new System.Drawing.Point(122, 453);
+            this.UcompMunicipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UcompMunicipal.Location = new System.Drawing.Point(130, 401);
             this.UcompMunicipal.Margin = new System.Windows.Forms.Padding(2);
             this.UcompMunicipal.Name = "UcompMunicipal";
-            this.UcompMunicipal.Size = new System.Drawing.Size(192, 26);
+            this.UcompMunicipal.Size = new System.Drawing.Size(268, 22);
             this.UcompMunicipal.TabIndex = 25;
             // 
             // tabPage2
@@ -823,6 +941,17 @@
             // UpPlaceofIncident
             // 
             this.UpPlaceofIncident.FormattingEnabled = true;
+            this.UpPlaceofIncident.Items.AddRange(new object[] {
+            "Home",
+            "Religious Institutions",
+            "Brothels and Similar Establishments",
+            "Work",
+            "Place of Medical Treatment",
+            "School",
+            "Transportation & Connecting Sites",
+            "Commercial Places",
+            "No Response",
+            "Others"});
             this.UpPlaceofIncident.Location = new System.Drawing.Point(841, 252);
             this.UpPlaceofIncident.Name = "UpPlaceofIncident";
             this.UpPlaceofIncident.Size = new System.Drawing.Size(303, 28);
@@ -877,6 +1006,10 @@
             // UpCaseStatus
             // 
             this.UpCaseStatus.FormattingEnabled = true;
+            this.UpCaseStatus.Items.AddRange(new object[] {
+            "Pending",
+            "Dismissed",
+            "Stop"});
             this.UpCaseStatus.Location = new System.Drawing.Point(801, 87);
             this.UpCaseStatus.Name = "UpCaseStatus";
             this.UpCaseStatus.Size = new System.Drawing.Size(343, 28);
@@ -982,76 +1115,123 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // UcompCivilS
+            // UCompBdate
             // 
-            this.UcompCivilS.FormattingEnabled = true;
-            this.UcompCivilS.Items.AddRange(new object[] {
-            "Single",
-            "Live-in",
-            "Separated",
-            "Married",
-            "Widowed"});
-            this.UcompCivilS.Location = new System.Drawing.Point(122, 320);
-            this.UcompCivilS.Margin = new System.Windows.Forms.Padding(2);
-            this.UcompCivilS.Name = "UcompCivilS";
-            this.UcompCivilS.Size = new System.Drawing.Size(192, 28);
-            this.UcompCivilS.TabIndex = 36;
+            this.UCompBdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCompBdate.Location = new System.Drawing.Point(130, 173);
+            this.UCompBdate.Name = "UCompBdate";
+            this.UCompBdate.Size = new System.Drawing.Size(268, 24);
+            this.UCompBdate.TabIndex = 40;
             // 
-            // label42
+            // label44
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(20, 326);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(72, 16);
-            this.label42.TabIndex = 35;
-            this.label42.Text = "Civil Status";
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(23, 178);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(60, 16);
+            this.label44.TabIndex = 39;
+            this.label44.Text = "Birthdate";
             // 
-            // UpRspCivilS
+            // UCompOccupation
             // 
-            this.UpRspCivilS.FormattingEnabled = true;
-            this.UpRspCivilS.Items.AddRange(new object[] {
-            "Single",
-            "Live-in",
-            "Separated",
-            "Married",
-            "Widowed"});
-            this.UpRspCivilS.Location = new System.Drawing.Point(139, 363);
-            this.UpRspCivilS.Margin = new System.Windows.Forms.Padding(2);
-            this.UpRspCivilS.Name = "UpRspCivilS";
-            this.UpRspCivilS.Size = new System.Drawing.Size(192, 28);
-            this.UpRspCivilS.TabIndex = 47;
+            this.UCompOccupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCompOccupation.Location = new System.Drawing.Point(130, 559);
+            this.UCompOccupation.Margin = new System.Windows.Forms.Padding(2);
+            this.UCompOccupation.Name = "UCompOccupation";
+            this.UCompOccupation.Size = new System.Drawing.Size(268, 24);
+            this.UCompOccupation.TabIndex = 44;
             // 
-            // label2
+            // UCompNationality
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(27, 368);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 16);
-            this.label2.TabIndex = 46;
-            this.label2.Text = "Civil Status";
+            this.UCompNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCompNationality.Location = new System.Drawing.Point(130, 523);
+            this.UCompNationality.Margin = new System.Windows.Forms.Padding(2);
+            this.UCompNationality.Name = "UCompNationality";
+            this.UCompNationality.Size = new System.Drawing.Size(268, 24);
+            this.UCompNationality.TabIndex = 43;
             // 
-            // UcompAge
+            // label46
             // 
-            this.UcompAge.Location = new System.Drawing.Point(122, 206);
-            this.UcompAge.Margin = new System.Windows.Forms.Padding(2);
-            this.UcompAge.Name = "UcompAge";
-            this.UcompAge.Size = new System.Drawing.Size(90, 26);
-            this.UcompAge.TabIndex = 37;
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(25, 562);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(75, 16);
+            this.label46.TabIndex = 42;
+            this.label46.Text = "Occupation";
             // 
-            // UrAge
+            // label45
             // 
-            this.UrAge.Location = new System.Drawing.Point(139, 239);
-            this.UrAge.Margin = new System.Windows.Forms.Padding(2);
-            this.UrAge.Name = "UrAge";
-            this.UrAge.Size = new System.Drawing.Size(90, 26);
-            this.UrAge.TabIndex = 38;
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(24, 523);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(70, 16);
+            this.label45.TabIndex = 41;
+            this.label45.Text = "Nationality";
+            // 
+            // UResBdate
+            // 
+            this.UResBdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UResBdate.Location = new System.Drawing.Point(141, 187);
+            this.UResBdate.Name = "UResBdate";
+            this.UResBdate.Size = new System.Drawing.Size(268, 24);
+            this.UResBdate.TabIndex = 46;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(29, 194);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Birthdate";
+            // 
+            // UResOccupation
+            // 
+            this.UResOccupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UResOccupation.Location = new System.Drawing.Point(141, 562);
+            this.UResOccupation.Margin = new System.Windows.Forms.Padding(2);
+            this.UResOccupation.Name = "UResOccupation";
+            this.UResOccupation.Size = new System.Drawing.Size(268, 24);
+            this.UResOccupation.TabIndex = 48;
+            // 
+            // UResNationality
+            // 
+            this.UResNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UResNationality.Location = new System.Drawing.Point(141, 526);
+            this.UResNationality.Margin = new System.Windows.Forms.Padding(2);
+            this.UResNationality.Name = "UResNationality";
+            this.UResNationality.Size = new System.Drawing.Size(268, 24);
+            this.UResNationality.TabIndex = 47;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(30, 570);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(75, 16);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "Occupation";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(29, 529);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(70, 16);
+            this.label47.TabIndex = 45;
+            this.label47.Text = "Nationality";
             // 
             // ManageCaseListIU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1275, 788);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.casenoTxt);
@@ -1167,5 +1347,17 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.TextBox UrAge;
         private System.Windows.Forms.TextBox UcompAge;
+        public System.Windows.Forms.DateTimePicker UCompBdate;
+        private System.Windows.Forms.Label label44;
+        public System.Windows.Forms.TextBox UCompOccupation;
+        public System.Windows.Forms.TextBox UCompNationality;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        public System.Windows.Forms.DateTimePicker UResBdate;
+        private System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox UResOccupation;
+        public System.Windows.Forms.TextBox UResNationality;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label47;
     }
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -110,6 +110,11 @@ namespace VAWCSanPedroHestia
                 return $"{lastName}, {firstName} {middleName}".Trim();
             }
             return "N/A";
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

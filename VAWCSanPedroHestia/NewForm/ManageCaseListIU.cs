@@ -53,6 +53,7 @@ namespace VAWCSanPedroHestia
                     UcompMddlName.Text = GetData(data, "Complainant", "MiddleName");
                     UcmbxSex.Text = GetData(data, "Complainant", "Sex");
                     UcompAge.Text = GetData(data, "Complainant", "Age");
+                    UCompBdate.Text = GetData(data,"Complainant", "Birthdate");
                     UcompReligion.Text = GetData(data, "Complainant", "Religion");
                     UcompCellNo.Text = GetData(data, "Complainant", "CellNumber");
                     UcompCivilS.Text = GetData(data, "Complainant", "CivilStatus");
@@ -61,6 +62,8 @@ namespace VAWCSanPedroHestia
                     UcompMunicipal.Text = GetData(data, "Complainant", "Municipality");
                     UcompProvince.Text = GetData(data, "Complainant", "Province");
                     UcompRegion.Text = GetData(data, "Complainant", "Region");
+                    UCompNationality.Text = GetData(data, "Complainant", "Nationality");
+                    UCompOccupation.Text = GetData(data, "Complainant", "Occupation");
 
                     UpRspLstName.Text = GetData(data, "Respondent", "LastName");
                     UpRspFrstName.Text = GetData(data, "Respondent", "FirstName");
@@ -68,6 +71,7 @@ namespace VAWCSanPedroHestia
                     UpRspAllias.Text = GetData(data, "Respondent", "Alias");
                     UpRspSex.Text = GetData(data, "Respondent", "Sex");
                     UrAge.Text = GetData(data, "Respondent", "Age");
+                    UResBdate.Text = GetData(data, "Respondent", "Birthdate");
                     UpRspReligion.Text = GetData(data, "Respondent", "Religion");
                     UpRspCellNo.Text = GetData(data, "Respondent", "CellNumber");
                     UpRspCivilS.Text = GetData(data, "Respondent", "CivilStatus");
@@ -76,6 +80,8 @@ namespace VAWCSanPedroHestia
                     UpRspMunicipal.Text = GetData(data, "Respondent", "Municipality");
                     UpRspProvince.Text = GetData(data, "Respondent", "Province");
                     UpRspRegion.Text = GetData(data, "Respondent", "Region");
+                    UResNationality.Text = GetData(data, "Respondent", "Nationality");
+                    UResOccupation.Text = GetData(data, "Respondent", "Occupation");
                     UpRspRelationshiptoC.Text = GetData(data, "Respondent", "RelationshipToComplainant");
 
                     UpRAVio.Text = GetData(data, "CaseDetails", "VAWCCase");
