@@ -1,4 +1,4 @@
-﻿namespace VAWCSanPedroHestia
+namespace VAWCSanPedroHestia
 {
     partial class Case_List
     {

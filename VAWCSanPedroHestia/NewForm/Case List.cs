@@ -111,5 +111,10 @@ namespace VAWCSanPedroHestia
             }
             return "N/A";
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
