@@ -55,9 +55,6 @@
             this.RA7610_Button = new System.Windows.Forms.Button();
             this.RA9208_Button = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.RPC_Button = new System.Windows.Forms.Button();
-            this.RA9995_Button = new System.Windows.Forms.Button();
-            this.RA9775_Button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -308,10 +305,10 @@
             this.RA7877_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RA7877_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RA7877_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA7877_Button.Location = new System.Drawing.Point(297, 70);
+            this.RA7877_Button.Location = new System.Drawing.Point(511, 70);
             this.RA7877_Button.Margin = new System.Windows.Forms.Padding(2);
             this.RA7877_Button.Name = "RA7877_Button";
-            this.RA7877_Button.Size = new System.Drawing.Size(118, 40);
+            this.RA7877_Button.Size = new System.Drawing.Size(216, 40);
             this.RA7877_Button.TabIndex = 7;
             this.RA7877_Button.Text = "RA 7877";
             this.RA7877_Button.UseVisualStyleBackColor = false;
@@ -322,10 +319,10 @@
             this.RA9262_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RA9262_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RA9262_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA9262_Button.Location = new System.Drawing.Point(24, 70);
+            this.RA9262_Button.Location = new System.Drawing.Point(26, 70);
             this.RA9262_Button.Margin = new System.Windows.Forms.Padding(2);
             this.RA9262_Button.Name = "RA9262_Button";
-            this.RA9262_Button.Size = new System.Drawing.Size(118, 40);
+            this.RA9262_Button.Size = new System.Drawing.Size(216, 40);
             this.RA9262_Button.TabIndex = 5;
             this.RA9262_Button.Text = "RA 9262";
             this.RA9262_Button.UseVisualStyleBackColor = false;
@@ -346,10 +343,10 @@
             this.RA8353_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RA8353_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RA8353_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA8353_Button.Location = new System.Drawing.Point(160, 70);
+            this.RA8353_Button.Location = new System.Drawing.Point(275, 70);
             this.RA8353_Button.Margin = new System.Windows.Forms.Padding(2);
             this.RA8353_Button.Name = "RA8353_Button";
-            this.RA8353_Button.Size = new System.Drawing.Size(118, 40);
+            this.RA8353_Button.Size = new System.Drawing.Size(216, 40);
             this.RA8353_Button.TabIndex = 6;
             this.RA8353_Button.Text = "RA 8353";
             this.RA8353_Button.UseVisualStyleBackColor = false;
@@ -360,10 +357,10 @@
             this.RA7610_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RA7610_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RA7610_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA7610_Button.Location = new System.Drawing.Point(434, 70);
+            this.RA7610_Button.Location = new System.Drawing.Point(756, 70);
             this.RA7610_Button.Margin = new System.Windows.Forms.Padding(2);
             this.RA7610_Button.Name = "RA7610_Button";
-            this.RA7610_Button.Size = new System.Drawing.Size(118, 40);
+            this.RA7610_Button.Size = new System.Drawing.Size(216, 40);
             this.RA7610_Button.TabIndex = 8;
             this.RA7610_Button.Text = "RA 7610";
             this.RA7610_Button.UseVisualStyleBackColor = false;
@@ -374,10 +371,10 @@
             this.RA9208_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.RA9208_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RA9208_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA9208_Button.Location = new System.Drawing.Point(571, 70);
+            this.RA9208_Button.Location = new System.Drawing.Point(997, 70);
             this.RA9208_Button.Margin = new System.Windows.Forms.Padding(2);
             this.RA9208_Button.Name = "RA9208_Button";
-            this.RA9208_Button.Size = new System.Drawing.Size(118, 40);
+            this.RA9208_Button.Size = new System.Drawing.Size(216, 40);
             this.RA9208_Button.TabIndex = 9;
             this.RA9208_Button.Text = "RA 9208";
             this.RA9208_Button.UseVisualStyleBackColor = false;
@@ -385,62 +382,17 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.RA7877_Button);
-            this.panel2.Controls.Add(this.RPC_Button);
             this.panel2.Controls.Add(this.RA9262_Button);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.RA8353_Button);
-            this.panel2.Controls.Add(this.RA9995_Button);
             this.panel2.Controls.Add(this.RA7610_Button);
             this.panel2.Controls.Add(this.RA9208_Button);
-            this.panel2.Controls.Add(this.RA9775_Button);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 259);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1258, 126);
             this.panel2.TabIndex = 15;
-            // 
-            // RPC_Button
-            // 
-            this.RPC_Button.BackColor = System.Drawing.Color.Silver;
-            this.RPC_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RPC_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RPC_Button.ForeColor = System.Drawing.Color.Black;
-            this.RPC_Button.Location = new System.Drawing.Point(981, 70);
-            this.RPC_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.RPC_Button.Name = "RPC_Button";
-            this.RPC_Button.Size = new System.Drawing.Size(232, 40);
-            this.RPC_Button.TabIndex = 11;
-            this.RPC_Button.Text = "REVISED PENAL CODE";
-            this.RPC_Button.UseVisualStyleBackColor = false;
-            // 
-            // RA9995_Button
-            // 
-            this.RA9995_Button.BackColor = System.Drawing.Color.Silver;
-            this.RA9995_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RA9995_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RA9995_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA9995_Button.Location = new System.Drawing.Point(844, 70);
-            this.RA9995_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.RA9995_Button.Name = "RA9995_Button";
-            this.RA9995_Button.Size = new System.Drawing.Size(118, 40);
-            this.RA9995_Button.TabIndex = 11;
-            this.RA9995_Button.Text = "RA 9995";
-            this.RA9995_Button.UseVisualStyleBackColor = false;
-            // 
-            // RA9775_Button
-            // 
-            this.RA9775_Button.BackColor = System.Drawing.Color.Silver;
-            this.RA9775_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RA9775_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RA9775_Button.ForeColor = System.Drawing.Color.Black;
-            this.RA9775_Button.Location = new System.Drawing.Point(707, 70);
-            this.RA9775_Button.Margin = new System.Windows.Forms.Padding(2);
-            this.RA9775_Button.Name = "RA9775_Button";
-            this.RA9775_Button.Size = new System.Drawing.Size(118, 40);
-            this.RA9775_Button.TabIndex = 10;
-            this.RA9775_Button.Text = "RA 9775";
-            this.RA9775_Button.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -508,9 +460,6 @@
         private System.Windows.Forms.Button RA7610_Button;
         private System.Windows.Forms.Button RA9208_Button;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button RPC_Button;
-        private System.Windows.Forms.Button RA9995_Button;
-        private System.Windows.Forms.Button RA9775_Button;
         private System.Windows.Forms.Panel panel1;
     }
 }
