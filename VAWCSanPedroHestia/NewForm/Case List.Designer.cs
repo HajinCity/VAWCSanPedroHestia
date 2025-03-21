@@ -33,7 +33,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ctxtlname = new System.Windows.Forms.TextBox();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +42,7 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ctxtlname = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -95,15 +95,7 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(1043, 541);
             this.dataGridView1.TabIndex = 5;
-            // 
-            // Ctxtlname
-            // 
-            this.Ctxtlname.Location = new System.Drawing.Point(107, 190);
-            this.Ctxtlname.Margin = new System.Windows.Forms.Padding(2);
-            this.Ctxtlname.Multiline = true;
-            this.Ctxtlname.Name = "Ctxtlname";
-            this.Ctxtlname.Size = new System.Drawing.Size(192, 26);
-            this.Ctxtlname.TabIndex = 11;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -155,11 +147,20 @@
             this.Column9.Name = "Column9";
             this.Column9.Width = 140;
             // 
+            // Ctxtlname
+            // 
+            this.Ctxtlname.Location = new System.Drawing.Point(107, 190);
+            this.Ctxtlname.Margin = new System.Windows.Forms.Padding(2);
+            this.Ctxtlname.Multiline = true;
+            this.Ctxtlname.Name = "Ctxtlname";
+            this.Ctxtlname.Size = new System.Drawing.Size(192, 26);
+            this.Ctxtlname.TabIndex = 11;
+            // 
             // Case_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 845);
+            this.ClientSize = new System.Drawing.Size(1259, 749);
             this.Controls.Add(this.Ctxtlname);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
