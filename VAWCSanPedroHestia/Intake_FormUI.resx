@@ -117,4 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>                                     REPUBLIC OF THE PHILIPPINES
+
+REGION IX, ZAMBOANGA DEL SUR, PAGADIAN CITY, BARANGAY SAN PEDRO
+
+                                OFFICE OF THE BARANGAY COUNCIL
+
+                      VIOLENCE AGAINST WOMEN AND THEIR CHILDREN 
+
+                                                    INTAKE FORM
+</value>
+  </data>
 </root>

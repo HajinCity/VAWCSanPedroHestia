@@ -1,4 +1,4 @@
-﻿namespace VAWCSanPedroHestia
+namespace VAWCSanPedroHestia
 {
     partial class Case_List
     {
@@ -42,7 +42,7 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ctxtlname = new System.Windows.Forms.TextBox();
+            this.searchtxtb = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -95,7 +95,6 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(1043, 541);
             this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Column1
             // 
@@ -147,21 +146,21 @@
             this.Column9.Name = "Column9";
             this.Column9.Width = 140;
             // 
-            // Ctxtlname
+            // searchtxtb
             // 
-            this.Ctxtlname.Location = new System.Drawing.Point(107, 190);
-            this.Ctxtlname.Margin = new System.Windows.Forms.Padding(2);
-            this.Ctxtlname.Multiline = true;
-            this.Ctxtlname.Name = "Ctxtlname";
-            this.Ctxtlname.Size = new System.Drawing.Size(192, 26);
-            this.Ctxtlname.TabIndex = 11;
+            this.searchtxtb.Location = new System.Drawing.Point(107, 190);
+            this.searchtxtb.Margin = new System.Windows.Forms.Padding(2);
+            this.searchtxtb.Multiline = true;
+            this.searchtxtb.Name = "searchtxtb";
+            this.searchtxtb.Size = new System.Drawing.Size(192, 26);
+            this.searchtxtb.TabIndex = 11;
             // 
             // Case_List
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1259, 749);
-            this.Controls.Add(this.Ctxtlname);
+            this.ClientSize = new System.Drawing.Size(1259, 845);
+            this.Controls.Add(this.searchtxtb);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -181,7 +180,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox Ctxtlname;
+        private System.Windows.Forms.TextBox searchtxtb;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
