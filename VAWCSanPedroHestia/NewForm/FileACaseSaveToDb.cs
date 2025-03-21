@@ -22,9 +22,12 @@ namespace VAWCSanPedroHestia.NewForm
                         MiddleName = form.CtxtMname.Text ?? "",
                         SexIdentification = form.ComboCsex.Text ?? "",
                         CivilStatus = form.CompCivlStatus.Text ?? "",  // ✅ Added Complainant Civil Status
+                        Birthdate = form.CompBdate.Value.ToString("yyyy-MM-dd"),
                         Age = form.CompAge.Text ?? "",
                         Religion = form.CtextRegion.Text ?? "",
                         CellNumber = form.Cnumno.Text ?? "",
+                        Nationality = form.CompNationality.Text ?? "",
+                        Occupation = form.CompOccupation.Text ?? "",
                         Address = new
                         {
                             Purok = form.CtxtPurok.Text ?? "",
@@ -33,6 +36,7 @@ namespace VAWCSanPedroHestia.NewForm
                             Province = form.Ctxtprvnc.Text ?? "",
                             Region = form.Ctxtrgn.Text ?? ""
                         }
+                       
                     },
                     Respondent = new
                     {
@@ -42,9 +46,12 @@ namespace VAWCSanPedroHestia.NewForm
                         Alias = form.RtxtAllias.Text ?? "",
                         SexIdentification = form.RCmboSex.Text ?? "",
                         CivilStatus = form.ResCivilStatus.Text ?? "",  // ✅ Added Respondent Civil Status
+                        Birthdate = form.RBdate.Value.ToString("yyyy-MM-dd"),
                         Age = form.ResAge.Text ?? "",
                         Religion = form.Rtextrgn.Text ?? "",
                         CellNumber = form.Rnumcntct.Text ?? "",
+                        Nationality = form.RNationality.Text ?? "",
+                        Occupation = form.ROccupation.Text ?? "",
                         RelationshipToComplainant = form.Rcmborltn.Text ?? "",
                         Address = new
                         {

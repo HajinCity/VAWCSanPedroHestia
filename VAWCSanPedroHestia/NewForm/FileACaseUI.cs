@@ -77,7 +77,8 @@ namespace VAWCSanPedroHestia
                 }
 
                 if (ctrl is DateTimePicker dtp)
-                    dtp.Value = DateTime.Now;
+                    dtp.Value = DateTime.Today; // Only sets the date portion, ignoring the time
+
 
                 // **If the control contains more controls inside (like Panels, GroupBoxes)**
                 if (ctrl.HasChildren)
