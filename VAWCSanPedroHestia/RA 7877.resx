@@ -117,106 +117,118 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>REPUBLIC ACT 7877
+  <data name="label4.Text" xml:space="preserve">
+    <value>Under RA 7877, work, education,or training related sexual harassment is “committed by an employer, employee, 
+manager, supervisor, agent of the employer, teacher, instructor, professor, coach, trainor, or any person who, 
+having authority, influence or moral ascendancy over another in a work or training or education environment, 
+demands, requests or otherwise requires any sexual favor from the other, regardless of whether the demand, 
+request or requirement for submission is accepted or not by the object of said act.”
+</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Work-related Sexual Harassment is committed when:
 
-AN ACT DECLARING SEXUAL HARASSMENT UNLAWFUL IN THE EMPLOYMENT,EDUCATION OR TRAINING 
-ENVIRONMENT, AND FOR OTHER PURPOSESBe it enacted by the Senate and House of Representatives of the 
-Philippines in Congress assembled:
- SECTION 1. Title. — This Act shall be known as the “Anti-Sexual Harassment
-Act of 1995.” 
+1. The sexual favor is made as a condition in the hiring or in the employment, re-employment or continued employment 
+of said individual, or in granting said individual favorable compensation, terms, conditions, promotions, or privileges; or 
+refusal to grant the sexual favor results in limiting, segregating or classifying the employee which in any way would 
+discriminate, deprive or diminish employment opportunities or otherwise adversely affect said employee
 
-SEC. 2. Declaration of Policy. — The State shall value the dignity of everyindividual, enhance the development 
-of its human resources, guarantee full respect forhuman rights, and uphold the dignity of workers, employees, 
-applicants for employment,students or those undergoing training, instruction or education. Towards this end, 
-allforms of sexual harassment in the employment, education or training environment arehereby declared 
-unlawful.
+2. The above acts would impair the employee’s rights or privileges under existing labor laws; or
 
-SEC. 3. Work, Education or Training-related Sexual Harassment Defined. —Work, education or training-related 
-sexual harassment is committed by an employer,employee, manager, supervisor, agent of the employer, teacher, 
-instructor, professor,coach, trainor, or any other person who, having authority, influence or moral ascendancy
-over another in a work or training or education environment, demands, requests orotherwise requires any 
-sexual favor from the other, regardless of whether the demand,request or requirement for submission is 
-accepted by the object of said Act.
+3. The above acts would result in an intimidating, hostile or offensive environment for the employee.</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>The employer or head of office is required by the law to prevent the occurrence of sexual harassment acts and to 
+provide the procedures for the resolution, settlement or prosecution of sexual harassment. Towards this end, the 
+employer or head of office shall:
 
-(a) In a work-related or employment environment, sexual harassment is committed when:
+1. Promulgate appropriate rules and regulations in consultation with and jointly approved by the employees or student 
+or trainees, through their duly designated representatives. Said rules and regulations shall prescribe the procedures 
+for the investigation of sexual harassment cases and the administrative sanctions thereof.</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Education or Training-related Sexual Harassment is committed:
 
-(1) The sexual favor is made as a condition in the hiring or in theemployment, re-employment or continued 
-employment of saidindividual, or in granting said individual favorable compensation, terms, 
+1. Against one who is under the care, custody or supervision of the offender;
 
-conditions, promotions, or privileges; or the refusal to grant the sexualfavor results in limiting, segregating or 
-classifying the employee which inany way would discriminate, deprive or diminish employmentopportunities 
-or otherwise adversely affect said employee;
+2. Against one whose education, training, apprenticeship, or tutorship is entrusted to the offender;
 
-(2) The above acts wold impair the employee’s rights or privileges underexisting labor laws; or
+3. When the sexual favor is made a condition to the giving of a passing grade, or granting of honors and scholarships, 
+or the payment of a stipend, allowance or other benefits, privileges, or considerations; or
 
-(3) The above acts would result in an intimidating, hostile, or offensive environment for the employee.
+4. When the sexual advances result in an intimidating, hostile or offensive environment for the student, trainee or 
+apprentice.</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>The said rules and regulations should include guidelines on proper decorum 
+          in the workplace and educational or training institutions.
 
-(b) In an education or training environment, sexual harassment is committed:
 
-(1) Against one who is under the care, custody or supervision of the offender;
+Administrative sanctions shall not be a bar to prosecution in the proper courts 
+                            for unlawful acts of sexual harassment.</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>2. Create a Committee on Decorum and Investigation (CODI) of cases on sexual harassment. The committee shall 
+conduct meetings or as the case may be, with officers and employees, teachers, instructors, professors, coaches, 
+trainors and students or trainees to increase understanding and prevent incidents of sexual harassment. It shall 
+                       also conduct the investigation of alleged cases constituting sexual harassment.</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>In the case of work-related environment, the committee shall be composed of at least 
+one (1) representative each from the management, the union, if any, the employees from 
+                   the supervisory rank, and from the rank and file employees.
 
-(2) Against one whose education, training, apprenticeship or tutorship is entrusted to the offender;
 
-(3) When the sexual favor is made a condition to the giving of a passing
-grade, or the granting of honors and scholarships, or the payment of a
-stipend, allowance or other benefits, privileges, or considerations; or
-(4) When the sexual advances result in an intimidating, hostile or offensive
-environment for the student, trainee or apprentice.
-Any person who directs or induces another to commit any act of sexual
-harassment as herein defined, or who cooperates in the commission thereof by another
-without which it would not have been committed, shall also be held liable under this Act.
+In the case of the educational or training institution, the committee shall be composed of 
+at least one (1) representative from the administration, the trainors, teachers, instructors, 
+              professors or coaches and students and trainees, as the case may be.
 
-SEC. 4. Duty of the Employer or Head of Office in a Work-related, Education or
-Training Environment. — It shall be the duty of the employer or the head of the workrelated, educational or 
-training environment or institution, to prevent or deter the commission of acts of sexual harassment and to 
-provide the procedures for the resolution,settlement or prosecution of acts of sexual harassment. Towards 
-this end, the employer or head of office shall:
 
-(a) Promulgate appropriate rules and regulations in consultation with and jointly approved by the employees 
-or students or trainees, through their duly designatedrepresentatives, prescribing the procedure for the 
-investigation of sexual harassment cases and the administrative sanctions therefor.
+The employer or head of office, educational or training institution shall disseminate or 
+                   post a copy of RA 7877 tfor the information of all concerned.
+</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>The employer or head of office, educational or training institution will be held liable for the damages arising from acts 
+of sexual harassment if they are informed by the offended party of the occurrence of such acts, yet no action has been 
+undertaken.
 
-Administrative sanctions shall not be a bar to prosecution in the proper courts for unlawful acts of sexual 
-harassment. 
+</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Any person who violates the provisions of the law shall be penalized by imprisonment of not less than one (1) month 
+nor more than six (6) months, or a fine of not less than Ten Thousand Pesos (P10,000) nor more than Twenty Thousand 
+Pesos (P20,000), or both such fine and imprisonment at the discretion of the court.</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Civil Service Commission
+Constitution Hills, Batasang Pambansa Complex, Diliman, Quezon City
+Public Assistance Desk: (02) 8931-7913 / 8931-8187
+Para sa Taumbayan Hotline: (02) 8951-2575 / 8932-0111
 
-The said rules and regulations issued pursuant to this subsection (a) shall include, among others, guidelines 
-on proper decorum in the workplace and educational or training institutions.
 
-(b) Create a committee on decorum and investigation of cases on sexual harassment. The committee shall 
-conduct meetings, as the case may be, with officers and employees, teachers, instructors, professors, coaches,
-trainors and students or trainees toincrease understanding and prevent incidents of sexual harassment. It shall 
-also conduct the investigation of alleged cases constituting sexual harassment. In the case of a work-related 
-environment, the committee shall be composed of at least one (1) representative each from the management, 
-the union, if any, the employees from the supervisory rank, and from the rank and file employees. In the case 
-of the educational or training institution, the committee shall be composed of at least one (1) representative 
-from the administration, the trainors, teachers, instructors, professors or coaches and students or trainees, as 
-the case may be. The employer or head of office, educational or training institution shall disseminate or post 
-a copy of this Act for the information of all concerned.
+For private sector employees:
 
-SEC. 5. Liability of the Employer, Head of Office, Educational or Training Institution. — The employer or head 
-of office, educational or training institution shall be solidarily liable for damages arising from the acts of sexual 
-harassment committed in the employment, education or training environment if the employer or head of office,
-educational or training institution is informed of such acts by the offended party and no immediate action is taken 
-thereon. SEC. 6. Independent Action for Damages. — Nothing in this Act shall preclude the victim of work, 
-education or training-related sexual harassment from instituting a separate and independent action for damages 
-and other affirmative relief.
+Department of Labor and Employment
+Bureau of Working Conditions
+Intramuros, Manila
+Hotline: 1349 / (02) 1349 for calls outside Metro Manila
 
- SEC. 7. Penalties. — Any person who violates the provisions of this Act shall,upon conviction, be penalized by 
-imprisonment of not less than one (1) month nor morethan six (6) months, or a fine of not less than Ten thousand 
-pesos (P10,000) nor more than Twenty thousand pesos (P20,000), or both such fine and imprisonment at the
-discretion of the court. Any action arising from the violation of the provisions of this Act shall prescribein three 
-(3) years.
 
-SEC. 8. Separability Clause. — If any portion or provision of this Act is declared void or unconstitutional, the 
-remaining portions or provisions hereof shall not be affected by such declaration. 
+Philippine National Police
+Women and Children Protection Center
+Camp Crame, Quezon City
+Tel. No.: 410-3213 / 532-6690
+Aleng Pulis Text Hot-line: 0919-777-7377
 
-SEC. 9. Repealing Clause. — All laws, decrees, orders, rules and regulations, other issuances, or parts thereof 
-inconsistent with provisions of this Act are hereby repealed or modified accordingly.
+National Bureau of Investigation
+Anti-Violence Against Women and Children Desk
+Taft Avenue, Manila
+Tel. Nos.: 523-8231 to 38 / 525-6028
 
-SEC. 10. Effectivity Clause. — This Act shall take effect fifteen (15) days after its complete publication in at 
-least two (2) national newspapers of general circulation. 
 
+DOJ – Public Attorney’s Office (DOJ-PAO)
+Tel. Nos.: 929-9010 / 929-9436 to 37 loc. 106 / 107
 </value>
   </data>
 </root>

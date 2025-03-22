@@ -117,127 +117,54 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Republic Act No. 8353             
+  <data name="label12.Text" xml:space="preserve">
+    <value>- Through force, threat, or intimidation
+- When the victim is deprived of reason or is unconscious
+- Through fraudulent machination or grave abuse of authority; and
+- When the victim is under twelve (12) years of age or is demented, even if none of the above circumstances are present.</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>By any person who, under any of the above circumstances, commits an act of sexual 
+assault by inserting his penis into another person’s mouth or anal orifice, or any 
+       instrument or object, into the genital or oral orifice of another person.</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Any man or woman may be held liable for rape.
 
-AN ACT EXPANDING THE DEFINITION OF THE CRIME OF RAPE, RECLASSIFYING THE SAME AS A CRIME 
-AGAINST PERSONS, AMENDING FOR THE PURPOSE ACT NO. 3815, AS AMENDED, OTHERWISE KNOWN 
-AS THE REVISED PENAL CODE, AND FOR OTHER PURPOSES
+It is possible that a man may rape his own wife, an act deemed as “marital rape.” The penalty for rape in general may 
+apply on the offender who commits marital rape.</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>- Advise the victim to seek the help of a counselor or a therapist who is an expert in handling cases of sexual abuse.
 
-Be it enacted by the Senate and House of Representatives of the Philippines in Congress assembled:
+- Assist her in securing a safe and temporary shelter if she needs to move to another place for security reasons. She 
+  can be referred to a crisis center or any government agency that offers temporary shelter.
 
-Section 1. Short Title. - This Act shall be known as "The Anti-Rape Law of 1997."
+- Make sure that the evidence is safe and intact. This would help should the victim decides to file a case.
 
-Section 2. Rape as a Crime Against Persons. - The crime of rape shall hereafter be classified as a Crime 
-Against Persons under Title Eight of Act No. 3815, as amended, otherwise known as the Revised Penal Code. 
-Accordingly, there shall be incorporated into Title Eight of the same Code a new chapter to be known as 
-Chapter Three on Rape, to read as follows:
+- Secure a Medico-legal certificate from a Medico-legal officer. Absence of bodily injuries does not mean that rape
+   did not occur or that the case may not be pursued anymore.
 
-"Chapter Three
-"Rape
+- Support the victim along the way when she decides to file a case.
 
-"Article 266-A. Rape: When And How Committed. - Rape is committed:
+- Ensure that she is prepared in all aspects. Make her understand the overall picture of the case. Inform her that it is 
+   possible that doctors, police, lawyers and judges would not be sensitive to her situation and experience.
 
-"1) By a man who shall have carnal knowledge of a woman under any of the following circumstances:
+- Help the victim choose the lawyer who understands her most.
 
-"a) Through force, threat, or intimidation;
+- Coordinate with people who can assist or support her all throughout.</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>The penalty varies depending on the act itself and the circumstances surrounding it.
 
-"b) When the offended party is deprived of reason or otherwise unconscious;
+- Reclusion Perpetua (Imprisonment from 20 to 40 years) is imposed on the offender if rape is committed through 
+sexual intercourse.
 
-"c) By means of fraudulent machination or grave abuse of authority; and
+- Prision Mayor (Imprisonment from 6 to 12 years) is imposed on the offender if rape was committed through oral or 
+anal sex or through the use of any object or instrument that was inserted into the mouth or anal orifice of the woman 
+or a man.
 
-"d) When the offended party is under twelve (12) years of age or is demented, even though none of the 
-circumstances mentioned above be present.
-
-"2) By any person who, under any of the circumstances mentioned in paragraph 1 hereof, shall commit an act 
-of sexual assault by inserting his penis into another person's mouth or anal orifice, or any instrument or object, 
-into the genital or anal orifice of another person.
-
-"Article 266-B. Penalty. - Rape under paragraph 1 of the next preceding article shall be punished by reclusion 
-perpetua.
-
-"Whenever the rape is committed with the use of a deadly weapon or by two or more persons, the penalty shall 
-be reclusion perpetua to death.
-
-"When by reason or on the occasion of the rape, the victim has become insane, the penalty shall become 
-reclusion perpetua to death.
-
-"When the rape is attempted and a homicide is committed by reason or on the occasion thereof, the penalty 
-shall be reclusion perpetua to death.
-
-"When by reason or on the occasion ofthe rape, homicide is committed, the penalty shall be death.
-
-"The death penalty shall also be imposed if the crime of rape is committed with any of the following 
-aggravating/qualifying circumstances:
-
-"l) When the victim is under eighteen (18) years of age and the offender is a parent, ascendant, step-parent,
- guardian, relative by consanguinity or affinity within the third civil degree, or the common-law spouse of the 
-parent of the victim;
-
-"2) When the victim is under the custody of the police or military authorities or any law enforcement or penal 
-institution;
-
-"3) When the rape is committed in full view of the spouse, parent, any of the children or other relatives within 
-the third civil degree of consanguinity;
-
-"4) When the victim is a religious engaged in legitimate religious vocation or calling and is personally known 
-to be such by the offender before or at the time of the commission of the crime;
-
-"5) When the victim is a child below seven (7) years old;
-
-"6) When the offender knows that he is afflicted with the Human Immuno-Deficiency Virus (HIV)/Acquired 
-Immune Deficiency Syndrome (AIDS) or any other sexually transmissible disease and the virus or disease is 
-transmitted to the victim;
-
-"7) When committed by any member of the Armed Forces of the Philippines or para-military units thereof or 
-the Philippine National Police or any law enforcement agency or penal institution, when the offender took 
-advantage of his position to facilitate the commission of the crime;
-
-"8) When by reason or on the occasion of the rape, the victim has suffered permanent physical mutilation 
-or disability;
-
-"9) When the offender knew of the pregnancy of the offended party at the time of the commission of the 
-crime; and
-
-"10) When the offender knew of the mental disability, emotional disorder and/or physical handicap of the 
-offended party at the time of the commission of the crime.
-
-"Rape under paragraph 2 of the next preceding article shall be punished by prision mayor.
-
-"Whenever the rape is committed with the use of a deadly weapon or by two or more persons, the penalty 
-shall be prision mayor to reclusion temporal.
-
-"When by reason or on the occasion of the rape, the victim has become insane, the penalty shall be reclusion 
-temporal.
-
-"When the rape is attempted and a homicide is committed by reason or on the occasion thereof, the penalty shall 
-be reclusion temporal to reclusion perpetua.
-
-"When by reason or on the occasion ofthe rape, homicide is committed, the penalty shall be reclusion perpetua.
-
-"Reclusion temporal shall be imposed if the rape is committed with any of the ten aggravating/ qualifying 
-circumstances mentioned in this article.
-
-"Article 266-C. Effect of Pardon. - The subsequent valid marriage between the offended party shall extinguish 
-the criminal action or the penalty imposed.
-
-"In case it is the legal husband who is the offender, the subsequent forgiveness by the wife as the offended 
-party shall extinguish the criminal action or the penalty: Provided, That the crime shall not be extinguished or 
-the penalty shall not be abated if the marriage is void ab initio.
-
-"Article 266-D. Presumptions. - Any physical overt act manifesting resistance against the act of rape in any 
-degree from the offended party, or where the offended party is so situated as to render her/him incapable 
-of giving valid consent, may be accepted as evidence in the prosecution of the acts punished under Article 
-266-A."
-
-Section 3. Separability Clause. - If any part, Sec., or provision of this Act is declared invalid or unconstitutional, 
-the other parts thereof not affected thereby shall remain valid.
-
-Section 4. Repealing Clause. - Article 336 of Act No. 3815, as amended, and all laws, acts, presidential decrees, 
-executive orders, administrative orders, rules and regulations inconsistent with or contrary to the provisions of 
-this Act are deemedamended, modified or repealed accordingly.
-
-Section 5. Effectivity. - This Act shall take effect fifteen (15) days after completion of its publication in two (2) 
-newspapers of general circulation.</value>
+This may also be elevated to Reclusion Temporal (Imprisonment from 12 to 20 years) or Reclusion Perpetua 
+depending on the circumstances surrounding the crime.</value>
   </data>
 </root>
