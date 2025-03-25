@@ -16,5 +16,10 @@ namespace VAWCSanPedroHestia
         {
             InitializeComponent();
         }
+
+        private void RA_8353_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
