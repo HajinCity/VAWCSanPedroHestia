@@ -150,6 +150,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAccountDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAccountDetails.Designer.cs">
+      <DependentUpon>AddAccountDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -262,6 +268,24 @@
     <Compile Include="RA 9262.Designer.cs">
       <DependentUpon>RA 9262.cs</DependentUpon>
     </Compile>
+    <Compile Include="SFCaselist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFCaselist.Designer.cs">
+      <DependentUpon>SFCaselist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFManagecaselistcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFManagecaselistcs.Designer.cs">
+      <DependentUpon>SFManagecaselistcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SFsystemManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SFsystemManagement.Designer.cs">
+      <DependentUpon>SFsystemManagement.cs</DependentUpon>
+    </Compile>
     <Compile Include="System Management.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +298,15 @@
     <Compile Include="NewForm\SystemManage.Designer.cs">
       <DependentUpon>SystemManage.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserSecurityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserSecurityForm.Designer.cs">
+      <DependentUpon>UserSecurityForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddAccountDetails.resx">
+      <DependentUpon>AddAccountDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -338,11 +371,23 @@
     <EmbeddedResource Include="RA 9262.resx">
       <DependentUpon>RA 9262.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SFCaselist.resx">
+      <DependentUpon>SFCaselist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFManagecaselistcs.resx">
+      <DependentUpon>SFManagecaselistcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SFsystemManagement.resx">
+      <DependentUpon>SFsystemManagement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="System Management.resx">
       <DependentUpon>System Management.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\SystemManage.resx">
       <DependentUpon>SystemManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserSecurityForm.resx">
+      <DependentUpon>UserSecurityForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -431,6 +476,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\reject.png" />
+    <None Include="Resources\cross.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\Rectangle 8.png" />
     <None Include="Resources\security-official.png" />
     <None Include="Resources\sanpedro6.png" />
     <None Include="Resources\sanpedro5.png" />

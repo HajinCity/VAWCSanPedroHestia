@@ -102,6 +102,7 @@
             // 
             // Changpassbtn
             // 
+            this.Changpassbtn.BackColor = System.Drawing.Color.Transparent;
             this.Changpassbtn.BackgroundImage = global::VAWCSanPedroHestia.Properties.Resources.rect9;
             this.Changpassbtn.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.Changpassbtn.Location = new System.Drawing.Point(303, 417);
