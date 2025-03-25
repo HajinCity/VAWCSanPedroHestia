@@ -118,14 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>[REPUBLIC ACT NO. 10364]
-
-AN ACT EXPANDING REPUBLIC ACT NO. 9208, ENTITLED “AN ACT TO INSTITUTE POLICIES TO ELIMINATE 
-TRAFFICKING IN PERSONS ESPECIALLY WOMEN AND CHILDREN, ESTABLISHING THE NECESSARY 
-INSTITUTIONAL MECHANISMS FOR THE PROTECTION AND SUPPORT OF TRAFFICKED PERSONS, 
-PROVIDING PENALTIES FOR ITS VIOLATIONS AND FOR OTHER PURPOSES”
-
-Be it enacted by the Senate and House of Representatives of the Philippines in Congress assembled:
+    <value>Be it enacted by the Senate and House of Representatives of the Philippines in Congress assembled:
 
 SECTION 1. Short Title. – This Act shall be known as the “Expanded Anti-Trafficking in Persons Act of 2012”.
 
@@ -791,7 +784,8 @@ objectives, policies, plans and programs;
 
 SEC. 23. A new Section 26-A is hereby inserted into Republic Act No. 9208, to read as follows:
 
-“SEC. 26-A. Extra-Territorial Jurisdiction. – The State shall exercise jurisdiction over any act defined and 
+“SEC. 26-
+A. Extra-Territorial Jurisdiction. – The State shall exercise jurisdiction over any act defined and 
 penalized under this Act, even if committed outside the Philippines and whether or not such act or acts 
 constitute an offense at the place of commission, the crime being a continuing offense, having been 
 commenced in the Philippines and other elements having been committed in another country, if the 
@@ -810,31 +804,50 @@ constituting such offense, except upon the approval of the Secretary of Justice.
 “The government may surrender or extradite persons accused of trafficking in the Philippines to the appropriate 
 international court if any, or to another State pursuant to the applicable extradition laws and treaties.”
 
-SEC. 24. Section 28 of Republic Act No. 9208 is hereby amended, to read as follows:
+SEC. 24. 
+Section 28 of Republic Act No. 9208 is hereby amended, to read as follows:
 
-“SEC. 28. Funding. – The amount necessary to implement the provisions of this Act shall be charged against the 
+“SEC. 28. 
+Funding. – The amount necessary to implement the provisions of this Act shall be charged against the 
 current year’s appropriations of the Inter-Agency Council Against Trafficking under the budget of the DOJ and 
 the appropriations of the other concerned departments. Thereafter, such sums as may be necessary for the 
 continued implementation of this Act shall be included in the annual General Appropriations Act.”
 
-SEC. 25. A new Section 28-A is hereby inserted into Republic Act No. 9208, to read as follows:
+SEC. 25. 
+A new Section 28-A is hereby inserted into Republic Act No. 9208, to read as follows:
 
-“SEC. 28-A. Additional Funds for the Council. – The amount collected from every penalty, fine or asset derived 
+“SEC. 28-A. 
+Additional Funds for the Council. – The amount collected from every penalty, fine or asset derived 
 from any violation of this Act shall be earmarked as additional funds for the use of the Council. The fund may 
 be augmented by grants, donations and endowment from various sources, domestic or foreign, for purposes 
 related to their functions, subject to the existing accepted rules and regulations of the Commission on Audit.”
 
-SEC. 26. Section 32 of Republic Act No. 9208 of the Repealing Clause is hereby amended to read as follows:
+SEC. 26. 
+Section 32 of Republic Act No. 9208 of the Repealing Clause is hereby amended to read as follows:
 
-“SEC. 32. Repealing Clause. – Article 202 of the Revised Penal Code, as amended, and all laws, acts, presidential 
+“SEC. 32. 
+Repealing Clause. – Article 202 of the Revised Penal Code, as amended, and all laws, acts, presidential 
 decrees, executive orders, administrative orders, rules and regulations inconsistent with or contrary to the 
 provisions of this Act are deemed amended, modified or repealed accordingly: Provided, That this Act shall not 
 in any way amend or repeal the provisions of Republic Act No. 7610, otherwise known as the ‘Special Protection 
 of Child Against Child Abuse, Exploitation and Discrimination Act.'”
 
-SEC. 27. Section 33 of Republic Act No. 9208 is hereby amended to read as follows:
+SEC. 27. 
+Section 33 of Republic Act No. 9208 is hereby amended to read as follows:
 
-“SEC. 33. Effectivity. – This Act shall take effect fifteen (15) days following its complete publication in at least 
+“SEC. 33. 
+Effectivity. – This Act shall take effect fifteen (15) days following its complete publication in at least 
 two (2) newspapers of general circulation.”</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>                                   [REPUBLIC ACT NO. 10364]
+
+AN ACT EXPANDING REPUBLIC ACT NO. 9208, ENTITLED “AN ACT 
+TO INSTITUTE POLICIES TO ELIMINATE TRAFFICKING IN PERSONS
+ESPECIALLY WOMEN AND CHILDREN, ESTABLISHING THE 
+NECESSARY INSTITUTIONAL MECHANISMS FOR THE PROTECTION 
+AND SUPPORT OF TRAFFICKED PERSONS, PROVIDING PENALTIES 
+           FOR ITS VIOLATIONS AND FOR OTHER PURPOSES”
+</value>
   </data>
 </root>

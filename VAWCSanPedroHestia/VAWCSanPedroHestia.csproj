@@ -150,6 +150,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
     <Compile Include="intakeformUI.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,6 +268,15 @@
     <Compile Include="System Management.Designer.cs">
       <DependentUpon>System Management.cs</DependentUpon>
     </Compile>
+    <Compile Include="SystemManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemManage.Designer.cs">
+      <DependentUpon>SystemManage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Intake Form.resx">
       <DependentUpon>Intake Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -325,6 +340,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="System Management.resx">
       <DependentUpon>System Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage.resx">
+      <DependentUpon>SystemManage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -413,6 +431,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\security-official.png" />
     <None Include="Resources\sanpedro6.png" />
     <None Include="Resources\sanpedro5.png" />
     <None Include="Resources\sanpedro4.png" />
