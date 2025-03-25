@@ -103,7 +103,7 @@ namespace VAWCSanPedroHestia
 
         private void management_btn_Click(object sender, EventArgs e)
         {
-
+            openingForm(new SystemManage());
         }
     }
 }

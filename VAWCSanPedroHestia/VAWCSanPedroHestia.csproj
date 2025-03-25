@@ -268,10 +268,10 @@
     <Compile Include="System Management.Designer.cs">
       <DependentUpon>System Management.cs</DependentUpon>
     </Compile>
-    <Compile Include="SystemManage.cs">
+    <Compile Include="NewForm\SystemManage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SystemManage.Designer.cs">
+    <Compile Include="NewForm\SystemManage.Designer.cs">
       <DependentUpon>SystemManage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="ChangePass.resx">
@@ -341,7 +341,7 @@
     <EmbeddedResource Include="System Management.resx">
       <DependentUpon>System Management.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SystemManage.resx">
+    <EmbeddedResource Include="NewForm\SystemManage.resx">
       <DependentUpon>SystemManage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
