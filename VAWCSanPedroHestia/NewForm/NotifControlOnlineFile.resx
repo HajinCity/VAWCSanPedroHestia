@@ -117,38 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="sanpedro3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sanpedro6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rect3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rect3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sanpedro5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sanpedro2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sanpedro1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sanpedro4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rect9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rect9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="security-official" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\security-official.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="rect6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rect6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sanpedro14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sanpedro14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
 </root>

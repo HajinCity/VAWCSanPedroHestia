@@ -206,6 +206,12 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewForm\NotifControlOnlineFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewForm\NotifControlOnlineFile.Designer.cs">
+      <DependentUpon>NotifControlOnlineFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewForm\QuarterlyAccomplishmentReport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -309,6 +315,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\ManageCaseListIU.resx">
       <DependentUpon>ManageCaseListIU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\NotifControlOnlineFile.resx">
+      <DependentUpon>NotifControlOnlineFile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\QuarterlyAccomplishmentReport.resx">
       <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
@@ -431,6 +440,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\sanpedro14.png" />
     <None Include="Resources\security-official.png" />
     <None Include="Resources\sanpedro6.png" />
     <None Include="Resources\sanpedro5.png" />
