@@ -236,6 +236,12 @@
     <Compile Include="Intake Form.Designer.cs">
       <DependentUpon>Intake Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewForm\ViewComplaint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewForm\ViewComplaint.Designer.cs">
+      <DependentUpon>ViewComplaint.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RA 10364.cs">
@@ -321,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\QuarterlyAccomplishmentReport.resx">
       <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\ViewComplaint.resx">
+      <DependentUpon>ViewComplaint.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -440,6 +449,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\sanpedro141.png" />
     <None Include="Resources\sanpedro14.png" />
     <None Include="Resources\security-official.png" />
     <None Include="Resources\sanpedro6.png" />

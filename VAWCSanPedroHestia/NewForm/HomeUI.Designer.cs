@@ -48,6 +48,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.RA7877_Button = new System.Windows.Forms.Button();
             this.RA9262_Button = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,8 +56,7 @@
             this.RA7610_Button = new System.Windows.Forms.Button();
             this.RA9208_Button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.notifPanel = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -286,8 +286,8 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.notifPanel);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.panel7);
@@ -300,6 +300,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1258, 455);
             this.panel3.TabIndex = 14;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(760, 22);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(265, 37);
+            this.label17.TabIndex = 9;
+            this.label17.Text = "NOTIFICATIONS";
             // 
             // RA7877_Button
             // 
@@ -393,23 +403,13 @@
             this.panel1.Size = new System.Drawing.Size(1189, 5279);
             this.panel1.TabIndex = 16;
             // 
-            // notifPanel
+            // flowLayoutPanel1
             // 
-            this.notifPanel.AutoScroll = true;
-            this.notifPanel.Location = new System.Drawing.Point(578, 109);
-            this.notifPanel.Name = "notifPanel";
-            this.notifPanel.Size = new System.Drawing.Size(638, 332);
-            this.notifPanel.TabIndex = 8;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(776, 22);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(265, 37);
-            this.label17.TabIndex = 9;
-            this.label17.Text = "NOTIFICATIONS";
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(552, 112);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(661, 329);
+            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // HomeUI
             // 
@@ -475,6 +475,6 @@
         private System.Windows.Forms.Button RA9208_Button;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Panel notifPanel;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
