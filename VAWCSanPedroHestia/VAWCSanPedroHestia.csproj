@@ -168,6 +168,12 @@
     <Compile Include="Intake_FormUI.Designer.cs">
       <DependentUpon>Intake_FormUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="NewForm\CallSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\CallSystem.Designer.cs">
+      <DependentUpon>CallSystem.cs</DependentUpon>
+    </Compile>
     <Compile Include="NewForm\Case List.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -297,6 +303,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Intake_FormUI.resx">
       <DependentUpon>Intake_FormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\CallSystem.resx">
+      <DependentUpon>CallSystem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\Case List.resx">
       <DependentUpon>Case List.cs</DependentUpon>
