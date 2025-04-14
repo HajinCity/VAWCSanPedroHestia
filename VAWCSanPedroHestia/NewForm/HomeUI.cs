@@ -19,6 +19,7 @@ namespace VAWCSanPedroHestia
         public HomeUI()
         {
             InitializeComponent();
+            RA9262_Button_Click(null, EventArgs.Empty);
         }
 
         // Load notifications when the form loads
@@ -92,27 +93,41 @@ namespace VAWCSanPedroHestia
 
         private void RA9262_Button_Click(object sender, EventArgs e)
         {
-            // Your code here
+            
+            panel1.Controls.Clear(); 
+            RA_9262 uc = new RA_9262();
+            uc.Dock = DockStyle.Fill; 
+            panel1.Controls.Add(uc);
         }
 
         private void RA8353_Button_Click(object sender, EventArgs e)
         {
             // Your code here
+            panel1.Controls.Clear(); 
+            RA_8353 uc = new RA_8353();
+            uc.Dock = DockStyle.Fill;
+            panel1.Controls.Add(uc);
         }
 
         private void RA7877_Button_Click(object sender, EventArgs e)
         {
-            // Your code here
+            panel1.Controls.Clear(); 
+            RA_7877 uc = new RA_7877(); 
+            uc.Dock = DockStyle.Fill;
+            panel1.Controls.Add(uc); 
         }
 
         private void RA7610_Button_Click(object sender, EventArgs e)
         {
-            // Your code here
+           
         }
 
         private void RA9208_Button_Click(object sender, EventArgs e)
         {
-            // Your code here
+            panel1.Controls.Clear();
+            RA_9208 uc = new RA_9208(); 
+            uc.Dock = DockStyle.Fill; 
+            panel1.Controls.Add(uc);
         }
     }
 }

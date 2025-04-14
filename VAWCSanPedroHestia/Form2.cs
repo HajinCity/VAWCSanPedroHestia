@@ -16,6 +16,7 @@ namespace VAWCSanPedroHestia
             InitializeComponent();
             loggedInUsername = username;
             LoadUserData();
+            home_btn_Click(null, EventArgs.Empty);
         }
 
         private async void LoadUserData()

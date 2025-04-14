@@ -48,6 +48,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.label17 = new System.Windows.Forms.Label();
             this.RA7877_Button = new System.Windows.Forms.Button();
             this.RA9262_Button = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.RA7610_Button = new System.Windows.Forms.Button();
             this.RA9208_Button = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -301,6 +301,14 @@
             this.panel3.Size = new System.Drawing.Size(1258, 455);
             this.panel3.TabIndex = 14;
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(552, 112);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(661, 329);
+            this.flowLayoutPanel1.TabIndex = 10;
+            // 
             // label17
             // 
             this.label17.AutoSize = true;
@@ -402,14 +410,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1189, 5279);
             this.panel1.TabIndex = 16;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(552, 112);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(661, 329);
-            this.flowLayoutPanel1.TabIndex = 10;
             // 
             // HomeUI
             // 
