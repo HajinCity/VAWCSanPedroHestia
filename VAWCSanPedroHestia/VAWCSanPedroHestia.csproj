@@ -242,11 +242,11 @@
     <Compile Include="Intake Form.Designer.cs">
       <DependentUpon>Intake Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewForm\ViewComplaint.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="NewForm\ViewComplaintForm.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewForm\ViewComplaint.Designer.cs">
-      <DependentUpon>ViewComplaint.cs</DependentUpon>
+    <Compile Include="NewForm\ViewComplaintForm.Designer.cs">
+      <DependentUpon>ViewComplaintForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -337,8 +337,8 @@
     <EmbeddedResource Include="NewForm\QuarterlyAccomplishmentReport.resx">
       <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewForm\ViewComplaint.resx">
-      <DependentUpon>ViewComplaint.cs</DependentUpon>
+    <EmbeddedResource Include="NewForm\ViewComplaintForm.resx">
+      <DependentUpon>ViewComplaintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

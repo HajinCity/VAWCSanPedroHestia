@@ -155,71 +155,87 @@ namespace VAWCSanPedroHestia
                 DocumentReference caseDoc = FirebaseInitialization.Database.Collection("caselist").Document(caseId);
 
                 Dictionary<string, object> updatedData = new Dictionary<string, object>
+        {
+            {
+                "Complainant", new Dictionary<string, object>
                 {
-                    { "Complainant", new Dictionary<string, object>
+                    { "LastName", UcompLstName.Text },
+                    { "FirstName", UcompFstName.Text },
+                    { "MiddleName", UcompMddlName.Text },
+                    { "Sex", UcmbxSex.Text },
+                    { "Age", UcompAge.Text },
+                    { "Religion", UcompReligion.Text },
+                    { "CellNumber", UcompCellNo.Text },
+                    { "CivilStatus", UcompCivilS.Text },
+                    {
+                        "Address", new Dictionary<string, object>
                         {
-                            { "LastName", UcompLstName.Text },
-                            { "FirstName", UcompFstName.Text },
-                            { "MiddleName", UcompMddlName.Text },
-                            { "Sex", UcmbxSex.Text },
-                            { "Age", UcompAge.Text },
-                            { "Religion", UcompReligion.Text },
-                            { "CellNumber", UcompCellNo.Text },
-                            { "CivilStatus", UcompCivilS.Text },
                             { "Purok", UcompPurok.Text },
                             { "Barangay", UcompBarangay.Text },
                             { "Municipality", UcompMunicipal.Text },
                             { "Province", UcompProvince.Text },
                             { "Region", UcompRegion.Text }
                         }
-                    },
-                    { "Respondent", new Dictionary<string, object>
+                    }
+                }
+            },
+            {
+                "Respondent", new Dictionary<string, object>
+                {
+                    { "LastName", UpRspLstName.Text },
+                    { "FirstName", UpRspFrstName.Text },
+                    { "MiddleName", UpRspMiddleName.Text },
+                    { "Alias", UpRspAllias.Text },
+                    { "Sex", UpRspSex.Text },
+                    { "Age", UrAge.Text },
+                    { "Religion", UpRspReligion.Text },
+                    { "CellNumber", UpRspCellNo.Text },
+                    { "CivilStatus", UpRspCivilS.Text },
+                    {
+                        "Address", new Dictionary<string, object>
                         {
-                            { "LastName", UpRspLstName.Text },
-                            { "FirstName", UpRspFrstName.Text },
-                            { "MiddleName", UpRspMiddleName.Text },
-                            { "Alias", UpRspAllias.Text },
-                            { "Sex", UpRspSex.Text },
-                            { "Age", UrAge.Text },
-                            { "Religion", UpRspReligion.Text },
-                            { "CellNumber", UpRspCellNo.Text },
-                            { "CivilStatus", UpRspCivilS.Text },
                             { "Purok", UpRspPurok.Text },
                             { "Barangay", UpRspBarangay.Text },
                             { "Municipality", UpRspMunicipal.Text },
                             { "Province", UpRspProvince.Text },
-                            { "Region", UpRspRegion.Text },
-                            { "RelationshipToComplainant", UpRspRelationshiptoC.Text }
+                            { "Region", UpRspRegion.Text }
                         }
                     },
-                    { "CaseDetails", new Dictionary<string, object>
-                        {
-                            { "VAWCCase", UpRAVio.Text },
-                            { "SubCase", UpRASubVio.Text },
-                            { "CaseStatus", UpCaseStatus.Text },
-                            { "ReferredTo", UpRefTo.Text },
-                            { "IncidentDate", UpIncidentDate.Text },
-                            { "IncidentDescription", Updesciption.Text },
-                            { "IncidentPlace", UpPlaceofIncident.Text },
-                            { "IncidentPurok", UpPurok.Text },
-                            { "IncidentBarangay", UpBarangay.Text },
-                            { "IncidentMunicipality", UpMunicipal.Text },
-                            { "IncidentProvince", UpProvince.Text },
-                            { "IncidentRegion", UpRegion.Text }
-                        }
-                    }
-                };
+                    { "RelationshipToComplainant", UpRspRelationshiptoC.Text }
+                }
+            },
+            {
+                "CaseDetails", new Dictionary<string, object>
+                {
+                    { "VAWCCase", UpRAVio.Text },
+                    { "SubCase", UpRASubVio.Text },
+                    { "CaseStatus", UpCaseStatus.Text },
+                    { "ReferredTo", UpRefTo.Text },
+                    { "IncidentDate", UpIncidentDate.Text },
+                    { "IncidentDescription", Updesciption.Text },
+                    { "IncidentPlace", UpPlaceofIncident.Text },
+                    { "IncidentPurok", UpPurok.Text },
+                    { "IncidentBarangay", UpBarangay.Text },
+                    { "IncidentMunicipality", UpMunicipal.Text },
+                    { "IncidentProvince", UpProvince.Text },
+                    { "IncidentRegion", UpRegion.Text }
+                }
+            }
+        };
 
                 await caseDoc.SetAsync(updatedData, SetOptions.MergeAll);
 
                 MessageBox.Show("Case updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                ClearForm(this);
+                ClearForm(this); // You can comment this if you want to review before clearing
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Error updating case: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+
     }
 }

@@ -11,11 +11,13 @@ namespace VAWCSanPedroHestia
     public partial class Case_List : Form
     {
         private List<object[]> caseDataList = new List<object[]>(); // Stores all cases before filtering
+        private List<object[]> onlineCaseList = new List<object[]>(); // Stores online cases data
 
         public Case_List()
         {
             InitializeComponent();
             LoadCaseList(); // ✅ Load data when form opens
+            LoadOnlineCaseList(); // Load online cases data
             searchtxtb.TextChanged += Searchtxtb_TextChanged; // ✅ Attach event to search box
         }
 
@@ -60,6 +62,62 @@ namespace VAWCSanPedroHestia
             }
         }
 
+        private async void LoadOnlineCaseList()
+        {
+            try
+            {
+                // Reference the onlinecaselist collection
+                CollectionReference onlineCaseCollection = FirebaseInitialization.Database.Collection("onlinecaselist");
+                QuerySnapshot snapshot = await onlineCaseCollection.GetSnapshotAsync();
+
+                dataGridView2.Rows.Clear();
+                onlineCaseList.Clear();
+
+                // Loop through each document in the collection
+                foreach (DocumentSnapshot document in snapshot.Documents)
+                {
+                    var data = document.ToDictionary();
+
+                    // Extract fields from each document
+                    string caseID = GetData(data, "", "caseID");
+                    string firstName = GetData(data, "", "firstName");
+                    string lastName = GetData(data, "", "lastName");
+                    string middleName = GetData(data, "", "middleName");
+                    string contact = GetData(data, "", "contact");
+                    string purok = GetData(data, "", "purok");
+                    string sex = GetData(data, "", "sex");
+                    string complaintDetails = GetData(data, "", "complaintDetails");
+                    string complaintDate = GetData(data, "", "complaintDate");
+                    string city = GetData(data, "", "city");
+                    string respFirstName = GetData(data, "", "respFirstName");
+                    string respLastName = GetData(data, "", "respLastName");
+                    string respMiddleName = GetData(data, "", "resplMiddleName");
+                    string relationship = GetData(data, "", "relationship");
+
+                    // Create row data
+                    object[] rowData = {
+                caseID,
+                $"{lastName}, {firstName} {middleName}".Trim(),
+                contact,
+                purok,
+                sex,
+                complaintDetails,
+                complaintDate,
+                city,
+                $"{respLastName}, {respFirstName} {respMiddleName}".Trim(),
+                relationship
+            };
+
+                    onlineCaseList.Add(rowData);
+                    dataGridView2.Rows.Add(rowData);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading online cases: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private void Searchtxtb_TextChanged(object sender, EventArgs e)
         {
             string searchText = searchtxtb.Text.Trim().ToLower();
@@ -92,6 +150,12 @@ namespace VAWCSanPedroHestia
 
         private string GetData(Dictionary<string, object> data, string parentKey, string childKey)
         {
+            if (string.IsNullOrEmpty(parentKey))
+            {
+                // Directly access the child key if no parent key is specified
+                return data.ContainsKey(childKey) ? data[childKey]?.ToString() ?? "N/A" : "N/A";
+            }
+
             if (data.ContainsKey(parentKey) && data[parentKey] is Dictionary<string, object> parentDict && parentDict.ContainsKey(childKey))
             {
                 return parentDict[childKey]?.ToString() ?? "N/A";
@@ -114,7 +178,12 @@ namespace VAWCSanPedroHestia
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Your existing code here
+        }
 
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Your existing code here
         }
     }
 }

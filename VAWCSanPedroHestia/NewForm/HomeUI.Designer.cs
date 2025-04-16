@@ -298,7 +298,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1258, 455);
+            this.panel3.Size = new System.Drawing.Size(1275, 455);
             this.panel3.TabIndex = 14;
             // 
             // flowLayoutPanel1
@@ -417,7 +417,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1275, 718);
+            this.ClientSize = new System.Drawing.Size(1292, 718);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.RA7877_Button);
             this.Controls.Add(this.RA9208_Button);
