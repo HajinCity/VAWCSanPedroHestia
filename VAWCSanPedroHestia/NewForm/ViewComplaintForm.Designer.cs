@@ -34,7 +34,7 @@
             this.RtoC = new System.Windows.Forms.Label();
             this.RespFullName = new System.Windows.Forms.Label();
             this.CompContact = new System.Windows.Forms.Label();
-            this.CompCivilStatus = new System.Windows.Forms.Label();
+            this.CompSex = new System.Windows.Forms.Label();
             this.CompAddress = new System.Windows.Forms.Label();
             this.CompFullName = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -78,6 +78,10 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.ComplaintID = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.IncidentDate = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.IncidentAddress = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,7 +112,7 @@
             // ComplaintDate
             // 
             this.ComplaintDate.AutoSize = true;
-            this.ComplaintDate.Location = new System.Drawing.Point(535, 518);
+            this.ComplaintDate.Location = new System.Drawing.Point(294, 518);
             this.ComplaintDate.Name = "ComplaintDate";
             this.ComplaintDate.Size = new System.Drawing.Size(82, 13);
             this.ComplaintDate.TabIndex = 42;
@@ -141,14 +145,14 @@
             this.CompContact.TabIndex = 39;
             this.CompContact.Text = "Name:";
             // 
-            // CompCivilStatus
+            // CompSex
             // 
-            this.CompCivilStatus.AutoSize = true;
-            this.CompCivilStatus.Location = new System.Drawing.Point(52, 270);
-            this.CompCivilStatus.Name = "CompCivilStatus";
-            this.CompCivilStatus.Size = new System.Drawing.Size(38, 13);
-            this.CompCivilStatus.TabIndex = 38;
-            this.CompCivilStatus.Text = "Name:";
+            this.CompSex.AutoSize = true;
+            this.CompSex.Location = new System.Drawing.Point(52, 270);
+            this.CompSex.Name = "CompSex";
+            this.CompSex.Size = new System.Drawing.Size(38, 13);
+            this.CompSex.TabIndex = 38;
+            this.CompSex.Text = "Name:";
             // 
             // CompAddress
             // 
@@ -195,7 +199,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(435, 518);
+            this.label11.Location = new System.Drawing.Point(206, 518);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 13);
             this.label11.TabIndex = 33;
@@ -532,7 +536,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(100, 518);
+            this.label17.Location = new System.Drawing.Point(18, 518);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(48, 13);
             this.label17.TabIndex = 71;
@@ -541,11 +545,47 @@
             // ComplaintID
             // 
             this.ComplaintID.AutoSize = true;
-            this.ComplaintID.Location = new System.Drawing.Point(154, 518);
+            this.ComplaintID.Location = new System.Drawing.Point(72, 518);
             this.ComplaintID.Name = "ComplaintID";
             this.ComplaintID.Size = new System.Drawing.Size(82, 13);
             this.ComplaintID.TabIndex = 72;
             this.ComplaintID.Text = "ComplaintDate :";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(400, 518);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(77, 13);
+            this.label19.TabIndex = 73;
+            this.label19.Text = "Incident Date :";
+            // 
+            // IncidentDate
+            // 
+            this.IncidentDate.AutoSize = true;
+            this.IncidentDate.Location = new System.Drawing.Point(488, 518);
+            this.IncidentDate.Name = "IncidentDate";
+            this.IncidentDate.Size = new System.Drawing.Size(38, 13);
+            this.IncidentDate.TabIndex = 74;
+            this.IncidentDate.Text = "Name:";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(565, 518);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(89, 13);
+            this.label28.TabIndex = 75;
+            this.label28.Text = "Incident Address:";
+            // 
+            // IncidentAddress
+            // 
+            this.IncidentAddress.AutoSize = true;
+            this.IncidentAddress.Location = new System.Drawing.Point(660, 518);
+            this.IncidentAddress.Name = "IncidentAddress";
+            this.IncidentAddress.Size = new System.Drawing.Size(38, 13);
+            this.IncidentAddress.TabIndex = 76;
+            this.IncidentAddress.Text = "Name:";
             // 
             // ViewComplaintForm
             // 
@@ -553,6 +593,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(840, 752);
+            this.Controls.Add(this.IncidentAddress);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.IncidentDate);
+            this.Controls.Add(this.label19);
             this.Controls.Add(this.ComplaintID);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.RespAge);
@@ -587,7 +631,7 @@
             this.Controls.Add(this.RtoC);
             this.Controls.Add(this.RespFullName);
             this.Controls.Add(this.CompContact);
-            this.Controls.Add(this.CompCivilStatus);
+            this.Controls.Add(this.CompSex);
             this.Controls.Add(this.CompAddress);
             this.Controls.Add(this.CompFullName);
             this.Controls.Add(this.button1);
@@ -620,7 +664,7 @@
         private System.Windows.Forms.Label RtoC;
         private System.Windows.Forms.Label RespFullName;
         private System.Windows.Forms.Label CompContact;
-        private System.Windows.Forms.Label CompCivilStatus;
+        private System.Windows.Forms.Label CompSex;
         private System.Windows.Forms.Label CompAddress;
         private System.Windows.Forms.Label CompFullName;
         private System.Windows.Forms.Button button1;
@@ -664,5 +708,9 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label ComplaintID;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label IncidentDate;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label IncidentAddress;
     }
 }

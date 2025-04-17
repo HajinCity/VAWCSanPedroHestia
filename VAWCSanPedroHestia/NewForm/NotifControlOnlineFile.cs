@@ -9,6 +9,7 @@ namespace VAWCSanPedroHestia.NewForm
         // 📄 Complaint Info
         public string CaseID { get; set; }
         public DateTime ComplaintDate { get; set; }
+        public DateTime IncidentDate { get; set; }
         public string ComplaintDetails { get; set; }
         public string Status { get; set; }
 
@@ -40,6 +41,14 @@ namespace VAWCSanPedroHestia.NewForm
         public string RespOccupation { get; set; }
         public string Relationship { get; set; }
 
+        // 📍 Incident Location Info
+        public string Place { get; set; }
+        public string IncidentPurok { get; set; }
+        public string IncidentBarangay { get; set; }
+        public string IncidentMunicipality { get; set; }
+        public string IncidentProvince { get; set; }
+        public string IncidentRegion { get; set; }
+
         public NotifControlOnlineFile()
         {
             InitializeComponent();
@@ -55,17 +64,19 @@ namespace VAWCSanPedroHestia.NewForm
             string respCivilStatus, string respReligion, string respNationality, string respOccupation,
             string relationship,
             DateTime complaintDate,
+            DateTime incidentDate,
             string complaintDetails,
-            string status
+            string status,
+            string place, string incidentPurok, string incidentBarangay,
+            string incidentMunicipality, string incidentProvince, string incidentRegion
         )
         {
-            // Set complaint info
             CaseID = caseId;
             ComplaintDate = complaintDate;
+            IncidentDate = incidentDate;
             ComplaintDetails = complaintDetails;
             Status = status;
 
-            // Set complainant info
             FirstName = firstName;
             MiddleName = middleName;
             LastName = lastName;
@@ -79,7 +90,6 @@ namespace VAWCSanPedroHestia.NewForm
             City = city;
             Contact = contact;
 
-            // Set respondent info
             RespFirstName = respFirstName;
             RespMiddleName = respMiddleName;
             RespLastName = respLastName;
@@ -93,15 +103,18 @@ namespace VAWCSanPedroHestia.NewForm
             RespOccupation = respOccupation;
             Relationship = relationship;
 
-            // Example label update (adjust to your actual UI elements)
+            Place = place;
+            IncidentPurok = incidentPurok;
+            IncidentBarangay = incidentBarangay;
+            IncidentMunicipality = incidentMunicipality;
+            IncidentProvince = incidentProvince;
+            IncidentRegion = incidentRegion;
+
             label2.Text = complaintDate.ToString("MMMM dd, yyyy - hh:mm tt");
-            // lblName.Text = $"{LastName}, {FirstName} {MiddleName}";
-            // lblStatus.Text = status;
         }
 
         private void btnViewComplaint_Click(object sender, EventArgs e)
         {
-            // Open ViewComplaintForm and pass all info
             ViewComplaintForm viewForm = new ViewComplaintForm();
             viewForm.Text = $"Complaint Details - Case ID: {CaseID}";
 
@@ -116,8 +129,11 @@ namespace VAWCSanPedroHestia.NewForm
                 RespCivilStatus, RespReligion, RespNationality, RespOccupation,
                 Relationship,
                 ComplaintDate,
+                IncidentDate,
                 ComplaintDetails,
-                Status
+                Status,
+                Place, IncidentPurok, IncidentBarangay,
+                IncidentMunicipality, IncidentProvince, IncidentRegion
             );
 
             viewForm.ShowDialog();

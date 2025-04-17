@@ -1084,7 +1084,7 @@ namespace VAWCSanPedroHestia
             this.UpIncidentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpIncidentDate.Location = new System.Drawing.Point(801, 196);
             this.UpIncidentDate.Name = "UpIncidentDate";
-            this.UpIncidentDate.Size = new System.Drawing.Size(282, 26);
+            this.UpIncidentDate.Size = new System.Drawing.Size(343, 26);
             this.UpIncidentDate.TabIndex = 40;
             // 
             // label35
@@ -1158,10 +1158,16 @@ namespace VAWCSanPedroHestia
             // UpRAVio
             // 
             this.UpRAVio.FormattingEnabled = true;
+            this.UpRAVio.Items.AddRange(new object[] {
+            "R.A. 9262: Anti Violence Against Women and their Children Act",
+            "R.A. 8353: Anti-Rape Law of 1995",
+            "R.A. 7877: Anti-Sexual Harrassment Act",
+            "R.A. 9208/10364: Anti-Trafficking in Person Act of 2003"});
             this.UpRAVio.Location = new System.Drawing.Point(187, 87);
             this.UpRAVio.Name = "UpRAVio";
             this.UpRAVio.Size = new System.Drawing.Size(343, 28);
             this.UpRAVio.TabIndex = 3;
+            this.UpRAVio.SelectedIndexChanged += new System.EventHandler(this.UpRAVio_SelectedIndexChanged);
             // 
             // label31
             // 

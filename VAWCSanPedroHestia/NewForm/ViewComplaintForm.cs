@@ -1,7 +1,6 @@
 ﻿using FirebaseAdmin.Messaging;
 using Google.Cloud.Firestore;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Numerics;
 using System.Windows.Forms;
@@ -17,7 +16,7 @@ namespace VAWCSanPedroHestia.NewForm
             InitializeComponent();
         }
 
-        // ✅ Load full complaint data
+        // ✅ Load full complaint data with incident details
         public void LoadComplaintData(
             string caseId,
             string firstName, string middleName, string lastName,
@@ -29,16 +28,20 @@ namespace VAWCSanPedroHestia.NewForm
             string respCivilStatus, string respReligion, string respNationality, string respOccupation,
             string relationship,
             DateTime complaintDate,
+            DateTime incidentDate,
             string complaintDetails,
-            string status)
+            string status,
+            string place, string incidentPurok, string incidentBarangay,
+            string incidentMunicipality, string incidentProvince, string incidentRegion
+        )
         {
             _caseId = caseId;
 
             // 👩 Complainant
             CompFullName.Text = $"{firstName} {middleName} {lastName}";
             CompAge.Text = age;
-            CompCivilStatus.Text = sex;
-            CompCivilStatus.Text = civilStatus;
+            CompSex.Text = sex;
+            CompSex.Text = civilStatus;
             CompReligion.Text = religion;
             CompNationality.Text = nationality;
             CompOccupation.Text = occupation;
@@ -57,19 +60,23 @@ namespace VAWCSanPedroHestia.NewForm
             RespContact.Text = respContact;
             RtoC.Text = relationship;
 
-            // 📄 Complaint
+            // 📄 Complaint Info
             ComplaintID.Text = caseId;
             ComplaintDate.Text = complaintDate.ToString("MMMM dd, yyyy - hh:mm tt");
+            IncidentDate.Text = incidentDate != DateTime.MinValue ? incidentDate.ToString("MMMM dd, yyyy") : "N/A";
             ComplaintDetails.Text = complaintDetails;
-           // ComplaintStatus.Text = status;
+          //  ComplaintStatus.Text = status;
 
-            // Optional: color code status
+            // 📍 Incident Location
+          //  PlaceOfIncident.Text = place;
+            IncidentAddress.Text = $"{incidentPurok}, {incidentBarangay}, {incidentMunicipality}, {incidentProvince}, {incidentRegion}";
+
+            // Optional color-code status
            // if (status == "Pending") ComplaintStatus.ForeColor = System.Drawing.Color.Orange;
-          //  else if (status == "Accepted") ComplaintStatus.ForeColor = System.Drawing.Color.Green;
-          //  else if (status == "Rejected") ComplaintStatus.ForeColor = System.Drawing.Color.Red;
+           // else if (status == "Accepted") ComplaintStatus.ForeColor = System.Drawing.Color.Green;
+           // else if (status == "Rejected") ComplaintStatus.ForeColor = System.Drawing.Color.Red;
         }
 
-        // ✅ Accept button - move to another collection
         private async void button1_Click(object sender, EventArgs e)
         {
             string originalCollection = "Complaints";
@@ -105,7 +112,6 @@ namespace VAWCSanPedroHestia.NewForm
             }
         }
 
-        // ✅ Reject button - delete from Firestore
         private async void button2_Click(object sender, EventArgs e)
         {
             var db = FirebaseInitialization.Database;

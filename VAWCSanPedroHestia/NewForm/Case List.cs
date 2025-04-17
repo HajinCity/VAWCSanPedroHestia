@@ -10,34 +10,31 @@ namespace VAWCSanPedroHestia
 {
     public partial class Case_List : Form
     {
-        private List<object[]> caseDataList = new List<object[]>(); // Stores all cases before filtering
-        private List<object[]> onlineCaseList = new List<object[]>(); // Stores online cases data
+        private List<object[]> caseDataList = new List<object[]>();
+        private List<object[]> onlineCaseList = new List<object[]>();
 
         public Case_List()
         {
             InitializeComponent();
-            LoadCaseList(); // ✅ Load data when form opens
-            LoadOnlineCaseList(); // Load online cases data
-            searchtxtb.TextChanged += Searchtxtb_TextChanged; // ✅ Attach event to search box
+            LoadCaseList();
+            LoadOnlineCaseList();
+            searchtxtb.TextChanged += Searchtxtb_TextChanged;
         }
 
         private async void LoadCaseList()
         {
             try
             {
-                // Reference Firestore collection
                 CollectionReference casesCollection = FirebaseInitialization.Database.Collection("caselist");
                 QuerySnapshot snapshot = await casesCollection.GetSnapshotAsync();
 
                 dataGridView1.Rows.Clear();
-                caseDataList.Clear(); // Clear old data before reloading
+                caseDataList.Clear();
 
-                // Loop through each document in Firestore
                 foreach (DocumentSnapshot document in snapshot.Documents)
                 {
                     var data = document.ToDictionary();
 
-                    // Extract necessary fields
                     string caseID = document.Id;
                     string complaintDate = GetData(data, "CaseDetails", "ComplaintDate");
                     string complainant = GetFullName(data, "Complainant");
@@ -48,11 +45,11 @@ namespace VAWCSanPedroHestia
                     string respondentsRelations = GetData(data, "Respondent", "RelationshipToComplainant");
                     string narrativeDescription = GetData(data, "CaseDetails", "IncidentDescription");
 
-                    // Store data in a list (for filtering later)
-                    object[] rowData = { caseID, complaintDate, complainant, respondent, caseViolation, caseSubViolation, violationOccurred, respondentsRelations, narrativeDescription };
-                    caseDataList.Add(rowData);
+                    object[] rowData = {
+                        caseID,complaintDate,complainant,respondent,caseViolation,caseSubViolation,violationOccurred,respondentsRelations,narrativeDescription
+                    };
 
-                    // Add to DataGridView
+                    caseDataList.Add(rowData);
                     dataGridView1.Rows.Add(rowData);
                 }
             }
@@ -66,47 +63,29 @@ namespace VAWCSanPedroHestia
         {
             try
             {
-                // Reference the onlinecaselist collection
                 CollectionReference onlineCaseCollection = FirebaseInitialization.Database.Collection("onlinecaselist");
                 QuerySnapshot snapshot = await onlineCaseCollection.GetSnapshotAsync();
 
                 dataGridView2.Rows.Clear();
                 onlineCaseList.Clear();
 
-                // Loop through each document in the collection
                 foreach (DocumentSnapshot document in snapshot.Documents)
                 {
                     var data = document.ToDictionary();
 
-                    // Extract fields from each document
-                    string caseID = GetData(data, "", "caseID");
-                    string firstName = GetData(data, "", "firstName");
-                    string lastName = GetData(data, "", "lastName");
-                    string middleName = GetData(data, "", "middleName");
-                    string contact = GetData(data, "", "contact");
-                    string purok = GetData(data, "", "purok");
-                    string sex = GetData(data, "", "sex");
-                    string complaintDetails = GetData(data, "", "complaintDetails");
-                    string complaintDate = GetData(data, "", "complaintDate");
-                    string city = GetData(data, "", "city");
-                    string respFirstName = GetData(data, "", "respFirstName");
-                    string respLastName = GetData(data, "", "respLastName");
-                    string respMiddleName = GetData(data, "", "resplMiddleName");
-                    string relationship = GetData(data, "", "relationship");
+                    string caseID = document.Id;
+                    string complaintDate = GetData(data, "caseDetails", "complaintDate");
+                    string complainant = GetFullName(data, "complainant");
+                    string respondent = GetFullName(data, "respondent");
+                    string caseViolation = GetData(data, "caseDetails", "vawcCase");
+                    string caseSubViolation = GetData(data, "caseDetails", "subCase");
+                    string violationOccurred = GetData(data, "caseDetails", "incidentDate");
+                    string respondentsRelations = GetData(data, "respondent", "relationshipToComplainant");
+                    string narrativeDescription = GetData(data, "caseDetails", "incidentDescription");
 
-                    // Create row data
                     object[] rowData = {
-                caseID,
-                $"{lastName}, {firstName} {middleName}".Trim(),
-                contact,
-                purok,
-                sex,
-                complaintDetails,
-                complaintDate,
-                city,
-                $"{respLastName}, {respFirstName} {respMiddleName}".Trim(),
-                relationship
-            };
+                        caseID,complaintDate,complainant,respondent,caseViolation,caseSubViolation,violationOccurred,respondentsRelations,narrativeDescription
+                    };
 
                     onlineCaseList.Add(rowData);
                     dataGridView2.Rows.Add(rowData);
@@ -118,41 +97,10 @@ namespace VAWCSanPedroHestia
             }
         }
 
-        private void Searchtxtb_TextChanged(object sender, EventArgs e)
-        {
-            string searchText = searchtxtb.Text.Trim().ToLower();
-
-            // If search box is empty, reset DataGridView
-            if (string.IsNullOrEmpty(searchText))
-            {
-                dataGridView1.Rows.Clear();
-                foreach (var rowData in caseDataList)
-                {
-                    dataGridView1.Rows.Add(rowData);
-                }
-                return;
-            }
-
-            // Filter data
-            var filteredData = caseDataList.Where(row =>
-                row[0].ToString().ToLower().Contains(searchText) || // Case ID
-                row[2].ToString().ToLower().Contains(searchText) || // Complainant Name
-                row[3].ToString().ToLower().Contains(searchText)    // Respondent Name
-            ).ToList();
-
-            // Update DataGridView
-            dataGridView1.Rows.Clear();
-            foreach (var rowData in filteredData)
-            {
-                dataGridView1.Rows.Add(rowData);
-            }
-        }
-
         private string GetData(Dictionary<string, object> data, string parentKey, string childKey)
         {
             if (string.IsNullOrEmpty(parentKey))
             {
-                // Directly access the child key if no parent key is specified
                 return data.ContainsKey(childKey) ? data[childKey]?.ToString() ?? "N/A" : "N/A";
             }
 
@@ -160,6 +108,7 @@ namespace VAWCSanPedroHestia
             {
                 return parentDict[childKey]?.ToString() ?? "N/A";
             }
+
             return "N/A";
         }
 
@@ -167,23 +116,74 @@ namespace VAWCSanPedroHestia
         {
             if (data.ContainsKey(personKey) && data[personKey] is Dictionary<string, object> personDict)
             {
-                string lastName = personDict.ContainsKey("LastName") ? personDict["LastName"].ToString() : "";
-                string firstName = personDict.ContainsKey("FirstName") ? personDict["FirstName"].ToString() : "";
-                string middleName = personDict.ContainsKey("MiddleName") ? personDict["MiddleName"].ToString() : "";
+                // Try both capitalized and lowercase keys
+                string lastName = personDict.ContainsKey("LastName") ? personDict["LastName"].ToString() :
+                                  personDict.ContainsKey("lastName") ? personDict["lastName"].ToString() : "";
+
+                string firstName = personDict.ContainsKey("FirstName") ? personDict["FirstName"].ToString() :
+                                   personDict.ContainsKey("firstName") ? personDict["firstName"].ToString() : "";
+
+                string middleName = personDict.ContainsKey("MiddleName") ? personDict["MiddleName"].ToString() :
+                                    personDict.ContainsKey("middleName") ? personDict["middleName"].ToString() : "";
 
                 return $"{lastName}, {firstName} {middleName}".Trim();
             }
+
             return "N/A";
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Searchtxtb_TextChanged(object sender, EventArgs e)
         {
-            // Your existing code here
+            string searchText = searchtxtb.Text.Trim().ToLower();
+
+            // === Filter DataGridView1 (caselist) ===
+            dataGridView1.Rows.Clear();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                foreach (var rowData in caseDataList)
+                {
+                    dataGridView1.Rows.Add(rowData);
+                }
+            }
+            else
+            {
+                var filteredCaseData = caseDataList.Where(row =>
+                    row[0].ToString().ToLower().Contains(searchText) || // Case ID
+                    row[2].ToString().ToLower().Contains(searchText) || // Complainant
+                    row[3].ToString().ToLower().Contains(searchText)    // Respondent
+                ).ToList();
+
+                foreach (var rowData in filteredCaseData)
+                {
+                    dataGridView1.Rows.Add(rowData);
+                }
+            }
+
+            // === Filter DataGridView2 (onlinecaselist) ===
+            dataGridView2.Rows.Clear();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                foreach (var rowData in onlineCaseList)
+                {
+                    dataGridView2.Rows.Add(rowData);
+                }
+            }
+            else
+            {
+                var filteredOnlineCaseData = onlineCaseList.Where(row =>
+                    row[0].ToString().ToLower().Contains(searchText) || // Case ID
+                    row[2].ToString().ToLower().Contains(searchText) || // Complainant
+                    row[3].ToString().ToLower().Contains(searchText)    // Respondent
+                ).ToList();
+
+                foreach (var rowData in filteredOnlineCaseData)
+                {
+                    dataGridView2.Rows.Add(rowData);
+                }
+            }
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Your existing code here
-        }
     }
 }

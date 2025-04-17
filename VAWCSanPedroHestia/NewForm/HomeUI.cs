@@ -72,6 +72,7 @@ namespace VAWCSanPedroHestia
                         var details = fields["caseDetails"]?["mapValue"]?["fields"] as JObject;
                         if (complainant == null || respondent == null || details == null) continue;
 
+                        // Complainant Info
                         string firstName = complainant["firstName"]?["stringValue"]?.ToString() ?? "";
                         string middleName = complainant["middleName"]?["stringValue"]?.ToString() ?? "";
                         string lastName = complainant["lastName"]?["stringValue"]?.ToString() ?? "";
@@ -81,11 +82,13 @@ namespace VAWCSanPedroHestia
                         string religion = complainant["religion"]?["stringValue"]?.ToString() ?? "";
                         string nationality = complainant["nationality"]?["stringValue"]?.ToString() ?? "";
                         string occupation = complainant["occupation"]?["stringValue"]?.ToString() ?? "";
+                        string contact = complainant["cellNumber"]?["stringValue"]?.ToString() ?? "";
+
                         var address = complainant["address"]?["mapValue"]?["fields"] as JObject;
                         string purok = address?["purok"]?["stringValue"]?.ToString() ?? "";
                         string city = address?["municipality"]?["stringValue"]?.ToString() ?? "";
-                        string contact = complainant["cellNumber"]?["stringValue"]?.ToString() ?? "";
 
+                        // Respondent Info
                         string respFirstName = respondent["firstName"]?["stringValue"]?.ToString() ?? "";
                         string respMiddleName = respondent["middleName"]?["stringValue"]?.ToString() ?? "";
                         string respLastName = respondent["lastName"]?["stringValue"]?.ToString() ?? "";
@@ -99,12 +102,26 @@ namespace VAWCSanPedroHestia
                         string respOccupation = respondent["occupation"]?["stringValue"]?.ToString() ?? "";
                         string relationship = respondent["relationshipToComplainant"]?["stringValue"]?.ToString() ?? "";
 
+                        // Case Details
                         string caseId = details["caseNumber"]?["stringValue"]?.ToString() ?? "";
                         string incidentDescription = details["incidentDescription"]?["stringValue"]?.ToString() ?? "";
                         string status = details["caseStatus"]?["stringValue"]?.ToString() ?? "Pending";
+
                         string rawDate = details["complaintDate"]?["timestampValue"]?.ToString() ?? "";
                         DateTime complaintDate = DateTime.TryParse(rawDate, out var parsed) ? parsed.ToLocalTime() : DateTime.Now;
 
+                        string incidentDateRaw = details["incidentDate"]?["stringValue"]?.ToString() ?? "";
+                        DateTime incidentDate = DateTime.TryParse(incidentDateRaw, out var incidentParsed)
+                            ? incidentParsed
+                            : DateTime.MinValue;
+
+                        var placeOfIncident = details["placeOfIncident"]?["mapValue"]?["fields"] as JObject;
+                        string place = placeOfIncident?["place"]?["stringValue"]?.ToString() ?? "";
+                        string incidentPurok = placeOfIncident?["purok"]?["stringValue"]?.ToString() ?? "";
+                        string incidentBarangay = placeOfIncident?["barangay"]?["stringValue"]?.ToString() ?? "";
+                        string incidentMunicipality = placeOfIncident?["municipality"]?["stringValue"]?.ToString() ?? "";
+                        string incidentProvince = placeOfIncident?["province"]?["stringValue"]?.ToString() ?? "";
+                        string incidentRegion = placeOfIncident?["region"]?["stringValue"]?.ToString() ?? "";
 
                         var notif = new NotifControlOnlineFile();
                         notif.SetData(
@@ -117,8 +134,10 @@ namespace VAWCSanPedroHestia
                             respCivilStatus, respReligion, respNationality, respOccupation,
                             relationship,
                             complaintDate,
+                            incidentDate,
                             incidentDescription,
-                            status
+                            status,
+                            place, incidentPurok, incidentBarangay, incidentMunicipality, incidentProvince, incidentRegion
                         );
 
                         flowLayoutPanel1.Controls.Add(notif);
@@ -134,6 +153,8 @@ namespace VAWCSanPedroHestia
                 MessageBox.Show("⚠️ Error loading notifications: " + ex.Message);
             }
         }
+
+
         private void RA9262_Button_Click(object sender, EventArgs e)
         {
             panel1.Controls.Clear();
