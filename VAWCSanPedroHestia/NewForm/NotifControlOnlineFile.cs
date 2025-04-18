@@ -110,7 +110,7 @@ namespace VAWCSanPedroHestia.NewForm
             IncidentProvince = incidentProvince;
             IncidentRegion = incidentRegion;
 
-            label2.Text = complaintDate.ToString("MMMM dd, yyyy - hh:mm tt");
+            label2.Text = complaintDate.ToString("MMMM dd, yyyy");
         }
 
         private void btnViewComplaint_Click(object sender, EventArgs e)

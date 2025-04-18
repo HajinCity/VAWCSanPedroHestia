@@ -107,8 +107,25 @@ namespace VAWCSanPedroHestia
                         string incidentDescription = details["incidentDescription"]?["stringValue"]?.ToString() ?? "";
                         string status = details["caseStatus"]?["stringValue"]?.ToString() ?? "Pending";
 
-                        string rawDate = details["complaintDate"]?["timestampValue"]?.ToString() ?? "";
-                        DateTime complaintDate = DateTime.TryParse(rawDate, out var parsed) ? parsed.ToLocalTime() : DateTime.Now;
+                        // Updated date handling - checks both timestampValue and stringValue
+                        DateTime complaintDate;
+                        var timestampValue = details["complaintDate"]?["timestampValue"]?.ToString();
+                        var stringValue = details["complaintDate"]?["stringValue"]?.ToString();
+
+                        if (!string.IsNullOrEmpty(timestampValue))
+                        {
+                            // Handle Firestore timestamp format
+                            complaintDate = DateTime.TryParse(timestampValue, out var parsed) ? parsed.ToLocalTime() : DateTime.MinValue;
+                        }
+                        else if (!string.IsNullOrEmpty(stringValue))
+                        {
+                            // Handle string format (like in your image: "2025-04-16")
+                            complaintDate = DateTime.TryParse(stringValue, out var parsed) ? parsed : DateTime.MinValue;
+                        }
+                        else
+                        {
+                            complaintDate = DateTime.MinValue;
+                        }
 
                         string incidentDateRaw = details["incidentDate"]?["stringValue"]?.ToString() ?? "";
                         DateTime incidentDate = DateTime.TryParse(incidentDateRaw, out var incidentParsed)

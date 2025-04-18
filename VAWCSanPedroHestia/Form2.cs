@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
+using VAWCSanPedroHestia.NewForm;
 
 namespace VAWCSanPedroHestia
 {
@@ -92,11 +93,6 @@ namespace VAWCSanPedroHestia
             openingForm(new ManageCaseListIU());
         }
 
-        private void intake_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void report_btn_Click(object sender, EventArgs e)
         {
 
@@ -105,6 +101,11 @@ namespace VAWCSanPedroHestia
         private void management_btn_Click(object sender, EventArgs e)
         {
             openingForm(new SystemManage());
+        }
+
+        private void call_btn_Click(object sender, EventArgs e)
+        {
+            openingForm(new CallSystem());
         }
     }
 }

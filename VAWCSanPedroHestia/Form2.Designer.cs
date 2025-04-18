@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.logout_btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.management_btn = new System.Windows.Forms.Button();
             this.report_btn = new System.Windows.Forms.Button();
-            this.intake_btn = new System.Windows.Forms.Button();
+            this.call_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.managecase_btn = new System.Windows.Forms.Button();
             this.case_btn = new System.Windows.Forms.Button();
             this.home_btn = new System.Windows.Forms.Button();
             this.File_btn = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.management_btn);
             this.panel1.Controls.Add(this.report_btn);
-            this.panel1.Controls.Add(this.intake_btn);
+            this.panel1.Controls.Add(this.call_btn);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.managecase_btn);
             this.panel1.Controls.Add(this.case_btn);
@@ -70,48 +70,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(266, 718);
             this.panel1.TabIndex = 0;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 9F);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(81, 175);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 15);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "SYSTEM ADMINISTRATOR";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(81, 150);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 19);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "ADELFA ANTIPOLO";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(266, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(609, 31);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(266, 31);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(609, 687);
-            this.panel3.TabIndex = 2;
             // 
             // logout_btn
             // 
@@ -140,6 +98,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial", 9F);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(81, 175);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(151, 15);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "SYSTEM ADMINISTRATOR";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(81, 150);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(157, 19);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ADELFA ANTIPOLO";
             // 
             // management_btn
             // 
@@ -175,22 +157,22 @@
             this.report_btn.UseVisualStyleBackColor = true;
             this.report_btn.Click += new System.EventHandler(this.report_btn_Click);
             // 
-            // intake_btn
+            // call_btn
             // 
-            this.intake_btn.FlatAppearance.BorderSize = 0;
-            this.intake_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.intake_btn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intake_btn.ForeColor = System.Drawing.Color.White;
-            this.intake_btn.Image = ((System.Drawing.Image)(resources.GetObject("intake_btn.Image")));
-            this.intake_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.intake_btn.Location = new System.Drawing.Point(45, 434);
-            this.intake_btn.Margin = new System.Windows.Forms.Padding(2);
-            this.intake_btn.Name = "intake_btn";
-            this.intake_btn.Size = new System.Drawing.Size(180, 32);
-            this.intake_btn.TabIndex = 6;
-            this.intake_btn.Text = "       CALL SYSTEM";
-            this.intake_btn.UseVisualStyleBackColor = true;
-            this.intake_btn.Click += new System.EventHandler(this.intake_btn_Click);
+            this.call_btn.FlatAppearance.BorderSize = 0;
+            this.call_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.call_btn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.call_btn.ForeColor = System.Drawing.Color.White;
+            this.call_btn.Image = ((System.Drawing.Image)(resources.GetObject("call_btn.Image")));
+            this.call_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.call_btn.Location = new System.Drawing.Point(45, 434);
+            this.call_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.call_btn.Name = "call_btn";
+            this.call_btn.Size = new System.Drawing.Size(180, 32);
+            this.call_btn.TabIndex = 6;
+            this.call_btn.Text = "       CALL SYSTEM";
+            this.call_btn.UseVisualStyleBackColor = true;
+            this.call_btn.Click += new System.EventHandler(this.call_btn_Click);
             // 
             // pictureBox2
             // 
@@ -269,6 +251,24 @@
             this.File_btn.UseVisualStyleBackColor = false;
             this.File_btn.Click += new System.EventHandler(this.File_btn_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(266, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(609, 31);
+            this.panel2.TabIndex = 1;
+            // 
+            // panel3
+            // 
+            this.panel3.AutoScroll = true;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(266, 31);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(609, 687);
+            this.panel3.TabIndex = 2;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -300,7 +300,7 @@
         private System.Windows.Forms.Button case_btn;
         private System.Windows.Forms.Button managecase_btn;
         private System.Windows.Forms.Button report_btn;
-        private System.Windows.Forms.Button intake_btn;
+        private System.Windows.Forms.Button call_btn;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button management_btn;
         private System.Windows.Forms.Label label1;
