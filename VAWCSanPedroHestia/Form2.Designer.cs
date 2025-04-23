@@ -36,7 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.management_btn = new System.Windows.Forms.Button();
             this.report_btn = new System.Windows.Forms.Button();
-            this.intake_btn = new System.Windows.Forms.Button();
+            this.call_btn = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.managecase_btn = new System.Windows.Forms.Button();
             this.case_btn = new System.Windows.Forms.Button();
@@ -58,7 +58,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.management_btn);
             this.panel1.Controls.Add(this.report_btn);
-            this.panel1.Controls.Add(this.intake_btn);
+            this.panel1.Controls.Add(this.call_btn);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Controls.Add(this.managecase_btn);
             this.panel1.Controls.Add(this.case_btn);
@@ -157,22 +157,22 @@
             this.report_btn.UseVisualStyleBackColor = true;
             this.report_btn.Click += new System.EventHandler(this.report_btn_Click);
             // 
-            // intake_btn
+            // call_btn
             // 
-            this.intake_btn.FlatAppearance.BorderSize = 0;
-            this.intake_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.intake_btn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.intake_btn.ForeColor = System.Drawing.Color.White;
-            this.intake_btn.Image = ((System.Drawing.Image)(resources.GetObject("intake_btn.Image")));
-            this.intake_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.intake_btn.Location = new System.Drawing.Point(45, 434);
-            this.intake_btn.Margin = new System.Windows.Forms.Padding(2);
-            this.intake_btn.Name = "intake_btn";
-            this.intake_btn.Size = new System.Drawing.Size(180, 32);
-            this.intake_btn.TabIndex = 6;
-            this.intake_btn.Text = "       CALL SYSTEM";
-            this.intake_btn.UseVisualStyleBackColor = true;
-            this.intake_btn.Click += new System.EventHandler(this.intake_btn_Click);
+            this.call_btn.FlatAppearance.BorderSize = 0;
+            this.call_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.call_btn.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.call_btn.ForeColor = System.Drawing.Color.White;
+            this.call_btn.Image = ((System.Drawing.Image)(resources.GetObject("call_btn.Image")));
+            this.call_btn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.call_btn.Location = new System.Drawing.Point(45, 434);
+            this.call_btn.Margin = new System.Windows.Forms.Padding(2);
+            this.call_btn.Name = "call_btn";
+            this.call_btn.Size = new System.Drawing.Size(180, 32);
+            this.call_btn.TabIndex = 6;
+            this.call_btn.Text = "       CALL SYSTEM";
+            this.call_btn.UseVisualStyleBackColor = true;
+            this.call_btn.Click += new System.EventHandler(this.call_btn_Click);
             // 
             // pictureBox2
             // 
@@ -300,7 +300,7 @@
         private System.Windows.Forms.Button case_btn;
         private System.Windows.Forms.Button managecase_btn;
         private System.Windows.Forms.Button report_btn;
-        private System.Windows.Forms.Button intake_btn;
+        private System.Windows.Forms.Button call_btn;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button management_btn;
         private System.Windows.Forms.Label label1;

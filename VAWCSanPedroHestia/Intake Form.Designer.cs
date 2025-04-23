@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -94,7 +93,7 @@
             this.label61 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label63 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -110,19 +109,11 @@
             this.label1.Size = new System.Drawing.Size(0, 18);
             this.label1.TabIndex = 3;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 228);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 13);
-            this.label3.TabIndex = 6;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(39, 261);
+            this.label4.Location = new System.Drawing.Point(26, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(86, 19);
             this.label4.TabIndex = 7;
@@ -131,7 +122,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(131, 265);
+            this.label5.Location = new System.Drawing.Point(118, 263);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 13);
             this.label5.TabIndex = 9;
@@ -736,19 +727,22 @@
             this.label62.TabIndex = 68;
             this.label62.Text = "CONTACT NO:";
             // 
-            // textBox2
+            // label63
             // 
-            this.textBox2.Location = new System.Drawing.Point(151, 539);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(517, 20);
-            this.textBox2.TabIndex = 69;
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(145, 910);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(631, 13);
+            this.label63.TabIndex = 70;
+            this.label63.Text = "_________________________________________________________________________________" +
+    "_______________________";
             // 
             // Intake_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label63);
             this.Controls.Add(this.label62);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label61);
@@ -810,7 +804,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox3);
@@ -831,7 +824,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
@@ -893,6 +885,6 @@
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label63;
     }
 }
