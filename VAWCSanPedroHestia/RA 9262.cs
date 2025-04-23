@@ -16,5 +16,20 @@ namespace VAWCSanPedroHestia
         {
             InitializeComponent();
         }
+
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RA_9262_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label66_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

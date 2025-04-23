@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class HomeUI: Form
+    public partial class SystemManage: Form
     {
-        public HomeUI()
+        public SystemManage()
         {
             InitializeComponent();
         }
