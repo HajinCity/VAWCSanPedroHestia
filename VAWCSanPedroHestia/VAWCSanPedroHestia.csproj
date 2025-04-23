@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -35,8 +36,23 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="FirebaseAdmin, Version=3.1.0.0, Culture=neutral, PublicKeyToken=97c8d00c348326ed, processorArchitecture=MSIL">
       <HintPath>..\packages\FirebaseAdmin.3.1.0\lib\net462\FirebaseAdmin.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.Core.2.1.7\lib\net48\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinForms.2.1.7\lib\net48\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsPresentation, Version=2.1.7.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
+      <HintPath>..\packages\GMap.NET.WinPresentation.2.1.7\lib\net48\GMap.NET.WindowsPresentation.dll</HintPath>
     </Reference>
     <Reference Include="Google.Api.CommonProtos, Version=2.16.0.0, Culture=neutral, PublicKeyToken=3ec5ea7f18953e47, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Api.CommonProtos.2.16.0\lib\net461\Google.Api.CommonProtos.dll</HintPath>
@@ -71,73 +87,113 @@
     <Reference Include="Google.LongRunning, Version=3.3.0.0, Culture=neutral, PublicKeyToken=185c282632e132a0, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.LongRunning.3.3.0\lib\net462\Google.LongRunning.dll</HintPath>
     </Reference>
-    <Reference Include="Google.Protobuf, Version=3.30.1.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
-      <HintPath>..\packages\Google.Protobuf.3.30.1\lib\net45\Google.Protobuf.dll</HintPath>
+    <Reference Include="Google.Protobuf, Version=3.30.2.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.30.2\lib\net45\Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Auth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\packages\Grpc.Auth.2.70.0\lib\net462\Grpc.Auth.dll</HintPath>
+      <HintPath>..\packages\Grpc.Auth.2.71.0-pre1\lib\net462\Grpc.Auth.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
       <HintPath>..\packages\Grpc.Core.2.46.6\lib\net45\Grpc.Core.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Core.Api, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\packages\Grpc.Core.Api.2.70.0\lib\net462\Grpc.Core.Api.dll</HintPath>
+      <HintPath>..\packages\Grpc.Core.Api.2.71.0-pre1\lib\net462\Grpc.Core.Api.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Net.Client, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\packages\Grpc.Net.Client.2.70.0\lib\net462\Grpc.Net.Client.dll</HintPath>
+      <HintPath>..\packages\Grpc.Net.Client.2.71.0-pre1\lib\net462\Grpc.Net.Client.dll</HintPath>
     </Reference>
     <Reference Include="Grpc.Net.Common, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d754f35622e28bad, processorArchitecture=MSIL">
-      <HintPath>..\packages\Grpc.Net.Common.2.70.0\lib\netstandard2.0\Grpc.Net.Common.dll</HintPath>
+      <HintPath>..\packages\Grpc.Net.Common.2.71.0-pre1\lib\netstandard2.0\Grpc.Net.Common.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.0-preview.1.25080.5\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.10.0.0-preview.3.25171.5\lib\net462\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.10.0.0-preview.1.25080.5\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.10.0.0-preview.3.25171.5\lib\net462\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Extensions.Logging.Abstractions, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
-      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.10.0.0-preview.1.25080.5\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+      <HintPath>..\packages\Microsoft.Extensions.Logging.Abstractions.10.0.0-preview.3.25171.5\lib\net462\Microsoft.Extensions.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.2.2.1\lib\net472\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Asio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Asio.2.2.1\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Core.2.2.1\lib\netstandard2.0\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Midi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Midi.2.2.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Wasapi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Wasapi.2.2.1\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinForms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.WinForms.2.2.1\lib\net472\NAudio.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.WinMM.2.2.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Buffers.4.6.0\lib\net462\System.Buffers.dll</HintPath>
+    <Reference Include="System.Buffers, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.6.1\lib\net462\System.Buffers.dll</HintPath>
     </Reference>
     <Reference Include="System.CodeDom, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.CodeDom.10.0.0-preview.1.25080.5\lib\net462\System.CodeDom.dll</HintPath>
+      <HintPath>..\packages\System.CodeDom.10.0.0-preview.3.25171.5\lib\net462\System.CodeDom.dll</HintPath>
     </Reference>
     <Reference Include="System.Collections.Immutable, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Collections.Immutable.10.0.0-preview.1.25080.5\lib\net462\System.Collections.Immutable.dll</HintPath>
+      <HintPath>..\packages\System.Collections.Immutable.10.0.0-preview.3.25171.5\lib\net462\System.Collections.Immutable.dll</HintPath>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.9.0\lib\net462\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.EF6, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.EF6.1.0.119.0\lib\net46\System.Data.SQLite.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Linq.1.0.119.0\lib\net46\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Diagnostics.DiagnosticSource, Version=10.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.10.0.0-preview.1.25080.5\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.10.0.0-preview.3.25171.5\lib\net462\System.Diagnostics.DiagnosticSource.dll</HintPath>
     </Reference>
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Linq.Async, Version=6.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Linq.Async.6.0.1\lib\net48\System.Linq.Async.dll</HintPath>
     </Reference>
     <Reference Include="System.Management" />
-    <Reference Include="System.Memory, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.6.0\lib\net462\System.Memory.dll</HintPath>
+    <Reference Include="System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.6.3\lib\net462\System.Memory.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http.WinHttpHandler, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Net.Http.WinHttpHandler.10.0.0-preview.1.25080.5\lib\net462\System.Net.Http.WinHttpHandler.dll</HintPath>
+      <HintPath>..\packages\System.Net.Http.WinHttpHandler.10.0.0-preview.3.25171.5\lib\net462\System.Net.Http.WinHttpHandler.dll</HintPath>
     </Reference>
     <Reference Include="System.Numerics" />
-    <Reference Include="System.Numerics.Vectors, Version=4.1.5.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Numerics.Vectors.4.6.0\lib\net462\System.Numerics.Vectors.dll</HintPath>
+    <Reference Include="System.Numerics.Vectors, Version=4.1.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.6.1\lib\net462\System.Numerics.Vectors.dll</HintPath>
     </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.0\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.1.2\lib\net462\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.0\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.1\lib\net461\System.Security.AccessControl.dll</HintPath>
     </Reference>
-    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -150,16 +206,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Case List.cs">
+    <Compile Include="AgoraInterop.cs" />
+    <Compile Include="ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Case List.Designer.cs">
+    <Compile Include="ChangePass.Designer.cs">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intakeformUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="intakeformUI.Designer.cs">
+      <DependentUpon>intakeformUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intake_FormUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Intake_FormUI.Designer.cs">
+      <DependentUpon>Intake_FormUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\CallingReceiverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\CallingReceiverForm.Designer.cs">
+      <DependentUpon>CallingReceiverForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\CallingSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\CallingSystem.Designer.cs">
+      <DependentUpon>CallingSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\Case List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\Case List.Designer.cs">
       <DependentUpon>Case List.cs</DependentUpon>
     </Compile>
-    <Compile Include="FileACaseUI.cs">
+    <Compile Include="NewForm\FileACaseSaveToDb.cs" />
+    <Compile Include="NewForm\FileACaseUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FileACaseUI.Designer.cs">
+    <Compile Include="NewForm\FileACaseUI.Designer.cs">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
     </Compile>
     <Compile Include="FirebaseInitialization.cs" />
@@ -187,16 +275,28 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManageCaseListIU.cs">
+    <Compile Include="NewForm\NotifControlOnlineFile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewForm\NotifControlOnlineFile.Designer.cs">
+      <DependentUpon>NotifControlOnlineFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\QuarterlyAccomplishmentReport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ManageCaseListIU.Designer.cs">
+    <Compile Include="NewForm\QuarterlyAccomplishmentReport.Designer.cs">
+      <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\ManageCaseListIU.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\ManageCaseListIU.Designer.cs">
       <DependentUpon>ManageCaseListIU.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeUI.cs">
+    <Compile Include="NewForm\HomeUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeUI.Designer.cs">
+    <Compile Include="NewForm\HomeUI.Designer.cs">
       <DependentUpon>HomeUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Intake Form.cs">
@@ -204,6 +304,12 @@
     </Compile>
     <Compile Include="Intake Form.Designer.cs">
       <DependentUpon>Intake Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\ViewComplaintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\ViewComplaintForm.Designer.cs">
+      <DependentUpon>ViewComplaintForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -237,10 +343,40 @@
     <Compile Include="RA 9262.Designer.cs">
       <DependentUpon>RA 9262.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Case List.resx">
+    <Compile Include="System Management.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System Management.Designer.cs">
+      <DependentUpon>System Management.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\SystemManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\SystemManage.Designer.cs">
+      <DependentUpon>SystemManage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intake Form.resx">
+      <DependentUpon>Intake Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intakeformUI.resx">
+      <DependentUpon>intakeformUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intake_FormUI.resx">
+      <DependentUpon>Intake_FormUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\CallingReceiverForm.resx">
+      <DependentUpon>CallingReceiverForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\CallingSystem.resx">
+      <DependentUpon>CallingSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\Case List.resx">
       <DependentUpon>Case List.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FileACaseUI.resx">
+    <EmbeddedResource Include="NewForm\FileACaseUI.resx">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
@@ -255,11 +391,20 @@
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HomeUI.resx">
+    <EmbeddedResource Include="NewForm\HomeUI.resx">
       <DependentUpon>HomeUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageCaseListIU.resx">
+    <EmbeddedResource Include="NewForm\ManageCaseListIU.resx">
       <DependentUpon>ManageCaseListIU.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\NotifControlOnlineFile.resx">
+      <DependentUpon>NotifControlOnlineFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\QuarterlyAccomplishmentReport.resx">
+      <DependentUpon>QuarterlyAccomplishmentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\ViewComplaintForm.resx">
+      <DependentUpon>ViewComplaintForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -285,6 +430,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="RA 9262.resx">
       <DependentUpon>RA 9262.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="System Management.resx">
+      <DependentUpon>System Management.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\SystemManage.resx">
+      <DependentUpon>SystemManage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -372,7 +523,22 @@
     <None Include="Resources\rect9.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ILLink\ILLink.Descriptors.LibraryBuild.xml" />
+    <None Include="Resources\sanpedro141.png" />
+    <None Include="Resources\sanpedro14.png" />
+    <None Include="Resources\security-official.png" />
+    <None Include="Resources\sanpedro6.png" />
+    <None Include="Resources\sanpedro5.png" />
+    <None Include="Resources\sanpedro4.png" />
+    <None Include="Resources\sanpedro3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpedro15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpedro16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpedro18.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets" Condition="Exists('..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets')" />
@@ -382,6 +548,13 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets'))" />
     <Error Condition="!Exists('..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.1\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets'))" />
   </Target>
   <Import Project="..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.2.46.6\build\net45\Grpc.Core.targets')" />
+  <Import Project="..\packages\EntityFramework.6.5.1\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.1\build\EntityFramework.targets')" />
+  <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
+  <Import Project="..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets" Condition="Exists('..\packages\System.ValueTuple.4.6.1\build\net471\System.ValueTuple.targets')" />
 </Project>
