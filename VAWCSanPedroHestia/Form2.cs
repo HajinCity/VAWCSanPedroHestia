@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Google.Cloud.Firestore;
+using Newtonsoft.Json.Linq;
+using VAWCSanPedroHestia.NewForm;
 
 namespace VAWCSanPedroHestia
 {
@@ -16,6 +19,7 @@ namespace VAWCSanPedroHestia
             InitializeComponent();
             loggedInUsername = username;
             LoadUserData();
+            home_btn_Click(null, EventArgs.Empty);
         }
 
         private async void LoadUserData()
@@ -91,11 +95,6 @@ namespace VAWCSanPedroHestia
             openingForm(new ManageCaseListIU());
         }
 
-        private void intake_btn_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void report_btn_Click(object sender, EventArgs e)
         {
 
@@ -105,5 +104,16 @@ namespace VAWCSanPedroHestia
         {
             openingForm(new SystemManage());
         }
+
+        private  void call_btn_Click(object sender, EventArgs e)
+        {
+
+            openingForm(new CallingSystem());
+        }
+
+
+
     }
+
+
 }

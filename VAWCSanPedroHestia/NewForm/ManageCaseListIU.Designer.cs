@@ -73,6 +73,12 @@ namespace VAWCSanPedroHestia
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.UResOccupation = new System.Windows.Forms.TextBox();
+            this.UResNationality = new System.Windows.Forms.TextBox();
+            this.UResBdate = new System.Windows.Forms.DateTimePicker();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
             this.UrAge = new System.Windows.Forms.TextBox();
             this.UpRspCivilS = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -81,6 +87,12 @@ namespace VAWCSanPedroHestia
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.UCompOccupation = new System.Windows.Forms.TextBox();
+            this.UCompNationality = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.UCompBdate = new System.Windows.Forms.DateTimePicker();
+            this.label44 = new System.Windows.Forms.Label();
             this.UcompAge = new System.Windows.Forms.TextBox();
             this.UcompCivilS = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
@@ -119,18 +131,6 @@ namespace VAWCSanPedroHestia
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
             this.casenoTxt = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.UCompBdate = new System.Windows.Forms.DateTimePicker();
-            this.label44 = new System.Windows.Forms.Label();
-            this.UCompOccupation = new System.Windows.Forms.TextBox();
-            this.UCompNationality = new System.Windows.Forms.TextBox();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.UResBdate = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.UResOccupation = new System.Windows.Forms.TextBox();
-            this.UResNationality = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -549,7 +549,7 @@ namespace VAWCSanPedroHestia
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(1, 84);
+            this.tabControl1.Location = new System.Drawing.Point(26, 84);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1238, 758);
@@ -611,6 +611,62 @@ namespace VAWCSanPedroHestia
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Respondent";
+            // 
+            // UResOccupation
+            // 
+            this.UResOccupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UResOccupation.Location = new System.Drawing.Point(141, 562);
+            this.UResOccupation.Margin = new System.Windows.Forms.Padding(2);
+            this.UResOccupation.Name = "UResOccupation";
+            this.UResOccupation.Size = new System.Drawing.Size(268, 24);
+            this.UResOccupation.TabIndex = 48;
+            // 
+            // UResNationality
+            // 
+            this.UResNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UResNationality.Location = new System.Drawing.Point(141, 526);
+            this.UResNationality.Margin = new System.Windows.Forms.Padding(2);
+            this.UResNationality.Name = "UResNationality";
+            this.UResNationality.Size = new System.Drawing.Size(268, 24);
+            this.UResNationality.TabIndex = 47;
+            // 
+            // UResBdate
+            // 
+            this.UResBdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UResBdate.Location = new System.Drawing.Point(141, 187);
+            this.UResBdate.Name = "UResBdate";
+            this.UResBdate.Size = new System.Drawing.Size(268, 24);
+            this.UResBdate.TabIndex = 46;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(30, 570);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(75, 16);
+            this.label43.TabIndex = 46;
+            this.label43.Text = "Occupation";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(29, 194);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(60, 16);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Birthdate";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(29, 529);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(70, 16);
+            this.label47.TabIndex = 45;
+            this.label47.Text = "Nationality";
             // 
             // UrAge
             // 
@@ -727,6 +783,62 @@ namespace VAWCSanPedroHestia
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Complainant";
+            // 
+            // UCompOccupation
+            // 
+            this.UCompOccupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCompOccupation.Location = new System.Drawing.Point(130, 559);
+            this.UCompOccupation.Margin = new System.Windows.Forms.Padding(2);
+            this.UCompOccupation.Name = "UCompOccupation";
+            this.UCompOccupation.Size = new System.Drawing.Size(268, 24);
+            this.UCompOccupation.TabIndex = 44;
+            // 
+            // UCompNationality
+            // 
+            this.UCompNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCompNationality.Location = new System.Drawing.Point(130, 523);
+            this.UCompNationality.Margin = new System.Windows.Forms.Padding(2);
+            this.UCompNationality.Name = "UCompNationality";
+            this.UCompNationality.Size = new System.Drawing.Size(268, 24);
+            this.UCompNationality.TabIndex = 43;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(25, 562);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(75, 16);
+            this.label46.TabIndex = 42;
+            this.label46.Text = "Occupation";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(24, 523);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(70, 16);
+            this.label45.TabIndex = 41;
+            this.label45.Text = "Nationality";
+            // 
+            // UCompBdate
+            // 
+            this.UCompBdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UCompBdate.Location = new System.Drawing.Point(130, 173);
+            this.UCompBdate.Name = "UCompBdate";
+            this.UCompBdate.Size = new System.Drawing.Size(268, 24);
+            this.UCompBdate.TabIndex = 40;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(23, 178);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(60, 16);
+            this.label44.TabIndex = 39;
+            this.label44.Text = "Birthdate";
             // 
             // UcompAge
             // 
@@ -972,7 +1084,7 @@ namespace VAWCSanPedroHestia
             this.UpIncidentDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UpIncidentDate.Location = new System.Drawing.Point(801, 196);
             this.UpIncidentDate.Name = "UpIncidentDate";
-            this.UpIncidentDate.Size = new System.Drawing.Size(282, 26);
+            this.UpIncidentDate.Size = new System.Drawing.Size(343, 26);
             this.UpIncidentDate.TabIndex = 40;
             // 
             // label35
@@ -1046,10 +1158,16 @@ namespace VAWCSanPedroHestia
             // UpRAVio
             // 
             this.UpRAVio.FormattingEnabled = true;
+            this.UpRAVio.Items.AddRange(new object[] {
+            "R.A. 9262: Anti Violence Against Women and their Children Act",
+            "R.A. 8353: Anti-Rape Law of 1995",
+            "R.A. 7877: Anti-Sexual Harrassment Act",
+            "R.A. 9208/10364: Anti-Trafficking in Person Act of 2003"});
             this.UpRAVio.Location = new System.Drawing.Point(187, 87);
             this.UpRAVio.Name = "UpRAVio";
             this.UpRAVio.Size = new System.Drawing.Size(343, 28);
             this.UpRAVio.TabIndex = 3;
+            this.UpRAVio.SelectedIndexChanged += new System.EventHandler(this.UpRAVio_SelectedIndexChanged);
             // 
             // label31
             // 
@@ -1114,118 +1232,6 @@ namespace VAWCSanPedroHestia
             this.button1.Text = "Enter Case No.";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // UCompBdate
-            // 
-            this.UCompBdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCompBdate.Location = new System.Drawing.Point(130, 173);
-            this.UCompBdate.Name = "UCompBdate";
-            this.UCompBdate.Size = new System.Drawing.Size(268, 24);
-            this.UCompBdate.TabIndex = 40;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(23, 178);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(60, 16);
-            this.label44.TabIndex = 39;
-            this.label44.Text = "Birthdate";
-            // 
-            // UCompOccupation
-            // 
-            this.UCompOccupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCompOccupation.Location = new System.Drawing.Point(130, 559);
-            this.UCompOccupation.Margin = new System.Windows.Forms.Padding(2);
-            this.UCompOccupation.Name = "UCompOccupation";
-            this.UCompOccupation.Size = new System.Drawing.Size(268, 24);
-            this.UCompOccupation.TabIndex = 44;
-            // 
-            // UCompNationality
-            // 
-            this.UCompNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UCompNationality.Location = new System.Drawing.Point(130, 523);
-            this.UCompNationality.Margin = new System.Windows.Forms.Padding(2);
-            this.UCompNationality.Name = "UCompNationality";
-            this.UCompNationality.Size = new System.Drawing.Size(268, 24);
-            this.UCompNationality.TabIndex = 43;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(25, 562);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(75, 16);
-            this.label46.TabIndex = 42;
-            this.label46.Text = "Occupation";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(24, 523);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(70, 16);
-            this.label45.TabIndex = 41;
-            this.label45.Text = "Nationality";
-            // 
-            // UResBdate
-            // 
-            this.UResBdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UResBdate.Location = new System.Drawing.Point(141, 187);
-            this.UResBdate.Name = "UResBdate";
-            this.UResBdate.Size = new System.Drawing.Size(268, 24);
-            this.UResBdate.TabIndex = 46;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(29, 194);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 16);
-            this.label4.TabIndex = 45;
-            this.label4.Text = "Birthdate";
-            // 
-            // UResOccupation
-            // 
-            this.UResOccupation.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UResOccupation.Location = new System.Drawing.Point(141, 562);
-            this.UResOccupation.Margin = new System.Windows.Forms.Padding(2);
-            this.UResOccupation.Name = "UResOccupation";
-            this.UResOccupation.Size = new System.Drawing.Size(268, 24);
-            this.UResOccupation.TabIndex = 48;
-            // 
-            // UResNationality
-            // 
-            this.UResNationality.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UResNationality.Location = new System.Drawing.Point(141, 526);
-            this.UResNationality.Margin = new System.Windows.Forms.Padding(2);
-            this.UResNationality.Name = "UResNationality";
-            this.UResNationality.Size = new System.Drawing.Size(268, 24);
-            this.UResNationality.TabIndex = 47;
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(30, 570);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(75, 16);
-            this.label43.TabIndex = 46;
-            this.label43.Text = "Occupation";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(29, 529);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(70, 16);
-            this.label47.TabIndex = 45;
-            this.label47.Text = "Nationality";
             // 
             // ManageCaseListIU
             // 
