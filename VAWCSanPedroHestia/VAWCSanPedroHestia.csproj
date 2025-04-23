@@ -206,6 +206,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AgoraInterop.cs" />
     <Compile Include="ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,11 +231,11 @@
     <Compile Include="NewForm\CallingReceiverForm.Designer.cs">
       <DependentUpon>CallingReceiverForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewForm\CallSystem.cs">
+    <Compile Include="NewForm\CallingSystem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NewForm\CallSystem.Designer.cs">
-      <DependentUpon>CallSystem.cs</DependentUpon>
+    <Compile Include="NewForm\CallingSystem.Designer.cs">
+      <DependentUpon>CallingSystem.cs</DependentUpon>
     </Compile>
     <Compile Include="NewForm\Case List.cs">
       <SubType>Form</SubType>
@@ -310,9 +311,6 @@
     <Compile Include="NewForm\ViewComplaintForm.Designer.cs">
       <DependentUpon>ViewComplaintForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewForm\WaveformViewer.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RA 10364.cs">
@@ -372,8 +370,8 @@
     <EmbeddedResource Include="NewForm\CallingReceiverForm.resx">
       <DependentUpon>CallingReceiverForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewForm\CallSystem.resx">
-      <DependentUpon>CallSystem.cs</DependentUpon>
+    <EmbeddedResource Include="NewForm\CallingSystem.resx">
+      <DependentUpon>CallingSystem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\Case List.resx">
       <DependentUpon>Case List.cs</DependentUpon>
