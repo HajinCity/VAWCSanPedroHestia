@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class Intake_Form: UserControl
+    public partial class BarangayProtectionOrderForm: UserControl
     {
-        public Intake_Form()
+        public BarangayProtectionOrderForm()
         {
             InitializeComponent();
         }
-        private void Intake_Form_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }
