@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace VAWCSanPedroHestia
 {
-    public partial class Intake_Form: UserControl
+    public partial class AddAccountDetails: Form
     {
-        public Intake_Form()
+        public AddAccountDetails()
         {
             InitializeComponent();
         }
-        private void Intake_Form_Load(object sender, EventArgs e)
+
+        private void AddAccountDetails_Load(object sender, EventArgs e)
         {
 
         }
-
-       
     }
 }

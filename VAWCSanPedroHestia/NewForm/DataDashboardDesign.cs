@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace VAWCSanPedroHestia
+namespace VAWCSanPedroHestia.NewForm
 {
-    public partial class Intake_Form: UserControl
+    public partial class DataDashboardDesign: UserControl
     {
-        public Intake_Form()
+        public DataDashboardDesign()
         {
             InitializeComponent();
         }
-        private void Intake_Form_Load(object sender, EventArgs e)
-        {
-
-        }
-
-       
     }
 }
