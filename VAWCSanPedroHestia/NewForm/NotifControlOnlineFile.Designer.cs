@@ -28,22 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnViewComplaint = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::VAWCSanPedroHestia.Properties.Resources.sanpedro14;
-            this.pictureBox1.Location = new System.Drawing.Point(24, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 87);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -77,6 +67,16 @@
             this.btnViewComplaint.Text = "VIEW COMPLAINT";
             this.btnViewComplaint.UseVisualStyleBackColor = false;
             this.btnViewComplaint.Click += new System.EventHandler(this.btnViewComplaint_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::VAWCSanPedroHestia.Properties.Resources.sanpedro14;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // NotifControlOnlineFile
             // 
