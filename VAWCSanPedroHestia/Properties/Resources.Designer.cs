@@ -63,16 +63,6 @@ namespace VAWCSanPedroHestia.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cross {
-            get {
-                object obj = ResourceManager.GetObject("cross", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap rect3 {
             get {
                 object obj = ResourceManager.GetObject("rect3", resourceCulture);
@@ -103,26 +93,6 @@ namespace VAWCSanPedroHestia.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Rectangle_8 {
-            get {
-                object obj = ResourceManager.GetObject("Rectangle 8", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap reject {
-            get {
-                object obj = ResourceManager.GetObject("reject", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap sanpedro1 {
             get {
                 object obj = ResourceManager.GetObject("sanpedro1", resourceCulture);
@@ -136,46 +106,6 @@ namespace VAWCSanPedroHestia.Properties {
         internal static System.Drawing.Bitmap sanpedro14 {
             get {
                 object obj = ResourceManager.GetObject("sanpedro14", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sanpedro141 {
-            get {
-                object obj = ResourceManager.GetObject("sanpedro141", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sanpedro15 {
-            get {
-                object obj = ResourceManager.GetObject("sanpedro15", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sanpedro16 {
-            get {
-                object obj = ResourceManager.GetObject("sanpedro16", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sanpedro18 {
-            get {
-                object obj = ResourceManager.GetObject("sanpedro18", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,16 +166,6 @@ namespace VAWCSanPedroHestia.Properties {
         internal static System.Drawing.Bitmap security_official {
             get {
                 object obj = ResourceManager.GetObject("security-official", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap warning {
-            get {
-                object obj = ResourceManager.GetObject("warning", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

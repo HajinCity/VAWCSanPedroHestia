@@ -117,27 +117,6 @@
     <Reference Include="Microsoft.Win32.Registry, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Win32.Registry.5.0.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
     </Reference>
-    <Reference Include="NAudio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.2.2.1\lib\net472\NAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.Asio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Asio.2.2.1\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Core.2.2.1\lib\netstandard2.0\NAudio.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.Midi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Midi.2.2.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.Wasapi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.Wasapi.2.2.1\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.WinForms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.WinForms.2.2.1\lib\net472\NAudio.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="NAudio.WinMM, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.WinMM.2.2.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -195,6 +174,7 @@
     <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.4.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Threading.Tasks.Extensions.4.6.3\lib\net462\System.Threading.Tasks.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -206,7 +186,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgoraInterop.cs" />
+    <Compile Include="BarangayProtectionOrderForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BarangayProtectionOrderForm.Designer.cs">
+      <DependentUpon>BarangayProtectionOrderForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangePass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,23 +210,29 @@
     <Compile Include="Intake_FormUI.Designer.cs">
       <DependentUpon>Intake_FormUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewForm\CallingReceiverForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewForm\CallingReceiverForm.Designer.cs">
-      <DependentUpon>CallingReceiverForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewForm\CallingSystem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewForm\CallingSystem.Designer.cs">
-      <DependentUpon>CallingSystem.cs</DependentUpon>
-    </Compile>
     <Compile Include="NewForm\Case List.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NewForm\Case List.Designer.cs">
       <DependentUpon>Case List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\DataAnalytics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewForm\DataAnalytics.Designer.cs">
+      <DependentUpon>DataAnalytics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\DataDashboardDesign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewForm\DataDashboardDesign.Designer.cs">
+      <DependentUpon>DataDashboardDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\DataRealTimeAnalytics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewForm\DataRealTimeAnalytics.Designer.cs">
+      <DependentUpon>DataRealTimeAnalytics.cs</DependentUpon>
     </Compile>
     <Compile Include="NewForm\FileACaseSaveToDb.cs" />
     <Compile Include="NewForm\FileACaseUI.cs">
@@ -355,6 +346,9 @@
     <Compile Include="NewForm\SystemManage.Designer.cs">
       <DependentUpon>SystemManage.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="BarangayProtectionOrderForm.resx">
+      <DependentUpon>BarangayProtectionOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChangePass.resx">
       <DependentUpon>ChangePass.cs</DependentUpon>
     </EmbeddedResource>
@@ -367,14 +361,17 @@
     <EmbeddedResource Include="Intake_FormUI.resx">
       <DependentUpon>Intake_FormUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewForm\CallingReceiverForm.resx">
-      <DependentUpon>CallingReceiverForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewForm\CallingSystem.resx">
-      <DependentUpon>CallingSystem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NewForm\Case List.resx">
       <DependentUpon>Case List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\DataAnalytics.resx">
+      <DependentUpon>DataAnalytics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\DataDashboardDesign.resx">
+      <DependentUpon>DataDashboardDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\DataRealTimeAnalytics.resx">
+      <DependentUpon>DataRealTimeAnalytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\FileACaseUI.resx">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
@@ -523,8 +520,6 @@
     <None Include="Resources\rect9.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sanpedro141.png" />
-    <None Include="Resources\sanpedro14.png" />
     <None Include="Resources\security-official.png" />
     <None Include="Resources\sanpedro6.png" />
     <None Include="Resources\sanpedro5.png" />
@@ -539,6 +534,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sanpedro18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpedro14.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets" Condition="Exists('..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets')" />

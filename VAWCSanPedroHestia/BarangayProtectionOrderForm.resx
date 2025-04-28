@@ -117,4 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label11.Text" xml:space="preserve">
+    <value>            Upon requesting for a Dialogue/Conference from the underign for settlement of the 
+marital conflict, the two parties confronted and made an agreement.
+
+             After having heard the application and the withnesses and evidence, the undersigned 
+hereby issues this BPO ordering you to immediately cease and desist from causing or threat-
+ening to cause physical harm or any form of abuse to the complainant.
+
+            This Barangay Protection Order (BPO) is effective for fifteen (15) days from receipt.
+</value>
+  </data>
 </root>
