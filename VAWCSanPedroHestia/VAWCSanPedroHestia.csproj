@@ -186,7 +186,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgoraInterop.cs" />
     <Compile Include="BarangayProtectionOrderForm.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -211,18 +210,6 @@
     <Compile Include="Intake_FormUI.Designer.cs">
       <DependentUpon>Intake_FormUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="NewForm\CallingReceiverForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewForm\CallingReceiverForm.Designer.cs">
-      <DependentUpon>CallingReceiverForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="NewForm\CallingSystem.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="NewForm\CallingSystem.Designer.cs">
-      <DependentUpon>CallingSystem.cs</DependentUpon>
-    </Compile>
     <Compile Include="NewForm\Case List.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -240,6 +227,12 @@
     </Compile>
     <Compile Include="NewForm\DataDashboardDesign.Designer.cs">
       <DependentUpon>DataDashboardDesign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewForm\DataRealTimeAnalytics.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NewForm\DataRealTimeAnalytics.Designer.cs">
+      <DependentUpon>DataRealTimeAnalytics.cs</DependentUpon>
     </Compile>
     <Compile Include="NewForm\FileACaseSaveToDb.cs" />
     <Compile Include="NewForm\FileACaseUI.cs">
@@ -368,12 +361,6 @@
     <EmbeddedResource Include="Intake_FormUI.resx">
       <DependentUpon>Intake_FormUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NewForm\CallingReceiverForm.resx">
-      <DependentUpon>CallingReceiverForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="NewForm\CallingSystem.resx">
-      <DependentUpon>CallingSystem.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="NewForm\Case List.resx">
       <DependentUpon>Case List.cs</DependentUpon>
     </EmbeddedResource>
@@ -382,6 +369,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\DataDashboardDesign.resx">
       <DependentUpon>DataDashboardDesign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewForm\DataRealTimeAnalytics.resx">
+      <DependentUpon>DataRealTimeAnalytics.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewForm\FileACaseUI.resx">
       <DependentUpon>FileACaseUI.cs</DependentUpon>
@@ -530,8 +520,6 @@
     <None Include="Resources\rect9.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\sanpedro141.png" />
-    <None Include="Resources\sanpedro14.png" />
     <None Include="Resources\security-official.png" />
     <None Include="Resources\sanpedro6.png" />
     <None Include="Resources\sanpedro5.png" />
@@ -546,6 +534,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sanpedro18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sanpedro14.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets" Condition="Exists('..\packages\Google.Api.CommonProtos.2.16.0\build\Google.Api.CommonProtos.targets')" />

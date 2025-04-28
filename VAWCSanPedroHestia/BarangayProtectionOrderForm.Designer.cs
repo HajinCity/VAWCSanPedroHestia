@@ -57,6 +57,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -339,11 +344,61 @@
             this.textBox2.Size = new System.Drawing.Size(179, 18);
             this.textBox2.TabIndex = 55;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(172, 722);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(229, 13);
+            this.label33.TabIndex = 56;
+            this.label33.Text = "_____________________________________";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(169, 783);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(229, 13);
+            this.label24.TabIndex = 57;
+            this.label24.Text = "_____________________________________";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(169, 828);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(229, 13);
+            this.label25.TabIndex = 58;
+            this.label25.Text = "_____________________________________";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(210, 738);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(145, 13);
+            this.label26.TabIndex = 59;
+            this.label26.Text = "Signature Over Printed Name";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(210, 843);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(145, 13);
+            this.label27.TabIndex = 60;
+            this.label27.Text = "Signature Over Printed Name";
+            // 
             // BarangayProtectionOrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label3);
@@ -412,5 +467,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
     }
 }

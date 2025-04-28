@@ -55,7 +55,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -98,6 +97,7 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -363,15 +363,6 @@
             this.label4.Size = new System.Drawing.Size(86, 19);
             this.label4.TabIndex = 7;
             this.label4.Text = "CASE NO.";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(112, 230);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "_______________";
             // 
             // label2
             // 
@@ -778,11 +769,20 @@
             this.label19.TabIndex = 24;
             this.label19.Text = "VIOLENCE AGAINST WOMEN AND THEIR CHILDREN ";
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(115, 223);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(240, 24);
+            this.textBox2.TabIndex = 75;
+            // 
             // Intake_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label64);
@@ -847,7 +847,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.label1);
@@ -892,7 +891,6 @@
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -935,5 +933,6 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }

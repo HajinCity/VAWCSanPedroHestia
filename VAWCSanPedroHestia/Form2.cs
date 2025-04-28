@@ -97,7 +97,7 @@ namespace VAWCSanPedroHestia
 
         private void report_btn_Click(object sender, EventArgs e)
         {
-
+            openingForm(new QuarterlyAccomplishmentReport());
         }
 
         private void management_btn_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace VAWCSanPedroHestia
         private  void call_btn_Click(object sender, EventArgs e)
         {
 
-            openingForm(new CallingSystem());
+            openingForm(new QuarterlyAccomplishmentReport()); 
         }
 
 

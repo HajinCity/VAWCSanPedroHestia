@@ -112,7 +112,7 @@
             // ComplaintDate
             // 
             this.ComplaintDate.AutoSize = true;
-            this.ComplaintDate.Location = new System.Drawing.Point(294, 518);
+            this.ComplaintDate.Location = new System.Drawing.Point(120, 548);
             this.ComplaintDate.Name = "ComplaintDate";
             this.ComplaintDate.Size = new System.Drawing.Size(82, 13);
             this.ComplaintDate.TabIndex = 42;
@@ -190,7 +190,7 @@
             // 
             this.ComplaintDetails.BackColor = System.Drawing.Color.White;
             this.ComplaintDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ComplaintDetails.Location = new System.Drawing.Point(103, 549);
+            this.ComplaintDetails.Location = new System.Drawing.Point(120, 578);
             this.ComplaintDetails.Multiline = true;
             this.ComplaintDetails.Name = "ComplaintDetails";
             this.ComplaintDetails.Size = new System.Drawing.Size(578, 75);
@@ -199,7 +199,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(206, 518);
+            this.label11.Location = new System.Drawing.Point(18, 548);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(82, 13);
             this.label11.TabIndex = 33;
@@ -291,12 +291,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::VAWCSanPedroHestia.Properties.Resources.sanpedro141;
-            this.pictureBox1.Location = new System.Drawing.Point(381, 2);
+            this.pictureBox1.Image = global::VAWCSanPedroHestia.Properties.Resources.sanpedro14;
+            this.pictureBox1.Location = new System.Drawing.Point(361, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(90, 88);
+            this.pictureBox1.Size = new System.Drawing.Size(94, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 23;
+            this.pictureBox1.TabIndex = 77;
             this.pictureBox1.TabStop = false;
             // 
             // label12
@@ -554,7 +554,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(400, 518);
+            this.label19.Location = new System.Drawing.Point(438, 518);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(77, 13);
             this.label19.TabIndex = 73;
@@ -563,7 +563,7 @@
             // IncidentDate
             // 
             this.IncidentDate.AutoSize = true;
-            this.IncidentDate.Location = new System.Drawing.Point(488, 518);
+            this.IncidentDate.Location = new System.Drawing.Point(526, 518);
             this.IncidentDate.Name = "IncidentDate";
             this.IncidentDate.Size = new System.Drawing.Size(38, 13);
             this.IncidentDate.TabIndex = 74;
@@ -572,7 +572,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(565, 518);
+            this.label28.Location = new System.Drawing.Point(437, 548);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(89, 13);
             this.label28.TabIndex = 75;
@@ -581,7 +581,7 @@
             // IncidentAddress
             // 
             this.IncidentAddress.AutoSize = true;
-            this.IncidentAddress.Location = new System.Drawing.Point(660, 518);
+            this.IncidentAddress.Location = new System.Drawing.Point(541, 548);
             this.IncidentAddress.Name = "IncidentAddress";
             this.IncidentAddress.Size = new System.Drawing.Size(38, 13);
             this.IncidentAddress.TabIndex = 76;
