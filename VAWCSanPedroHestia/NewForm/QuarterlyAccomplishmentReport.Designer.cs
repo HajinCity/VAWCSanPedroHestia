@@ -31,12 +31,14 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.dataDashboardDesign1 = new VAWCSanPedroHestia.NewForm.DataDashboardDesign();
             this.dataRealTimeAnalytics1 = new VAWCSanPedroHestia.NewForm.DataRealTimeAnalytics();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.intake_Form1 = new VAWCSanPedroHestia.Intake_Form();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -72,6 +74,17 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.intake_Form1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(854, 1119);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // dataDashboardDesign1
             // 
             this.dataDashboardDesign1.AutoSize = true;
@@ -89,15 +102,13 @@
             this.dataRealTimeAnalytics1.Size = new System.Drawing.Size(818, 1098);
             this.dataRealTimeAnalytics1.TabIndex = 0;
             // 
-            // tabPage3
+            // intake_Form1
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(854, 1119);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.intake_Form1.BackColor = System.Drawing.Color.White;
+            this.intake_Form1.Location = new System.Drawing.Point(16, 6);
+            this.intake_Form1.Name = "intake_Form1";
+            this.intake_Form1.Size = new System.Drawing.Size(818, 1098);
+            this.intake_Form1.TabIndex = 0;
             // 
             // QuarterlyAccomplishmentReport
             // 
@@ -105,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1259, 1049);
+            this.ClientSize = new System.Drawing.Size(1344, 1049);
             this.Controls.Add(this.tabControl1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "QuarterlyAccomplishmentReport";
@@ -114,6 +125,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -123,8 +135,9 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private DataDashboardDesign dataDashboardDesign1;
         private DataRealTimeAnalytics dataRealTimeAnalytics1;
         private System.Windows.Forms.TabPage tabPage3;
+        private DataDashboardDesign dataDashboardDesign1;
+        private Intake_Form intake_Form1;
     }
 }
