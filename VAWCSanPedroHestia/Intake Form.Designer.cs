@@ -1,4 +1,4 @@
-﻿namespace VAWCSanPedroHestia
+namespace VAWCSanPedroHestia
 {
     partial class Intake_Form
     {
@@ -114,8 +114,8 @@
             this.RespondentAge = new System.Windows.Forms.Label();
             this.RespondentAddress = new System.Windows.Forms.Label();
             this.RespondentCivilStatus = new System.Windows.Forms.Label();
-            this.RespondentNationality = new System.Windows.Forms.Label();
             this.RespondentReligion = new System.Windows.Forms.Label();
+            this.RespondentNationality = new System.Windows.Forms.Label();
             this.RespondentOccupation = new System.Windows.Forms.Label();
             this.RespondentRelationshipstoVictim = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -796,12 +796,11 @@
             this.CaseTextBox.Name = "CaseTextBox";
             this.CaseTextBox.Size = new System.Drawing.Size(240, 24);
             this.CaseTextBox.TabIndex = 75;
-            this.CaseTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CaseTextBox_KeyDown);
             // 
             // ComplaintDate
             // 
             this.ComplaintDate.AutoSize = true;
-            this.ComplaintDate.Location = new System.Drawing.Point(677, 226);
+            this.ComplaintDate.Location = new System.Drawing.Point(673, 230);
             this.ComplaintDate.Name = "ComplaintDate";
             this.ComplaintDate.Size = new System.Drawing.Size(35, 13);
             this.ComplaintDate.TabIndex = 76;
@@ -810,7 +809,7 @@
             // ComplainantFullName
             // 
             this.ComplainantFullName.AutoSize = true;
-            this.ComplainantFullName.Location = new System.Drawing.Point(100, 307);
+            this.ComplainantFullName.Location = new System.Drawing.Point(137, 307);
             this.ComplainantFullName.Name = "ComplainantFullName";
             this.ComplainantFullName.Size = new System.Drawing.Size(41, 13);
             this.ComplainantFullName.TabIndex = 77;
@@ -819,7 +818,7 @@
             // ComplainantContactNo
             // 
             this.ComplainantContactNo.AutoSize = true;
-            this.ComplainantContactNo.Location = new System.Drawing.Point(218, 341);
+            this.ComplainantContactNo.Location = new System.Drawing.Point(175, 341);
             this.ComplainantContactNo.Name = "ComplainantContactNo";
             this.ComplainantContactNo.Size = new System.Drawing.Size(41, 13);
             this.ComplainantContactNo.TabIndex = 78;
@@ -828,7 +827,7 @@
             // ComplainantSex
             // 
             this.ComplainantSex.AutoSize = true;
-            this.ComplainantSex.Location = new System.Drawing.Point(544, 341);
+            this.ComplainantSex.Location = new System.Drawing.Point(532, 341);
             this.ComplainantSex.Name = "ComplainantSex";
             this.ComplainantSex.Size = new System.Drawing.Size(41, 13);
             this.ComplainantSex.TabIndex = 79;
@@ -837,7 +836,7 @@
             // ComplainantAge
             // 
             this.ComplainantAge.AutoSize = true;
-            this.ComplainantAge.Location = new System.Drawing.Point(702, 341);
+            this.ComplainantAge.Location = new System.Drawing.Point(687, 341);
             this.ComplainantAge.Name = "ComplainantAge";
             this.ComplainantAge.Size = new System.Drawing.Size(41, 13);
             this.ComplainantAge.TabIndex = 80;
@@ -855,7 +854,7 @@
             // ComplainantCivilStatus
             // 
             this.ComplainantCivilStatus.AutoSize = true;
-            this.ComplainantCivilStatus.Location = new System.Drawing.Point(159, 404);
+            this.ComplainantCivilStatus.Location = new System.Drawing.Point(162, 404);
             this.ComplainantCivilStatus.Name = "ComplainantCivilStatus";
             this.ComplainantCivilStatus.Size = new System.Drawing.Size(41, 13);
             this.ComplainantCivilStatus.TabIndex = 82;
@@ -864,7 +863,7 @@
             // ComplainantReligion
             // 
             this.ComplainantReligion.AutoSize = true;
-            this.ComplainantReligion.Location = new System.Drawing.Point(596, 404);
+            this.ComplainantReligion.Location = new System.Drawing.Point(594, 404);
             this.ComplainantReligion.Name = "ComplainantReligion";
             this.ComplainantReligion.Size = new System.Drawing.Size(41, 13);
             this.ComplainantReligion.TabIndex = 83;
@@ -873,7 +872,7 @@
             // ComplainantNationality
             // 
             this.ComplainantNationality.AutoSize = true;
-            this.ComplainantNationality.Location = new System.Drawing.Point(159, 434);
+            this.ComplainantNationality.Location = new System.Drawing.Point(162, 436);
             this.ComplainantNationality.Name = "ComplainantNationality";
             this.ComplainantNationality.Size = new System.Drawing.Size(41, 13);
             this.ComplainantNationality.TabIndex = 84;
@@ -882,101 +881,101 @@
             // ComplainantOccupation
             // 
             this.ComplainantOccupation.AutoSize = true;
-            this.ComplainantOccupation.Location = new System.Drawing.Point(596, 432);
+            this.ComplainantOccupation.Location = new System.Drawing.Point(594, 432);
             this.ComplainantOccupation.Name = "ComplainantOccupation";
             this.ComplainantOccupation.Size = new System.Drawing.Size(41, 13);
-            this.ComplainantOccupation.TabIndex = 86;
+            this.ComplainantOccupation.TabIndex = 85;
             this.ComplainantOccupation.Text = "label75";
             // 
             // RespondentFullName
             // 
             this.RespondentFullName.AutoSize = true;
-            this.RespondentFullName.Location = new System.Drawing.Point(105, 538);
+            this.RespondentFullName.Location = new System.Drawing.Point(102, 529);
             this.RespondentFullName.Name = "RespondentFullName";
             this.RespondentFullName.Size = new System.Drawing.Size(41, 13);
-            this.RespondentFullName.TabIndex = 87;
-            this.RespondentFullName.Text = "label76";
+            this.RespondentFullName.TabIndex = 88;
+            this.RespondentFullName.Text = "label78";
             // 
             // RespondentContactNo
             // 
             this.RespondentContactNo.AutoSize = true;
-            this.RespondentContactNo.Location = new System.Drawing.Point(148, 572);
+            this.RespondentContactNo.Location = new System.Drawing.Point(192, 572);
             this.RespondentContactNo.Name = "RespondentContactNo";
             this.RespondentContactNo.Size = new System.Drawing.Size(41, 13);
-            this.RespondentContactNo.TabIndex = 88;
-            this.RespondentContactNo.Text = "label77";
+            this.RespondentContactNo.TabIndex = 89;
+            this.RespondentContactNo.Text = "label79";
             // 
             // RespondentSex
             // 
             this.RespondentSex.AutoSize = true;
-            this.RespondentSex.Location = new System.Drawing.Point(544, 572);
+            this.RespondentSex.Location = new System.Drawing.Point(534, 572);
             this.RespondentSex.Name = "RespondentSex";
             this.RespondentSex.Size = new System.Drawing.Size(41, 13);
-            this.RespondentSex.TabIndex = 89;
-            this.RespondentSex.Text = "label78";
+            this.RespondentSex.TabIndex = 90;
+            this.RespondentSex.Text = "label80";
             // 
             // RespondentAge
             // 
             this.RespondentAge.AutoSize = true;
-            this.RespondentAge.Location = new System.Drawing.Point(702, 572);
+            this.RespondentAge.Location = new System.Drawing.Point(687, 572);
             this.RespondentAge.Name = "RespondentAge";
             this.RespondentAge.Size = new System.Drawing.Size(41, 13);
-            this.RespondentAge.TabIndex = 90;
-            this.RespondentAge.Text = "label79";
+            this.RespondentAge.TabIndex = 91;
+            this.RespondentAge.Text = "label81";
             // 
             // RespondentAddress
             // 
             this.RespondentAddress.AutoSize = true;
-            this.RespondentAddress.Location = new System.Drawing.Point(142, 604);
+            this.RespondentAddress.Location = new System.Drawing.Point(143, 604);
             this.RespondentAddress.Name = "RespondentAddress";
             this.RespondentAddress.Size = new System.Drawing.Size(41, 13);
-            this.RespondentAddress.TabIndex = 91;
-            this.RespondentAddress.Text = "label80";
+            this.RespondentAddress.TabIndex = 92;
+            this.RespondentAddress.Text = "label82";
             // 
             // RespondentCivilStatus
             // 
             this.RespondentCivilStatus.AutoSize = true;
-            this.RespondentCivilStatus.Location = new System.Drawing.Point(159, 637);
+            this.RespondentCivilStatus.Location = new System.Drawing.Point(162, 637);
             this.RespondentCivilStatus.Name = "RespondentCivilStatus";
             this.RespondentCivilStatus.Size = new System.Drawing.Size(41, 13);
-            this.RespondentCivilStatus.TabIndex = 92;
-            this.RespondentCivilStatus.Text = "label81";
-            // 
-            // RespondentNationality
-            // 
-            this.RespondentNationality.AutoSize = true;
-            this.RespondentNationality.Location = new System.Drawing.Point(159, 663);
-            this.RespondentNationality.Name = "RespondentNationality";
-            this.RespondentNationality.Size = new System.Drawing.Size(41, 13);
-            this.RespondentNationality.TabIndex = 93;
-            this.RespondentNationality.Text = "label82";
+            this.RespondentCivilStatus.TabIndex = 93;
+            this.RespondentCivilStatus.Text = "label83";
             // 
             // RespondentReligion
             // 
             this.RespondentReligion.AutoSize = true;
-            this.RespondentReligion.Location = new System.Drawing.Point(596, 637);
+            this.RespondentReligion.Location = new System.Drawing.Point(573, 637);
             this.RespondentReligion.Name = "RespondentReligion";
             this.RespondentReligion.Size = new System.Drawing.Size(41, 13);
             this.RespondentReligion.TabIndex = 94;
-            this.RespondentReligion.Text = "label83";
+            this.RespondentReligion.Text = "label84";
+            // 
+            // RespondentNationality
+            // 
+            this.RespondentNationality.AutoSize = true;
+            this.RespondentNationality.Location = new System.Drawing.Point(162, 663);
+            this.RespondentNationality.Name = "RespondentNationality";
+            this.RespondentNationality.Size = new System.Drawing.Size(41, 13);
+            this.RespondentNationality.TabIndex = 95;
+            this.RespondentNationality.Text = "label85";
             // 
             // RespondentOccupation
             // 
             this.RespondentOccupation.AutoSize = true;
-            this.RespondentOccupation.Location = new System.Drawing.Point(596, 663);
+            this.RespondentOccupation.Location = new System.Drawing.Point(576, 663);
             this.RespondentOccupation.Name = "RespondentOccupation";
             this.RespondentOccupation.Size = new System.Drawing.Size(41, 13);
-            this.RespondentOccupation.TabIndex = 95;
-            this.RespondentOccupation.Text = "label84";
+            this.RespondentOccupation.TabIndex = 96;
+            this.RespondentOccupation.Text = "label86";
             // 
             // RespondentRelationshipstoVictim
             // 
             this.RespondentRelationshipstoVictim.AutoSize = true;
-            this.RespondentRelationshipstoVictim.Location = new System.Drawing.Point(576, 737);
+            this.RespondentRelationshipstoVictim.Location = new System.Drawing.Point(555, 737);
             this.RespondentRelationshipstoVictim.Name = "RespondentRelationshipstoVictim";
             this.RespondentRelationshipstoVictim.Size = new System.Drawing.Size(41, 13);
-            this.RespondentRelationshipstoVictim.TabIndex = 96;
-            this.RespondentRelationshipstoVictim.Text = "label85";
+            this.RespondentRelationshipstoVictim.TabIndex = 97;
+            this.RespondentRelationshipstoVictim.Text = "label87";
             // 
             // Intake_Form
             // 
@@ -985,8 +984,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.RespondentRelationshipstoVictim);
             this.Controls.Add(this.RespondentOccupation);
-            this.Controls.Add(this.RespondentReligion);
             this.Controls.Add(this.RespondentNationality);
+            this.Controls.Add(this.RespondentReligion);
             this.Controls.Add(this.RespondentCivilStatus);
             this.Controls.Add(this.RespondentAddress);
             this.Controls.Add(this.RespondentAge);
@@ -1171,8 +1170,8 @@
         private System.Windows.Forms.Label RespondentAge;
         private System.Windows.Forms.Label RespondentAddress;
         private System.Windows.Forms.Label RespondentCivilStatus;
-        private System.Windows.Forms.Label RespondentNationality;
         private System.Windows.Forms.Label RespondentReligion;
+        private System.Windows.Forms.Label RespondentNationality;
         private System.Windows.Forms.Label RespondentOccupation;
         private System.Windows.Forms.Label RespondentRelationshipstoVictim;
     }

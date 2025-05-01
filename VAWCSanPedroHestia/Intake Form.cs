@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -18,15 +18,15 @@ namespace VAWCSanPedroHestia
 
         public Intake_Form()
         {
-            
+
             InitializeComponent();
-                
-           
+
+            _db = FirebaseInitialization.Database;
         }
 
         private void Intake_Form_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private async void CaseTextBox_KeyDown(object sender, KeyEventArgs e)
