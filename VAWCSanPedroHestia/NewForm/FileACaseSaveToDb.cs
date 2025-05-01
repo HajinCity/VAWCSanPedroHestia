@@ -36,7 +36,7 @@ namespace VAWCSanPedroHestia.NewForm
                             Province = form.Ctxtprvnc.Text ?? "",
                             Region = form.Ctxtrgn.Text ?? ""
                         }
-                       
+
                     },
                     Respondent = new
                     {
@@ -81,6 +81,11 @@ namespace VAWCSanPedroHestia.NewForm
                             Region = form.piRegion.Text ?? ""
                         },
                         IncidentDescription = form.DescriptionIncident.Text ?? ""
+                    },
+
+                    BPO = new
+                    {
+                        BPOOrder = "Not Yet Requested"
                     }
                 };
 

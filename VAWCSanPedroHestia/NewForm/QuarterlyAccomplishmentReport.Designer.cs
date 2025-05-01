@@ -30,13 +30,16 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataDashboardDesign1 = new VAWCSanPedroHestia.NewForm.DataDashboardDesign();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataRealTimeAnalytics1 = new VAWCSanPedroHestia.NewForm.DataRealTimeAnalytics();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.barangayProtectionOrderForm1 = new VAWCSanPedroHestia.BarangayProtectionOrderForm();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -44,6 +47,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(181, 81);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -61,6 +65,15 @@
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dataDashboardDesign1
+            // 
+            this.dataDashboardDesign1.AutoSize = true;
+            this.dataDashboardDesign1.BackColor = System.Drawing.Color.White;
+            this.dataDashboardDesign1.Location = new System.Drawing.Point(19, 15);
+            this.dataDashboardDesign1.Name = "dataDashboardDesign1";
+            this.dataDashboardDesign1.Size = new System.Drawing.Size(818, 964);
+            this.dataDashboardDesign1.TabIndex = 0;
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.dataRealTimeAnalytics1);
@@ -71,15 +84,6 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataDashboardDesign1
-            // 
-            this.dataDashboardDesign1.AutoSize = true;
-            this.dataDashboardDesign1.BackColor = System.Drawing.Color.White;
-            this.dataDashboardDesign1.Location = new System.Drawing.Point(19, 15);
-            this.dataDashboardDesign1.Name = "dataDashboardDesign1";
-            this.dataDashboardDesign1.Size = new System.Drawing.Size(818, 964);
-            this.dataDashboardDesign1.TabIndex = 0;
             // 
             // dataRealTimeAnalytics1
             // 
@@ -99,6 +103,25 @@
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.barangayProtectionOrderForm1);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(854, 1119);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // barangayProtectionOrderForm1
+            // 
+            this.barangayProtectionOrderForm1.BackColor = System.Drawing.Color.White;
+            this.barangayProtectionOrderForm1.Location = new System.Drawing.Point(17, 15);
+            this.barangayProtectionOrderForm1.Name = "barangayProtectionOrderForm1";
+            this.barangayProtectionOrderForm1.Size = new System.Drawing.Size(818, 1098);
+            this.barangayProtectionOrderForm1.TabIndex = 0;
+            // 
             // QuarterlyAccomplishmentReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -114,6 +137,7 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -126,5 +150,7 @@
         private DataDashboardDesign dataDashboardDesign1;
         private DataRealTimeAnalytics dataRealTimeAnalytics1;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private BarangayProtectionOrderForm barangayProtectionOrderForm1;
     }
 }
