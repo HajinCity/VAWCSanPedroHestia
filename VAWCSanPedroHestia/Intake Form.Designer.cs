@@ -1,4 +1,4 @@
-﻿namespace VAWCSanPedroHestia
+namespace VAWCSanPedroHestia
 {
     partial class Intake_Form
     {
@@ -97,7 +97,27 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.CaseTextBox = new System.Windows.Forms.TextBox();
+            this.ComplaintDate = new System.Windows.Forms.Label();
+            this.ComplainantFullName = new System.Windows.Forms.Label();
+            this.ComplainantContactNo = new System.Windows.Forms.Label();
+            this.ComplainantSex = new System.Windows.Forms.Label();
+            this.ComplainantAge = new System.Windows.Forms.Label();
+            this.ComplainantAddress = new System.Windows.Forms.Label();
+            this.ComplainantCivilStatus = new System.Windows.Forms.Label();
+            this.ComplainantReligion = new System.Windows.Forms.Label();
+            this.ComplainantNationality = new System.Windows.Forms.Label();
+            this.ComplainantOccupation = new System.Windows.Forms.Label();
+            this.RespondentFullName = new System.Windows.Forms.Label();
+            this.RespondentContactNo = new System.Windows.Forms.Label();
+            this.RespondentSex = new System.Windows.Forms.Label();
+            this.RespondentAge = new System.Windows.Forms.Label();
+            this.RespondentAddress = new System.Windows.Forms.Label();
+            this.RespondentCivilStatus = new System.Windows.Forms.Label();
+            this.RespondentReligion = new System.Windows.Forms.Label();
+            this.RespondentNationality = new System.Windows.Forms.Label();
+            this.RespondentOccupation = new System.Windows.Forms.Label();
+            this.RespondentRelationshipstoVictim = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -769,20 +789,220 @@
             this.label19.TabIndex = 24;
             this.label19.Text = "VIOLENCE AGAINST WOMEN AND THEIR CHILDREN ";
             // 
-            // textBox2
+            // CaseTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(115, 223);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(240, 24);
-            this.textBox2.TabIndex = 75;
+            this.CaseTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CaseTextBox.Location = new System.Drawing.Point(115, 223);
+            this.CaseTextBox.Name = "CaseTextBox";
+            this.CaseTextBox.Size = new System.Drawing.Size(240, 24);
+            this.CaseTextBox.TabIndex = 75;
+            // 
+            // ComplaintDate
+            // 
+            this.ComplaintDate.AutoSize = true;
+            this.ComplaintDate.Location = new System.Drawing.Point(673, 230);
+            this.ComplaintDate.Name = "ComplaintDate";
+            this.ComplaintDate.Size = new System.Drawing.Size(35, 13);
+            this.ComplaintDate.TabIndex = 76;
+            this.ComplaintDate.Text = "label5";
+            // 
+            // ComplainantFullName
+            // 
+            this.ComplainantFullName.AutoSize = true;
+            this.ComplainantFullName.Location = new System.Drawing.Point(137, 307);
+            this.ComplainantFullName.Name = "ComplainantFullName";
+            this.ComplainantFullName.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantFullName.TabIndex = 77;
+            this.ComplainantFullName.Text = "label67";
+            // 
+            // ComplainantContactNo
+            // 
+            this.ComplainantContactNo.AutoSize = true;
+            this.ComplainantContactNo.Location = new System.Drawing.Point(175, 341);
+            this.ComplainantContactNo.Name = "ComplainantContactNo";
+            this.ComplainantContactNo.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantContactNo.TabIndex = 78;
+            this.ComplainantContactNo.Text = "label68";
+            // 
+            // ComplainantSex
+            // 
+            this.ComplainantSex.AutoSize = true;
+            this.ComplainantSex.Location = new System.Drawing.Point(532, 341);
+            this.ComplainantSex.Name = "ComplainantSex";
+            this.ComplainantSex.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantSex.TabIndex = 79;
+            this.ComplainantSex.Text = "label69";
+            // 
+            // ComplainantAge
+            // 
+            this.ComplainantAge.AutoSize = true;
+            this.ComplainantAge.Location = new System.Drawing.Point(687, 341);
+            this.ComplainantAge.Name = "ComplainantAge";
+            this.ComplainantAge.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantAge.TabIndex = 80;
+            this.ComplainantAge.Text = "label70";
+            // 
+            // ComplainantAddress
+            // 
+            this.ComplainantAddress.AutoSize = true;
+            this.ComplainantAddress.Location = new System.Drawing.Point(137, 373);
+            this.ComplainantAddress.Name = "ComplainantAddress";
+            this.ComplainantAddress.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantAddress.TabIndex = 81;
+            this.ComplainantAddress.Text = "label71";
+            // 
+            // ComplainantCivilStatus
+            // 
+            this.ComplainantCivilStatus.AutoSize = true;
+            this.ComplainantCivilStatus.Location = new System.Drawing.Point(162, 404);
+            this.ComplainantCivilStatus.Name = "ComplainantCivilStatus";
+            this.ComplainantCivilStatus.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantCivilStatus.TabIndex = 82;
+            this.ComplainantCivilStatus.Text = "label72";
+            // 
+            // ComplainantReligion
+            // 
+            this.ComplainantReligion.AutoSize = true;
+            this.ComplainantReligion.Location = new System.Drawing.Point(594, 404);
+            this.ComplainantReligion.Name = "ComplainantReligion";
+            this.ComplainantReligion.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantReligion.TabIndex = 83;
+            this.ComplainantReligion.Text = "label73";
+            // 
+            // ComplainantNationality
+            // 
+            this.ComplainantNationality.AutoSize = true;
+            this.ComplainantNationality.Location = new System.Drawing.Point(162, 436);
+            this.ComplainantNationality.Name = "ComplainantNationality";
+            this.ComplainantNationality.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantNationality.TabIndex = 84;
+            this.ComplainantNationality.Text = "label74";
+            // 
+            // ComplainantOccupation
+            // 
+            this.ComplainantOccupation.AutoSize = true;
+            this.ComplainantOccupation.Location = new System.Drawing.Point(594, 432);
+            this.ComplainantOccupation.Name = "ComplainantOccupation";
+            this.ComplainantOccupation.Size = new System.Drawing.Size(41, 13);
+            this.ComplainantOccupation.TabIndex = 85;
+            this.ComplainantOccupation.Text = "label75";
+            // 
+            // RespondentFullName
+            // 
+            this.RespondentFullName.AutoSize = true;
+            this.RespondentFullName.Location = new System.Drawing.Point(102, 529);
+            this.RespondentFullName.Name = "RespondentFullName";
+            this.RespondentFullName.Size = new System.Drawing.Size(41, 13);
+            this.RespondentFullName.TabIndex = 88;
+            this.RespondentFullName.Text = "label78";
+            // 
+            // RespondentContactNo
+            // 
+            this.RespondentContactNo.AutoSize = true;
+            this.RespondentContactNo.Location = new System.Drawing.Point(192, 572);
+            this.RespondentContactNo.Name = "RespondentContactNo";
+            this.RespondentContactNo.Size = new System.Drawing.Size(41, 13);
+            this.RespondentContactNo.TabIndex = 89;
+            this.RespondentContactNo.Text = "label79";
+            // 
+            // RespondentSex
+            // 
+            this.RespondentSex.AutoSize = true;
+            this.RespondentSex.Location = new System.Drawing.Point(534, 572);
+            this.RespondentSex.Name = "RespondentSex";
+            this.RespondentSex.Size = new System.Drawing.Size(41, 13);
+            this.RespondentSex.TabIndex = 90;
+            this.RespondentSex.Text = "label80";
+            // 
+            // RespondentAge
+            // 
+            this.RespondentAge.AutoSize = true;
+            this.RespondentAge.Location = new System.Drawing.Point(687, 572);
+            this.RespondentAge.Name = "RespondentAge";
+            this.RespondentAge.Size = new System.Drawing.Size(41, 13);
+            this.RespondentAge.TabIndex = 91;
+            this.RespondentAge.Text = "label81";
+            // 
+            // RespondentAddress
+            // 
+            this.RespondentAddress.AutoSize = true;
+            this.RespondentAddress.Location = new System.Drawing.Point(143, 604);
+            this.RespondentAddress.Name = "RespondentAddress";
+            this.RespondentAddress.Size = new System.Drawing.Size(41, 13);
+            this.RespondentAddress.TabIndex = 92;
+            this.RespondentAddress.Text = "label82";
+            // 
+            // RespondentCivilStatus
+            // 
+            this.RespondentCivilStatus.AutoSize = true;
+            this.RespondentCivilStatus.Location = new System.Drawing.Point(162, 637);
+            this.RespondentCivilStatus.Name = "RespondentCivilStatus";
+            this.RespondentCivilStatus.Size = new System.Drawing.Size(41, 13);
+            this.RespondentCivilStatus.TabIndex = 93;
+            this.RespondentCivilStatus.Text = "label83";
+            // 
+            // RespondentReligion
+            // 
+            this.RespondentReligion.AutoSize = true;
+            this.RespondentReligion.Location = new System.Drawing.Point(573, 637);
+            this.RespondentReligion.Name = "RespondentReligion";
+            this.RespondentReligion.Size = new System.Drawing.Size(41, 13);
+            this.RespondentReligion.TabIndex = 94;
+            this.RespondentReligion.Text = "label84";
+            // 
+            // RespondentNationality
+            // 
+            this.RespondentNationality.AutoSize = true;
+            this.RespondentNationality.Location = new System.Drawing.Point(162, 663);
+            this.RespondentNationality.Name = "RespondentNationality";
+            this.RespondentNationality.Size = new System.Drawing.Size(41, 13);
+            this.RespondentNationality.TabIndex = 95;
+            this.RespondentNationality.Text = "label85";
+            // 
+            // RespondentOccupation
+            // 
+            this.RespondentOccupation.AutoSize = true;
+            this.RespondentOccupation.Location = new System.Drawing.Point(576, 663);
+            this.RespondentOccupation.Name = "RespondentOccupation";
+            this.RespondentOccupation.Size = new System.Drawing.Size(41, 13);
+            this.RespondentOccupation.TabIndex = 96;
+            this.RespondentOccupation.Text = "label86";
+            // 
+            // RespondentRelationshipstoVictim
+            // 
+            this.RespondentRelationshipstoVictim.AutoSize = true;
+            this.RespondentRelationshipstoVictim.Location = new System.Drawing.Point(555, 737);
+            this.RespondentRelationshipstoVictim.Name = "RespondentRelationshipstoVictim";
+            this.RespondentRelationshipstoVictim.Size = new System.Drawing.Size(41, 13);
+            this.RespondentRelationshipstoVictim.TabIndex = 97;
+            this.RespondentRelationshipstoVictim.Text = "label87";
             // 
             // Intake_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.RespondentRelationshipstoVictim);
+            this.Controls.Add(this.RespondentOccupation);
+            this.Controls.Add(this.RespondentNationality);
+            this.Controls.Add(this.RespondentReligion);
+            this.Controls.Add(this.RespondentCivilStatus);
+            this.Controls.Add(this.RespondentAddress);
+            this.Controls.Add(this.RespondentAge);
+            this.Controls.Add(this.RespondentSex);
+            this.Controls.Add(this.RespondentContactNo);
+            this.Controls.Add(this.RespondentFullName);
+            this.Controls.Add(this.ComplainantOccupation);
+            this.Controls.Add(this.ComplainantNationality);
+            this.Controls.Add(this.ComplainantReligion);
+            this.Controls.Add(this.ComplainantCivilStatus);
+            this.Controls.Add(this.ComplainantAddress);
+            this.Controls.Add(this.ComplainantAge);
+            this.Controls.Add(this.ComplainantSex);
+            this.Controls.Add(this.ComplainantContactNo);
+            this.Controls.Add(this.ComplainantFullName);
+            this.Controls.Add(this.ComplaintDate);
+            this.Controls.Add(this.CaseTextBox);
             this.Controls.Add(this.label66);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label64);
@@ -933,6 +1153,26 @@
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox CaseTextBox;
+        private System.Windows.Forms.Label ComplaintDate;
+        private System.Windows.Forms.Label ComplainantFullName;
+        private System.Windows.Forms.Label ComplainantContactNo;
+        private System.Windows.Forms.Label ComplainantSex;
+        private System.Windows.Forms.Label ComplainantAge;
+        private System.Windows.Forms.Label ComplainantAddress;
+        private System.Windows.Forms.Label ComplainantCivilStatus;
+        private System.Windows.Forms.Label ComplainantReligion;
+        private System.Windows.Forms.Label ComplainantNationality;
+        private System.Windows.Forms.Label ComplainantOccupation;
+        private System.Windows.Forms.Label RespondentFullName;
+        private System.Windows.Forms.Label RespondentContactNo;
+        private System.Windows.Forms.Label RespondentSex;
+        private System.Windows.Forms.Label RespondentAge;
+        private System.Windows.Forms.Label RespondentAddress;
+        private System.Windows.Forms.Label RespondentCivilStatus;
+        private System.Windows.Forms.Label RespondentReligion;
+        private System.Windows.Forms.Label RespondentNationality;
+        private System.Windows.Forms.Label RespondentOccupation;
+        private System.Windows.Forms.Label RespondentRelationshipstoVictim;
     }
 }

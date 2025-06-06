@@ -1,13 +1,13 @@
-﻿namespace VAWCSanPedroHestia.NewForm
+namespace VAWCSanPedroHestia.NewForm
 {
-    partial class QuarterlyAccomplishmentReport
+    partial class NotifControlOnlineFile
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -20,111 +20,86 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
+        /// <summary> 
+        /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.dataDashboardDesign1 = new VAWCSanPedroHestia.NewForm.DataDashboardDesign();
-            this.dataRealTimeAnalytics1 = new VAWCSanPedroHestia.NewForm.DataRealTimeAnalytics();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnViewComplaint = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // label1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(181, 81);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(862, 1145);
-            this.tabControl1.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(132, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(398, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Complainant has reached out through a formal complaint.";
             // 
-            // tabPage1
+            // label2
             // 
-            this.tabPage1.Controls.Add(this.dataDashboardDesign1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(854, 1119);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(137, 72);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "label2";
             // 
-            // tabPage2
+            // btnViewComplaint
             // 
-            this.tabPage2.Controls.Add(this.dataRealTimeAnalytics1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(854, 1119);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.btnViewComplaint.BackColor = System.Drawing.Color.Red;
+            this.btnViewComplaint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewComplaint.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewComplaint.ForeColor = System.Drawing.Color.White;
+            this.btnViewComplaint.Location = new System.Drawing.Point(358, 72);
+            this.btnViewComplaint.Name = "btnViewComplaint";
+            this.btnViewComplaint.Size = new System.Drawing.Size(163, 39);
+            this.btnViewComplaint.TabIndex = 3;
+            this.btnViewComplaint.Text = "VIEW COMPLAINT";
+            this.btnViewComplaint.UseVisualStyleBackColor = false;
+            this.btnViewComplaint.Click += new System.EventHandler(this.btnViewComplaint_Click);
             // 
-            // dataDashboardDesign1
+            // pictureBox1
             // 
-            this.dataDashboardDesign1.AutoSize = true;
-            this.dataDashboardDesign1.BackColor = System.Drawing.Color.White;
-            this.dataDashboardDesign1.Location = new System.Drawing.Point(19, 15);
-            this.dataDashboardDesign1.Name = "dataDashboardDesign1";
-            this.dataDashboardDesign1.Size = new System.Drawing.Size(818, 964);
-            this.dataDashboardDesign1.TabIndex = 0;
+            this.pictureBox1.Image = global::VAWCSanPedroHestia.Properties.Resources.sanpedro14;
+            this.pictureBox1.Location = new System.Drawing.Point(24, 17);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(91, 94);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
-            // dataRealTimeAnalytics1
-            // 
-            this.dataRealTimeAnalytics1.BackColor = System.Drawing.Color.White;
-            this.dataRealTimeAnalytics1.Location = new System.Drawing.Point(20, 3);
-            this.dataRealTimeAnalytics1.Name = "dataRealTimeAnalytics1";
-            this.dataRealTimeAnalytics1.Size = new System.Drawing.Size(818, 1098);
-            this.dataRealTimeAnalytics1.TabIndex = 0;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(854, 1119);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // QuarterlyAccomplishmentReport
+            // NotifControlOnlineFile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1259, 1049);
-            this.Controls.Add(this.tabControl1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "QuarterlyAccomplishmentReport";
-            this.Text = "Form1";
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.Controls.Add(this.btnViewComplaint);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "NotifControlOnlineFile";
+            this.Size = new System.Drawing.Size(549, 140);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
-        private DataDashboardDesign dataDashboardDesign1;
-        private DataRealTimeAnalytics dataRealTimeAnalytics1;
-        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnViewComplaint;
     }
 }
